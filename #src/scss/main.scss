@@ -1,0 +1,123 @@
+.main {
+  height: 100vh;
+  background-size: cover;
+  @media (max-width: 370px) {
+    min-height: 100%;
+  }
+  &__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 7.98%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+    @media (max-width: $md2+px) {
+      text-align: center;
+    }
+  }
+
+  &__title-box {
+    padding: 120px 160px 160px 280px;
+    background: rgba(12, 12, 12, 0.6);
+    max-width: 750px;
+    max-height: 565px;
+    margin: 106px 0px 0px 0px;
+    @media (max-width: 1366px) {
+      margin: 91px 0px 0px 0px;
+    }
+    @media (max-width: 1124px) {
+      margin: 61px 0px 0px 0px;
+    }
+    @media (max-width: $md2+px) {
+      padding: 20% 17%;
+      text-align: left;
+      max-width: 100%;
+      max-height: auto;
+    }
+    @media (max-width: $md4+px) {
+      padding: 12% 16%;
+      text-align: left;
+      max-width: 100%;
+      max-height: auto;
+    }
+  }
+
+  &__title {
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 72px;
+    color: #ffffff;
+    margin: 0px 0px 55px 0px;
+    @media (max-width: $md3+px) {
+      font-size: 62px;
+      line-height: 62px;
+    }
+    @media (max-width: $md4+px) {
+      font-size: 47px;
+      line-height: 47px;
+      margin: 0px 0px 35px 0px;
+    }
+  }
+  &__subtitle {
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 150%;
+    color: #ffffff;
+    @media (max-width: $md4+px) {
+      font-size: 22px;
+    }
+  }
+
+  &__list {
+    // position: relative;
+    // top: -65px;
+    display: inline-flex;
+    padding: 55px 42.5px 55px 42.5px;
+    background-color: $blue;
+    margin: 0px 20px 0px 225px;
+    transform: translateY(-50%);
+    @media (max-width: $md2+px) {
+      margin: 0px 20px 0px 20px;
+    }
+    @media (max-width: 630px) {
+      flex-direction: column;
+      padding: 35px 42.5px 35px 42.5px;
+      transform: translateY(-25%);
+    }
+    @media (max-width: $md4+px) {
+      transform: translateY(-10%);
+      padding: 25px 20px 25px 20px;
+    }
+    li {
+      &:not(:last-child) {
+        @media (max-width: 630px) {
+          margin: 0px 0px 35px 0px;
+        }
+        @media (max-width: $md4+px) {
+          margin: 0px 0px 25px 0px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0px 17.5px 0px 17.5px;
+    transition: $tr;
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
