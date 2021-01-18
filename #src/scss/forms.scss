@@ -31,9 +31,13 @@
 //</BUTTONS>====================================================================================================
 .button {
   display: flex;
+  flex: 0 0 340px;
+  min-width: 340px;
+  max-height: 90px;
   align-items: center;
+  justify-content: center;
   height: 100%;
-  padding: 0px 55px 0px 55px;
+  padding: 0px 15px 0px 15px;
 
   font-family: Mabry Pro;
   font-style: normal;
@@ -44,20 +48,23 @@
   color: #ffffff;
   letter-spacing: 0.05em;
   background-color: $blue;
+  text-align: center;
   transition: $tr;
   @media (min-width: 992px) {
     &:hover {
       background-color: $bluehover;
     }
   }
-  @media (max-width: 1366px) {
-    padding: 0px 45px 0px 45px;
-  }
-  @media (max-width: 1210px) {
-    padding: 0px 35px 0px 35px;
-  }
+  // @media (max-width: 1366px) {
+  //   padding: 0px 45px 0px 45px;
+  // }
+  // @media (max-width: 1210px) {
+  //   padding: 0px 35px 0px 35px;
+  // }
   @media (max-width: 1124px) {
-    padding: 0px 25px 0px 25px;
+    // padding: 0px 25px 0px 25px;
+    flex: 0 1 340px;
+    min-width: 280px;
   }
   
 }

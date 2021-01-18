@@ -1,25 +1,129 @@
-.footer {}
+.footer {
+  background-color: #000000;
+  padding: 75px 0px 75px 0px;
+  @media (max-width: 1100px) {
+    padding: 25px 0px 25px 0px;
+  }
+}
 
-.footer__container {}
+.footer__container {
+}
 
-._container {}
+._container {
+}
 
-.footer__row {}
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1290px;
+  margin: 0 auto;
+  @media (max-width: 1380px) {
+    padding: 0px 40px 0px 40px;
+  }
+  @media (max-width: 890px) {
+    flex-direction: column;
+  }
+}
 
-.footer__column {}
+.footer__column {
+}
 
-.footer__logo {}
+.footer__column:nth-child(2) {
+  flex: 1 0 auto;
+  padding: 0px 50px 0px 105px;
+  @media (max-width: 890px) {
+    margin: 30px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+}
+.footer__column:nth-child(3) {
+  height: 90px;
+}
+.footer__logo {
+}
 
-.footer__sites {}
+.footer__sites {
+  display: flex;
+  margin: 0px 0px 35px 0px;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+  }
+  @media (max-width: 890px) {
+    flex-direction: row;
+  }
+  @media (max-width: $md4+px) {
+    flex-direction: column;
+  }
+}
+.footer__sites li {
+  @media (max-width: 1100px) {
+    margin: 0px 0px 20px 0px;
+  }
+}
 
-.footer__sites-link {}
+.footer__sites-link {
+  font-family: Mabry Pro;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: right;
+  color: #fff;
+  margin: 0px 40px 0px 0px;
+  transition: $tr;
+  @media (max-width: 1100px) {
+    margin: 0px 20px 20px 0px;
+  }
+  @media (max-width: $md4+px) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.footer__sites-link ._active {
+  color: $redhover;
+}
+@media (min-width: $md2+px) {
+  .footer__sites-link:hover {
+    // transform: scale(1.1);
+    color: $redhover;
+  }
+}
 
-.footer__contacts-row {}
+.footer__contacts-row {
+}
 
-.footer__phone {}
+.footer__phone {
+  font-family: Mabry Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: right;
+  color: #ffffff;
+  transition: $tr;
+}
+.footer__phone ._active {
+  color: $redhover;
+}
 
-.footer__button {}
+@media (min-width: $md2+px) {
+  .footer__phone:hover {
+    transform: scale(1.1);
+    color: $redhover;
+  }
+}
 
-.button {}
+.footer__phone span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 180%;
+  color: #ffffff;
+  padding: 0px 15px 0px 0px;
+}
 
+.footer__button {
+}
 
+.button {
+}
