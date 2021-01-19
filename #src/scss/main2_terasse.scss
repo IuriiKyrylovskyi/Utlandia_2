@@ -48,18 +48,7 @@
 }
 
 .terasse__title {
-  font-family: Mabry Pro;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 110%;
-  color: #000000;
   margin: 0px 0px 35px 0px;
-  @media (max-width: $md4+px) {
-    font-size: 46px;
-  }
-  @media (max-width: 360px) {
-    font-size: 40px;
-  }
 }
 
 .terasse__text {

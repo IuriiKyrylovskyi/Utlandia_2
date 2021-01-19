@@ -1,3 +1,17 @@
+// =====title========
+._title {
+  font-family: Mabry Pro;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #000000;
+  @media (max-width: $md4+px) {
+    font-size: 46px;
+  }
+  @media (max-width: 360px) {
+    font-size: 40px;
+  }
+}
 //<FORM ()>====================================================================================================
 .form {
   &__row {

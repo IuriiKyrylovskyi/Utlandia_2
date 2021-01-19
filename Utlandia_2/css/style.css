@@ -124,6 +124,14 @@ body._lock {
   margin: 0 auto;
 }
 
+._title {
+  font-family: Mabry Pro;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #000000;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1166,11 +1174,6 @@ body.ie ._ibg img {
 }
 
 .terasse__title {
-  font-family: Mabry Pro;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 110%;
-  color: #000000;
   margin: 0px 0px 35px 0px;
 }
 
@@ -1231,6 +1234,110 @@ body.ie ._ibg img {
   font-weight: 500;
   font-size: 22px;
   line-height: 31px;
+}
+
+.location {
+  min-height: 100vh;
+}
+
+.location__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1435px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  min-height: 100vh;
+}
+
+.location__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0px 0px 100px 0px;
+}
+
+.location__title {
+  max-width: 430px;
+  font-family: Mabry Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #000000;
+}
+
+.location__text {
+  max-width: 610px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  padding: 0px 65px 0px 65px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.location__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #003dd6;
+  padding: 50px;
+}
+
+.location__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  max-width: 400px;
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.location__column-title {
+  font-family: Mabry Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #ffffff;
+  margin: 0px 0px 15px 0px;
+}
+
+.location__column-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
 }
 
 @media (min-width: 991.98px) {
@@ -1375,6 +1482,22 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1055px) {
+  .location__title-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .location__title {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .select__title {
     font-size: 18px;
@@ -1401,6 +1524,10 @@ body.ie ._ibg img {
 
   .main__list {
     margin: 0px 20px 0px 20px;
+  }
+
+  .location__row {
+    padding: 30px;
   }
 }
 
@@ -1436,6 +1563,31 @@ body.ie ._ibg img {
   .main__title {
     font-size: 62px;
     line-height: 62px;
+  }
+
+  .location__title-box {
+    margin: 50px 0px 50px 0px;
+  }
+
+  .location__text {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .location__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+  }
+
+  .location__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin: 20px 20px;
   }
 }
 
@@ -1481,6 +1633,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 479.98px) {
+  ._title {
+    font-size: 46px;
+  }
+
   .footer__sites {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1519,10 +1675,6 @@ body.ie ._ibg img {
   .main__list li:not(:last-child) {
     margin: 0px 0px 25px 0px;
   }
-
-  .terasse__title {
-    font-size: 46px;
-  }
 }
 
 @media (max-width: 430px) {
@@ -1556,7 +1708,7 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 360px) {
-  .terasse__title {
+  ._title {
     font-size: 40px;
   }
 }
@@ -1617,6 +1769,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 1100px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1055px){
 
 @supports (-webkit-appearance:none){
 
