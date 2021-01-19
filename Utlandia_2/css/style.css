@@ -1139,6 +1139,100 @@ body.ie ._ibg img {
   transition: all 0.5s ease;
 }
 
+.terasse {
+  min-height: 100vh;
+}
+
+.terasse__content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 40px;
+}
+
+.terasse__title-box {
+  max-width: 600px;
+  padding: 65px 100px;
+  background-color: #fff;
+  margin: 40px 0px 100px 0px;
+}
+
+.terasse__title {
+  font-family: Mabry Pro;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  color: #000000;
+  margin: 0px 0px 35px 0px;
+}
+
+.terasse__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.terasse__row {
+  max-width: 1210px;
+  min-height: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #003dd6;
+  padding: 45px;
+  margin: 0px 0px 40px auto;
+}
+
+.terasse__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+
+.terasse__icon-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 72px;
+          flex: 0 0 72px;
+  width: 72px;
+  margin: 0px 30px 0px 0px;
+}
+
+.terasse__info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.terasse__info span {
+  display: block;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -1202,6 +1296,26 @@ body.ie ._ibg img {
 
   .main__title-box {
     margin: 91px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .terasse__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+
+  .terasse__column {
+    margin: 0px 20px 45px 20px;
+  }
+
+  .terasse__column:last-child {
+    margin: 0px 20px 0px 20px;
   }
 }
 
@@ -1348,6 +1462,24 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 600px) {
+  .terasse__title-box {
+    margin: 40px 0px 50px 0px;
+    padding: 45px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .terasse__title-box {
+    margin: 30px 0px 30px 0px;
+    padding: 25px 20px;
+  }
+
+  .terasse__row {
+    padding: 35px;
+  }
+}
+
 @media (max-width: 479.98px) {
   .footer__sites {
     -webkit-box-orient: vertical;
@@ -1387,11 +1519,45 @@ body.ie ._ibg img {
   .main__list li:not(:last-child) {
     margin: 0px 0px 25px 0px;
   }
+
+  .terasse__title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 430px) {
+  .terasse__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .terasse__icon-box {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .terasse__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .terasse__title-box {
+    padding: 25px 00px;
+  }
 }
 
 @media (max-width: 370px) {
   .main {
     min-height: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .terasse__title {
+    font-size: 40px;
   }
 }
 @supports (-webkit-appearance:none){
@@ -1427,6 +1593,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 1366px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1200px){
 
 @supports (-webkit-appearance:none){
 
@@ -1498,6 +1672,22 @@ body.ie ._ibg img {
 
 }
 
+ @media (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 479.98px){
 
 @supports (-webkit-appearance:none){
@@ -1506,7 +1696,31 @@ body.ie ._ibg img {
 
 }
 
+ @media (max-width: 430px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 390px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 370px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 360px){
 
 @supports (-webkit-appearance:none){
 
