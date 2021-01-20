@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,11 +37,23 @@
     display: block;
     // height: 100%;
   }
+  &__logo svg {
+    fill: #ffffff;
+    // transition: all 0.5s linear 0.5s;
+    transition: $tr;
+  }
+
+  // &__logo._white svg {
+  //   fill: $blue;
+  // }
 
   &__lang {
     display: flex;
     align-items: center;
     margin: 17px 60px 0px 60px;
+    // transition: all 0.5s linear 0.5s;
+    transition: $tr;
+
     @media (max-width: 1124px) {
       margin: 10px 20px 0px 30px;
     }
@@ -54,10 +66,12 @@
       font-size: 14px;
       line-height: 14px;
       margin: 0px 5px 0px 5px;
-      color: rgba(255, 255, 255, 0.5);
-      transition: $tr;
+      color: #ffffff;
+      opacity: 0.5;
+      transition: all 0.5s linear 0.5s;
+      // transition: $tr;
       &._active {
-        color: rgba(255, 255, 255, 1);
+        opacity: 1;
       }
       @media (min-width: $md2+px) {
         &:hover {
@@ -75,6 +89,7 @@
     line-height: 18px;
     color: #ffffff;
     white-space: nowrap;
+    // transition: all 0.5s linear 0.5s;
     transition: $tr;
     @media (min-width: $md2+px) {
       &:hover {
@@ -92,7 +107,7 @@
     @media (max-width: 1124px) {
       margin: 0px 45px 0px 45px;
     }
-     @media (max-width: 615px) {
+    @media (max-width: 615px) {
       display: none;
     }
   }
@@ -107,6 +122,9 @@
     text-transform: uppercase;
     color: #ffffff;
     margin: 0px 35px 0px 0px;
+    // transition: all 0.5s linear 0.5s;
+    transition: $tr;
+
     @media (max-width: 1124px) {
       display: none;
     }
@@ -116,22 +134,16 @@
   }
 }
 
-.lang {
-  &__ukr {
-  }
-
-  &__rus {
-  }
-
-  &__en {
-  }
-}
-
+//====================================================================================================
 .menu {
-  &__icon {
-  }
+  &__body._active {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
 
-  &__body {
+    background-color: rgba(0, 0, 0, 0.75);
   }
 
   &__list {
@@ -140,10 +152,6 @@
   &__link {
   }
 }
-.icon-menu {
-}
-
-//====================================================================================================
 
 //Burger
 .icon-menu {
@@ -185,5 +193,40 @@
         background-color: $redhover;
       }
     }
+  }
+}
+
+// _white =============================================================
+.header._scroll {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  // transition: all 0.5s linear 0.5s;
+  transition: $tr;
+
+  .header__logo svg {
+    fill: $blue;
+  }
+  .header__lang a {
+    color: #000000;
+  }
+
+  .header__phone {
+    color: #000000;
+  }
+
+  .header__menu-title {
+    color: #000000;
+  }
+
+  .header__menu {
+  }
+  .icon-menu span {
+    background-color: hsl(0, 0%, 0%);
+  }
+  .icon-menu._active span {
+    background-color: $redhover;
+  }
+  .icon-menu:nth-child(2) {
+    display: none;
   }
 }

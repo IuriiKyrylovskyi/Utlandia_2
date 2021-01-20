@@ -860,7 +860,7 @@ body.ie ._ibg img {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -894,6 +894,13 @@ body.ie ._ibg img {
   display: block;
 }
 
+.header__logo svg {
+  fill: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .header__lang {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,6 +909,9 @@ body.ie ._ibg img {
       -ms-flex-align: center;
           align-items: center;
   margin: 17px 60px 0px 60px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header__lang a {
@@ -910,14 +920,15 @@ body.ie ._ibg img {
   font-size: 14px;
   line-height: 14px;
   margin: 0px 5px 0px 5px;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  color: #ffffff;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s linear 0.5s;
+  -o-transition: all 0.5s linear 0.5s;
+  transition: all 0.5s linear 0.5s;
 }
 
 .header__lang a._active {
-  color: white;
+  opacity: 1;
 }
 
 .header__phone {
@@ -946,6 +957,18 @@ body.ie ._ibg img {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px 35px 0px 0px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu__body._active {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .icon-menu {
@@ -998,6 +1021,42 @@ body.ie ._ibg img {
           transform: rotate(45deg);
   bottom: calc(50% - 1px);
   background-color: #ff4b4b;
+}
+
+.header._scroll {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header._scroll .header__logo svg {
+  fill: #003dd6;
+}
+
+.header._scroll .header__lang a {
+  color: #000000;
+}
+
+.header._scroll .header__phone {
+  color: #000000;
+}
+
+.header._scroll .header__menu-title {
+  color: #000000;
+}
+
+.header._scroll .icon-menu span {
+  background-color: black;
+}
+
+.header._scroll .icon-menu._active span {
+  background-color: #ff4b4b;
+}
+
+.header._scroll .icon-menu:nth-child(2) {
+  display: none;
 }
 
 .footer {
