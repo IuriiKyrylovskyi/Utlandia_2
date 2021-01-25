@@ -1,0 +1,169 @@
+.close-ter {
+  &__body {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    source,
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: cover;
+      // padding: 0 0 100% 0;
+    }
+  }
+
+  &__container {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 970px;
+    min-height: 100vh;
+    padding: 40px;
+    margin: 0px 0px 0px auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    max-width: 445px;
+    padding: 50px;
+    margin: 0px 0px 50px 0px;
+    background-color: #fff;
+  }
+
+  &__title {
+  }
+
+  &__slider-box {
+    max-width: 890px;
+  }
+  &__slider {
+  }
+}
+
+.slider-close {
+  &__item {
+    // width: 890px;
+    background-color: $blue;
+    padding: 60px 70px;
+  }
+
+  &__row {
+    display: flex;
+    width: 100%;
+  }
+
+  &__column {
+  }
+
+  &__icon {
+  }
+
+  &__content {
+    max-width: 500px;
+    margin: 0px 65px 0px 65px;
+  }
+
+  &__pagin {
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 110%;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+    span {
+      opacity: 0.5;
+    }
+  }
+
+  &__title {
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 110%;
+    color: #ffffff;
+    margin: 30px 0px 25px 0px;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff;
+  }
+}
+
+.close-ter__slider-box {
+  .slick-arrow {
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 23px;
+    right: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-color: $blue;
+    background-image: url("../img/main4_close_territory/arrow_prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    transition: $tr;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background-color: $red;
+        box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-color: $blue;
+    background-image: url("../img/main4_close_territory/arrow_next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    transition: $tr;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background-color: $red;
+        box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
