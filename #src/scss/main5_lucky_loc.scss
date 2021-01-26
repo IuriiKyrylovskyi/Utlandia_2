@@ -1,16 +1,44 @@
 .lucky {
   &__content {
+    height: calc(100vh - 100px);
+    @media (max-width: 1366px) {
+      height: calc(100vh - 60px);
+    }
+    @media (max-width: 1124px) {
+      height: calc(100vh - 40px);
+    }
+    // @media (max-width: $md3+px) {
+    //   height: calc(100vh - 30px);
+    // }
+    // @media (max-width: $md4+px) {
+    //   height: calc(100vh - 20px);
+    // }
   }
 
   &__tabs {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
+    height: calc(100vh - 100px);
+
+    @media (max-width: 1366px) {
+      height: calc(100vh - 60px);
+    }
+    @media (max-width: 1124px) {
+      height: calc(100vh - 40px);
+    }
+    // @media (max-width: $md3+px) {
+    //   height: calc(100vh - 30px);
+    // }
+    // @media (max-width: $md4+px) {
+    //   height: calc(100vh - 20px);
+    // }
   }
 
   &__tabs-items-box {
-    min-height: 100vh;
+    // min-height: 100vh;
+    height: 100%;
     width: 37%;
     display: flex;
     flex-direction: column;
@@ -77,23 +105,15 @@
   }
 
   &__tabs-blocks {
-    height: 100vh;
-
     width: 63%;
   }
 
   &__tabs-block {
     position: relative;
-    padding: 0px 0px 100% 0px;
+    height: 100%;
   }
   &__tabs-block_img {
-    // padding: 0px 0px 100% 0px;
-
-    // position: absolute;
-    // width: 100%;
-    height: 100vh;
-    // top: 0;
-    // left: 0;
+    height: 100%;
     img,
     source {
       position: absolute;
@@ -101,7 +121,6 @@
       height: 100%;
       top: 0;
       left: 0;
-      // padding: 0px 0px 100% 0px;
       background-size: cover;
     }
   }

@@ -1,3 +1,20 @@
+// ==== common styles ========
+._section {
+  // margin-top: 100px;
+  margin-top: 100px;
+  @media (max-width: 1366px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 1124px) {
+    margin-top: 40px;
+  }
+  // @media (max-width: $md3+px) {
+  //   margin-top: 30px;
+  // }
+  // @media (max-width: $md4+px) {
+  //   margin-top: 20px;
+  // }
+}
 // =====title========
 ._title {
   font-family: Mabry Pro;
@@ -80,7 +97,6 @@
     flex: 0 1 340px;
     min-width: 280px;
   }
-  
 }
 //<SELECT (sel+tab)>====================================================================================================
 .select {

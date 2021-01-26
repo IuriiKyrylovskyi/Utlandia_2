@@ -1,8 +1,21 @@
 .close-ter {
   &__body {
-    min-height: 100vh;
+    // min-height: 100vh;
+    height: calc(100vh - 100px);
     width: 100%;
     position: relative;
+    @media (max-width: 1366px) {
+      height: calc(100vh - 60px);
+    }
+    @media (max-width: 1124px) {
+      height: calc(100vh - 40px);
+    }
+    // @media (max-width: $md3+px) {
+    //   height: calc(100vh - 30px);
+    // }
+    // @media (max-width: $md4+px) {
+    //   height: calc(100vh - 20px);
+    // }
   }
 
   &__bg {
@@ -19,11 +32,11 @@
       top: 0;
       left: 0;
       overflow: cover;
-      // padding: 0 0 100% 0;
     }
   }
 
   &__container {
+    height: 100%;
   }
 
   &__content {
@@ -32,7 +45,7 @@
     align-items: flex-start;
     justify-content: center;
     max-width: 970px;
-    min-height: 100vh;
+    height: 100%;
     padding: 40px;
     margin: 0px 0px 0px auto;
     position: relative;
