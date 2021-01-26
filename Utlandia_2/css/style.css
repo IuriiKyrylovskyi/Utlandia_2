@@ -1234,10 +1234,10 @@ body.ie ._ibg img {
 .terasse__bg img,
 .terasse__bg source {
   position: absolute;
-  width: 100%;
+  width: 64%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 36%;
 }
 
 .terasse__container {
@@ -1745,6 +1745,90 @@ body.ie ._ibg img {
   top: 0;
   left: 0;
   background-size: cover;
+}
+
+.choose__content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.choose__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choose__bg {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choose__bg img,
+.choose__bg source {
+  width: 100%;
+}
+
+.choose__floors {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.choose__floors img,
+.choose__floors source {
+  max-width: 100%;
+}
+
+.choose__floors--svg svg {
+  fill: transparent;
+}
+
+.choose__floors--svg svg:hover {
+  fill: #003dd6;
+  opacity: 0.5;
+}
+
+.choose__title-box {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 630px;
+  padding: 65px 70px 65px 90px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.choose__title {
+  max-width: 220px;
+  margin: 0px 0px 35px 0px;
+}
+
+.choose__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1a1b1f;
 }
 
 @media (min-width: 991.98px) {
