@@ -1747,6 +1747,11 @@ body.ie ._ibg img {
   background-size: cover;
 }
 
+.choose {
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
 .choose__content {
   position: relative;
   height: 100%;
@@ -1757,44 +1762,22 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .choose__bg {
+  position: absolute;
+  max-width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  top: 0;
+  right: 0;
 }
 
 .choose__bg img,
 .choose__bg source {
-  width: 100%;
-}
-
-.choose__floors {
-  position: absolute;
-  top: 0;
-  cursor: pointer;
-}
-
-.choose__floors img,
-.choose__floors source {
   max-width: 100%;
-}
-
-.choose__floors--svg svg {
-  fill: transparent;
-}
-
-.choose__floors--svg svg:hover {
-  fill: #003dd6;
-  opacity: 0.5;
 }
 
 .choose__title-box {
@@ -1815,6 +1798,7 @@ body.ie ._ibg img {
   padding: 65px 70px 65px 90px;
   background-color: #fff;
   text-align: left;
+  z-index: 3;
 }
 
 .choose__title {
@@ -1829,6 +1813,19 @@ body.ie ._ibg img {
   font-size: 16px;
   line-height: 160%;
   color: #1a1b1f;
+}
+
+.floors {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.floors svg {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 991.98px) {
@@ -1882,6 +1879,19 @@ body.ie ._ibg img {
     -webkit-box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
   }
+
+  .floors__floor {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    fill: transparent;
+  }
+
+  .floors__floor:hover {
+    fill: #003dd6;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1930,6 +1940,10 @@ body.ie ._ibg img {
   }
 
   .lucky__tabs {
+    height: calc(100vh - 60px);
+  }
+
+  .choose {
     height: calc(100vh - 60px);
   }
 }
@@ -2004,6 +2018,10 @@ body.ie ._ibg img {
   }
 
   .lucky__tabs {
+    height: calc(100vh - 40px);
+  }
+
+  .choose {
     height: calc(100vh - 40px);
   }
 }
