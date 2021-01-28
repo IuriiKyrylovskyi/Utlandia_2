@@ -2,6 +2,27 @@
   min-height: 100vh;
 }
 
+.location__body {
+  position: relative;
+}
+
+.location__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  img,
+  source {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+  }
+}
 .location__content {
   display: flex;
   flex-direction: column;

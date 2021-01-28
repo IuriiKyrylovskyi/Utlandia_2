@@ -1,7 +1,5 @@
 .choose {
-  min-height: calc(100vh - 100px);
-  // height: calc(100vh - 100px);
-  overflow: hidden;
+  // min-height: calc(100vh - 100px);
   @media (max-width: 1366px) {
     height: calc(100vh - 60px);
   }
@@ -9,6 +7,8 @@
     height: calc(100vh - 40px);
   }
   &__container {
+    height: 100%;
+    margin: auto auto 0;
   }
 
   &__content {
@@ -20,6 +20,7 @@
   &__img-box {
     display: flex;
     justify-content: flex-end;
+    height: 100%;
   }
 
   &__bg {
@@ -28,9 +29,8 @@
     height: 100%;
     top: 0;
     right: 0;
-    // height: 100%;
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    align-items: flex-end;
     img,
     source {
       max-width: 100%;
@@ -38,29 +38,6 @@
   }
 
   &__floors {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // max-width: 100%;
-    // height: 100%;
-    // cursor: pointer;
-    // img,
-    // source {
-    //   max-width: 100%;
-    // }
-    // &:hover {
-    //   background-color: $bluehover;
-    //   opacity: 0.3;
-    // }
-    // &--svg {
-    //   svg {
-    //     fill: transparent;
-    //     &:hover {
-    //       fill: $blue;
-    //       opacity: 0.5;
-    //     }
-    //   }
-    // }
   }
 
   &__title-box {
@@ -94,15 +71,13 @@
 }
 
 .floors {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 100%;
-  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
   svg {
     max-width: 100%;
     height: auto;
-    // min-height: calc(100vh - 100px);
   }
   &__floor {
     @media (min-width: $md2+px) {
