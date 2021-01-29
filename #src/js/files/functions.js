@@ -517,3 +517,6 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
+
+// parallax 
+new universalParallax().init();
