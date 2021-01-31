@@ -131,7 +131,18 @@ var universalParallax = function universalParallax() {
 function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 };
+// const body = document.querySelector('body');
+// const locParallax = document.querySelector('.parallax__container');
 
+// const addLpClass = () => {
+//   if (body.classList.contains('_lock')) {
+//     let rightPadingNum = body.style;
+//     locParallax.classList.add('_lp');
+//   }
+//   locParallax.classList.remove('_lp');
+// };
+
+// body.addEventListener('change', addLpClass);
 ;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");

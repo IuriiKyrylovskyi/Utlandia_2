@@ -125,7 +125,6 @@ body._lock {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,18 +879,21 @@ body.ie ._ibg img {
 }
 
 .header {
-  position: fixed;
-  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   left: 0;
   width: 100%;
+  z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 15px;
   padding-bottom: 15px;
-  z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header__content {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,6 +915,12 @@ body.ie ._ibg img {
 
 .header__column:nth-child(2) {
   padding-right: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__logo {
@@ -973,6 +981,9 @@ body.ie ._ibg img {
 }
 
 .header__menu-title {
+  position: absolute;
+  top: 45px;
+  right: 120px;
   font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
@@ -981,7 +992,6 @@ body.ie ._ibg img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0px 80px 0px 0px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1348,7 +1358,6 @@ body.ie ._ibg img {
   position: relative;
   min-height: calc(100vh - 100px);
   width: 100%;
-  position: relative;
 }
 
 .terasse__bg {
@@ -1370,7 +1379,6 @@ body.ie ._ibg img {
 
 .terasse__content {
   position: relative;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1383,6 +1391,7 @@ body.ie ._ibg img {
           justify-content: center;
   margin: auto 40px;
   z-index: 1;
+  min-height: calc(100vh - 100px);
 }
 
 .terasse__title-box {
@@ -2111,6 +2120,10 @@ body.ie ._ibg img {
     min-height: calc(100vh - 60px);
   }
 
+  .terasse__content {
+    min-height: calc(100vh - 60px);
+  }
+
   .close-ter__body {
     height: calc(100vh - 60px);
   }
@@ -2194,6 +2207,10 @@ body.ie ._ibg img {
   }
 
   .terasse {
+    min-height: calc(100vh - 40px);
+  }
+
+  .terasse__content {
     min-height: calc(100vh - 40px);
   }
 

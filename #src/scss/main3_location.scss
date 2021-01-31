@@ -1,8 +1,19 @@
+// body._lock {
+//   .location__parallax.parallax {
+//     width: calc(100% - 33px);
+//   }
+// }
+
 .location {
   min-height: 100vh;
   // position: relative;
 }
-
+// .location__parallax-container {
+//   position: absolute;
+//   height: 200px;
+//   top: 55%;
+//   padding: 0px 0px 45% 0px;
+// }
 .location .parallax__container {
   clip: rect(0, auto, auto, 0);
   overflow: hidden;
