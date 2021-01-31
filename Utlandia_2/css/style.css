@@ -4,6 +4,22 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
+@font-face {
+  font-family: "Mabry Pro";
+  font-display: swap;
+  src: url("../fonts/MabryPro-Regular.woff") format("woff"), url("../fonts/MabryPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mabry Pro";
+  font-display: swap;
+  src: url("../fonts/MabryPro-Medium.woff") format("woff"), url("../fonts/MabryPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -129,7 +145,7 @@ body._lock {
 }
 
 ._title {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-weight: 500;
   font-size: 56px;
   line-height: 110%;
@@ -164,7 +180,7 @@ body._lock {
           justify-content: center;
   height: 100%;
   padding: 0px 15px 0px 15px;
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -924,7 +940,7 @@ body.ie ._ibg img {
 }
 
 .header__lang a {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -941,7 +957,7 @@ body.ie ._ibg img {
 }
 
 .header__phone {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -957,7 +973,7 @@ body.ie ._ibg img {
 }
 
 .header__menu-title {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1134,7 +1150,7 @@ body.ie ._ibg img {
 }
 
 .footer__lang a {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -1151,7 +1167,7 @@ body.ie ._ibg img {
 }
 
 .footer__phone {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -1181,7 +1197,7 @@ body.ie ._ibg img {
 
 .footer__text {
   max-width: 315px;
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1190,7 +1206,7 @@ body.ie ._ibg img {
 }
 
 .footer__list {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1209,7 +1225,7 @@ body.ie ._ibg img {
 }
 
 .footer__rights {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1219,7 +1235,7 @@ body.ie ._ibg img {
 }
 
 .socials .socials__label {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1285,7 +1301,7 @@ body.ie ._ibg img {
 }
 
 .main__title {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 72px;
@@ -1295,7 +1311,7 @@ body.ie ._ibg img {
 }
 
 .main__subtitle {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -1316,7 +1332,7 @@ body.ie ._ibg img {
 }
 
 .main__link {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -1435,7 +1451,7 @@ body.ie ._ibg img {
 }
 
 .terasse__info {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1508,7 +1524,7 @@ body.ie ._ibg img {
 
 .location__title {
   max-width: 430px;
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 56px;
@@ -1518,7 +1534,7 @@ body.ie ._ibg img {
 
 .location__text {
   max-width: 610px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1558,7 +1574,7 @@ body.ie ._ibg img {
 }
 
 .location__column-title {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -1571,7 +1587,7 @@ body.ie ._ibg img {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1663,7 +1679,7 @@ body.ie ._ibg img {
 }
 
 .slider-close__pagin {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -1677,7 +1693,7 @@ body.ie ._ibg img {
 }
 
 .slider-close__title {
-  font-family: Mabry Pro;
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -1687,7 +1703,7 @@ body.ie ._ibg img {
 }
 
 .slider-close__text {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1945,7 +1961,7 @@ body.ie ._ibg img {
 }
 
 .choose__text {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2034,6 +2050,10 @@ body.ie ._ibg img {
     background-color: #d53030;
     -webkit-box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
+  }
+
+  .lucky__tabs-item {
+    cursor: pointer;
   }
 
   .floors__floor {
