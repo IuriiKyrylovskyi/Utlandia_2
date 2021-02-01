@@ -883,7 +883,7 @@ body.ie ._ibg img {
   position: sticky;
   top: 0px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 15px;
@@ -1288,26 +1288,84 @@ body.ie ._ibg img {
 
 .main {
   height: 100vh;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.main__cover {
+.main__bg {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.main__bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7.98%, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.35) 7.98%, rgba(0, 0, 0, 0) 100%), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 7.98%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
 }
 
+.main__cover {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 80vh;
+}
+
 .main__title-box {
-  padding: 120px 160px 160px 280px;
   background: rgba(12, 12, 12, 0.6);
   max-width: 750px;
-  max-height: 565px;
-  margin: 106px 0px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title-box-content {
+  max-width: 320px;
+  margin: 20px;
 }
 
 .main__title {
@@ -1327,12 +1385,17 @@ body.ie ._ibg img {
   font-size: 28px;
   line-height: 150%;
   color: #ffffff;
+  margin: 0px 0px 30px 0px;
 }
 
 .main__list {
+  max-width: 600px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 55px 42.5px 55px 42.5px;
   background-color: #003dd6;
   margin: 0px 20px 0px 225px;
@@ -1484,7 +1547,7 @@ body.ie ._ibg img {
   clip: rect(0, auto, auto, 0);
   overflow: hidden;
   height: 45%;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top: 55%;
   left: 0;
@@ -2112,10 +2175,6 @@ body.ie ._ibg img {
     height: 60px;
   }
 
-  .main__title-box {
-    margin: 91px 0px 0px 0px;
-  }
-
   .terasse {
     min-height: calc(100vh - 60px);
   }
@@ -2202,10 +2261,6 @@ body.ie ._ibg img {
     margin: 10px 20px 0px 30px;
   }
 
-  .main__title-box {
-    margin: 61px 0px 0px 0px;
-  }
-
   .terasse {
     min-height: calc(100vh - 40px);
   }
@@ -2275,7 +2330,6 @@ body.ie ._ibg img {
   }
 
   .main__title-box {
-    padding: 20% 17%;
     text-align: left;
     max-width: 100%;
     max-height: auto;
@@ -2397,13 +2451,6 @@ body.ie ._ibg img {
     font-size: 46px;
   }
 
-  .main__title-box {
-    padding: 12% 16%;
-    text-align: left;
-    max-width: 100%;
-    max-height: auto;
-  }
-
   .main__title {
     font-size: 47px;
     line-height: 47px;
@@ -2459,6 +2506,18 @@ body.ie ._ibg img {
 @media (max-width: 360px) {
   ._title {
     font-size: 40px;
+  }
+}
+
+@media (max-height: 545px) {
+  .main {
+    height: 100%;
+  }
+
+  .main__list {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 @supports (-webkit-appearance:none){
@@ -2632,6 +2691,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 360px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-height: 545px){
 
 @supports (-webkit-appearance:none){
 
