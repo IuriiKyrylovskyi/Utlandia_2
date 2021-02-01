@@ -1982,6 +1982,11 @@ body.ie ._ibg img {
   background-size: cover;
 }
 
+.choose {
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
 .choose__container {
   height: 100%;
   margin: auto auto 0;
@@ -1997,10 +2002,11 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
+  padding-top: 50px;
 }
 
 .choose__bg {
@@ -2429,6 +2435,10 @@ body.ie ._ibg img {
 
   .location__row {
     padding: 30px;
+  }
+
+  .choose__title-box {
+    padding: 35px 40px 40px 50px;
   }
 }
 
