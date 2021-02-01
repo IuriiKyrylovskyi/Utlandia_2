@@ -64,9 +64,15 @@
 
 .terasse__title-box {
   max-width: 600px;
-  padding: 65px 100px;
+  height: 365px;
+  // padding: 65px 100px;
   background-color: #fff;
   margin: 40px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 @media (max-width: 600px) {
@@ -83,15 +89,17 @@
 }
 @media (max-width: 390px) {
   .terasse__title-box {
-    padding: 25px 00px;
+    padding: 25px 10px;
   }
 }
 
 .terasse__title {
+  max-width: 400px;
   margin: 0px 0px 35px 0px;
 }
 
 .terasse__text {
+  max-width: 400px;
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
