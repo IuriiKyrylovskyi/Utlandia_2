@@ -1,18 +1,20 @@
 .lucky {
+  @media (max-width: 1124px) {
+    min-height: 700px;
+  }
   &__content {
-    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
     @media (max-width: 1366px) {
-      min-height: calc(100vh - 60px);
+      height: calc(100vh - 60px);
     }
     @media (max-width: 1124px) {
-      min-height: calc(100vh - 40px);
+      height: calc(100vh - 40px);
+      // height: 100%;
     }
+
     @media (max-width: $md3+px) {
-      min-height: 100%;
+      height: 100%;
     }
-    // @media (max-width: $md4+px) {
-    //   height: calc(100vh - 20px);
-    // }
   }
 
   &__tabs {
@@ -27,14 +29,20 @@
     }
     @media (max-width: 1124px) {
       height: calc(100vh - 40px);
+      min-height: 600px;
+    }
+    @media (max-hight: 515px) {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
     }
     @media (max-width: $md3+px) {
       height: 100%;
       flex-direction: column;
       align-items: center;
     }
-    // @media (max-width: $md4+px) {
-    //   height: calc(100vh - 20px);
+    // @media (max-hight: 515px) {
+    //   height: 100%;
     // }
   }
 
