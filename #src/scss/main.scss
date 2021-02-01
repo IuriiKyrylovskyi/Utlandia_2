@@ -6,20 +6,18 @@
   align-items: flex-start;
   justify-content: center;
   // position: absolute;
-  margin-top: -106px;
+  // margin-top: -106px;
+  // @media (max-width: 1366px) {
+  //   margin-top: -91px;
+  // }
   // @media (max-width: 1124px) {
   //   margin-top: -61px;
   // }
-  @media (max-width: 1366px) {
-    margin-top: -91px;
-  }
-  @media (max-width: 1124px) {
-    margin-top: -61px;
-  }
 
   @media (max-height: 570px) {
     min-height: 650px;
   }
+
   // @media (max-width: 370px) {
   //   // min-height: 100%;
   // }
