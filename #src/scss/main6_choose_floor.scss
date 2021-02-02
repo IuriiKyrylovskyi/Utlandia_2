@@ -16,6 +16,8 @@
   &__container {
     height: 100%;
     margin: auto auto 0;
+
+    position: relative;
   }
 
   &__content {
@@ -25,7 +27,7 @@
   }
 
   &__img-box {
-    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
@@ -34,25 +36,25 @@
       width: 1520px;
       max-width: 1520px;
     }
+    @media (max-width: 1200px) {
+      width: 1335px;
+      max-width: 1335px;
+    }
     @media (max-width: 1124px) {
       height: calc(100vh - 40px);
+    }
+    @media (max-width: $md2+px) {
+      transform: translateX(-150px);
+    }
+    @media (max-width: $md3+px) {
       width: 1024px;
       max-width: 1024px;
-    }
-
-    @media (max-width: $md3+px) {
-      // height: 100vh;
-
       height: 100%;
-      margin-left: -350px;
     }
 
-    // justify-content: center;
-    // height: 100%;
-    // padding-top: 50px;
-    // @media (max-width:$md1+px){
-    //   padding-top: 300px;
-    // }
+    @media (max-width: 650px) {
+      transform: translateX(-350px);
+    }
   }
 
   &__bg {
@@ -71,13 +73,17 @@
         display: block;
         max-width: 1520px;
       }
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
+        width: 1335px;
+        max-width: 1335px;
+      }
+      @media (max-width: $md3+px) {
         width: 1024px;
         max-width: 1024px;
       }
-      @media (max-width: $md3+px) {
-        margin-left: -350px;
-      }
+      // @media (max-width: $md3+px) {
+      //   margin-left: -350px;
+      // }
     }
   }
 
@@ -86,8 +92,8 @@
 
   &__title-box {
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -98,14 +104,15 @@
     text-align: left;
     z-index: 3;
     @media (max-width: $md2+px) {
-      // position: relative;
+      // position: static;
+
       padding: 60px 40px 40px 50px;
     }
     @media (max-width: $md3+px) {
-      position: relative;
+      position: static;
     }
-    @media (max-height: 545px) {
-      position: relative;
+    @media (max-height: 545px) and (max-width: 823px) {
+      position: static;
     }
   }
 
