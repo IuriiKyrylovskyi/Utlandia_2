@@ -10,6 +10,9 @@
   @media (max-width: $md3+px) {
     height: 100%;
   }
+  @media (max-height: 545px) {
+    height: 100%;
+  }
   &__container {
     height: 100%;
     margin: auto auto 0;
@@ -28,13 +31,18 @@
     justify-content: flex-end;
     @media (max-width: 1366px) {
       height: calc(100vh - 60px);
-      width: 1024px;
-      max-width: 1024px;
+      width: 1520px;
+      max-width: 1520px;
     }
     @media (max-width: 1124px) {
       height: calc(100vh - 40px);
+      width: 1024px;
+      max-width: 1024px;
     }
+
     @media (max-width: $md3+px) {
+      // height: 100vh;
+
       height: 100%;
       margin-left: -350px;
     }
@@ -58,9 +66,13 @@
     img,
     source {
       max-width: 100%;
+      @media (max-width: 1366px) {
+        width: 1520px;
+        display: block;
+        max-width: 1520px;
+      }
       @media (max-width: 1024px) {
         width: 1024px;
-        display: block;
         max-width: 1024px;
       }
       @media (max-width: $md3+px) {
@@ -90,7 +102,10 @@
       padding: 60px 40px 40px 50px;
     }
     @media (max-width: $md3+px) {
-      // position: relative;
+      position: relative;
+    }
+    @media (max-height: 545px) {
+      position: relative;
     }
   }
 

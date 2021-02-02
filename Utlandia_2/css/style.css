@@ -2262,8 +2262,15 @@ body.ie ._ibg img {
 
   .choose__img-box {
     height: calc(100vh - 60px);
-    width: 1024px;
-    max-width: 1024px;
+    width: 1520px;
+    max-width: 1520px;
+  }
+
+  .choose__bg img,
+  .choose__bg source {
+    width: 1520px;
+    display: block;
+    max-width: 1520px;
   }
 }
 
@@ -2371,6 +2378,8 @@ body.ie ._ibg img {
 
   .choose__img-box {
     height: calc(100vh - 40px);
+    width: 1024px;
+    max-width: 1024px;
   }
 }
 
@@ -2407,7 +2416,6 @@ body.ie ._ibg img {
   .choose__bg img,
   .choose__bg source {
     width: 1024px;
-    display: block;
     max-width: 1024px;
   }
 }
@@ -2566,6 +2574,10 @@ body.ie ._ibg img {
   .choose__bg img,
   .choose__bg source {
     margin-left: -350px;
+  }
+
+  .choose__title-box {
+    position: relative;
   }
 }
 
@@ -2747,6 +2759,14 @@ body.ie ._ibg img {
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
             transform: translateY(0%);
+  }
+
+  .choose {
+    height: 100%;
+  }
+
+  .choose__title-box {
+    position: relative;
   }
 }
 
