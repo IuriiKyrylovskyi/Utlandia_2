@@ -81,9 +81,7 @@
         width: 1024px;
         max-width: 1024px;
       }
-      // @media (max-width: $md3+px) {
-      //   margin-left: -350px;
-      // }
+     
     }
   }
 
@@ -141,11 +139,14 @@
     height: auto;
   }
   &__floor {
+    animation: fadeIn 16s infinite ease;
+    transition: $tr;
     @media (min-width: $md2+px) {
-      transition: $tr;
       cursor: pointer;
       fill: transparent;
       &:hover {
+        animation-name: hover;
+        animation-timing-function: ease;
         fill: $blue;
         opacity: 0.5;
       }
@@ -173,5 +174,51 @@
   }
 
   &_8 {
+  }
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+  50% {
+    opacity: 0.5;
+    fill: $blue;
+  }
+  100% {
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
+// Set delay per List Item
+$total-items: 8;
+@for $i from 1 through $total-items {
+  .floors__floor:nth-child(#{$i}) {
+    animation-delay: 2s * $i;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+  40% {
+    opacity: 0;
+    fill: transparent;
+  }
+  50% {
+    opacity: 0.5;
+    fill: $blue;
+  }
+  60% {
+    opacity: 0;
+    fill: transparent;
+  }
+  100% {
+    opacity: 0;
+    fill: transparent;
   }
 }

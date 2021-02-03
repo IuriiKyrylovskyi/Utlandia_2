@@ -2097,6 +2097,142 @@ body.ie ._ibg img {
   height: auto;
 }
 
+.floors__floor {
+  -webkit-animation: fadeIn 16s infinite ease;
+          animation: fadeIn 16s infinite ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  50% {
+    opacity: 0.5;
+    fill: #003dd6;
+  }
+
+  100% {
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  50% {
+    opacity: 0.5;
+    fill: #003dd6;
+  }
+
+  100% {
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
+.floors__floor:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.floors__floor:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.floors__floor:nth-child(3) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.floors__floor:nth-child(4) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.floors__floor:nth-child(5) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.floors__floor:nth-child(6) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.floors__floor:nth-child(7) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.floors__floor:nth-child(8) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  40% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  50% {
+    opacity: 0.5;
+    fill: #003dd6;
+  }
+
+  60% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  100% {
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  40% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  50% {
+    opacity: 0.5;
+    fill: #003dd6;
+  }
+
+  60% {
+    opacity: 0;
+    fill: transparent;
+  }
+
+  100% {
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
 .contacts {
   position: relative;
   width: 100%;
@@ -2426,14 +2562,15 @@ body.ie ._ibg img {
   }
 
   .floors__floor {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     cursor: pointer;
     fill: transparent;
   }
 
   .floors__floor:hover {
+    -webkit-animation-name: hover;
+            animation-name: hover;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
     fill: #003dd6;
     opacity: 0.5;
   }
