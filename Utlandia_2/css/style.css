@@ -2490,6 +2490,49 @@ body.ie ._ibg img {
   color: #1a1b1f;
 }
 
+.constructions {
+  min-height: 100vh;
+}
+
+.constructions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.constructions__body {
+  max-width: 805px;
+  padding: 60px 0px 60px 0px;
+}
+
+.constructions__title {
+  margin: 0 0 50px 0;
+}
+
+.small-slide__data {
+  font-family: "Mabry Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1a1b1f;
+}
+
+.small-slide__time {
+  font-family: "Mabry Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #809eeb;
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -2516,7 +2559,7 @@ body.ie ._ibg img {
   }
 
   .footer__logo svg:hover {
-    color: #054bfd;
+    color: #809eeb;
   }
 
   .footer__lang a:hover {
@@ -2538,7 +2581,7 @@ body.ie ._ibg img {
   }
 
   .socials__link svg:hover {
-    fill: #054bfd;
+    fill: #809eeb;
   }
 
   .main__link:hover {
@@ -2576,11 +2619,11 @@ body.ie ._ibg img {
   }
 
   .contacts__phone:hover {
-    color: #054bfd;
+    color: #809eeb;
   }
 
   .contacts-socials__links:hover {
-    color: #054bfd;
+    color: #809eeb;
   }
 
   .docs__item:hover {
@@ -2597,7 +2640,7 @@ body.ie ._ibg img {
 
 @media (min-width: 992px) {
   .button:hover {
-    background-color: #054bfd;
+    background-color: #809eeb;
   }
 
   .select__option:hover {

@@ -1,0 +1,95 @@
+.constructions {
+  min-height: 100vh;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body {
+    max-width: 805px;
+    padding: 60px 0px 60px 0px;
+  }
+
+  &__title {
+    margin: 0 0 50px 0;
+  }
+
+  &__sliders-box {
+  }
+
+  &__slider-small-box {
+  }
+
+  &__slider-small {
+  }
+
+  &__slide-small {
+  }
+
+  &__slider-big-box {
+  }
+
+  &__slider-big {
+  }
+
+  &__slide-big {
+  }
+}
+
+.small-slide {
+  &__data {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1a1b1f;
+  }
+
+  &__time {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $bluelight;
+  }
+}
+.big-slide {
+  &__row {
+  }
+
+  &__column-content {
+  }
+
+  &__content {
+  }
+
+  &__label {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__column-info {
+  }
+
+  &__info-cell {
+  }
+}
+.info-cell {
+  &_done {
+  }
+  &__info {
+  }
+
+  &__progress-box {
+  }
+
+  &__progress-line {
+  }
+}
