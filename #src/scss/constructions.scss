@@ -2,32 +2,60 @@
   min-height: 100vh;
   &__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   &__body {
-    max-width: 805px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1285px;
+    min-height: 100vh;
     padding: 60px 0px 60px 0px;
   }
 
+  &__title-box {
+    width: 100%;
+  }
   &__title {
     margin: 0 0 50px 0;
   }
 
   &__sliders-box {
+    display: flex;
+    height: 100%;
   }
 
   &__slider-small-box {
+    flex: 0 0 200px;
+    width: 200px;
+    margin: 0px 30px 0px 0px;
   }
 
   &__slider-small {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9990246376294768) 0%, rgba(255, 255, 255, 0) 100%);
+      z-index: 1;
+    }
   }
 
   &__slide-small {
   }
 
   &__slider-big-box {
+    flex: 1 0 auto;
+    width: 100%;
   }
 
   &__slider-big {
@@ -57,39 +85,127 @@
   }
 }
 .big-slide {
+  &__bg {
+    height: 100%;
+  }
   &__row {
+    display: flex;
   }
 
   &__column-content {
+    width: 100%;
+    height: 100%;
+    source,
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
   }
 
   &__content {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 345px;
+    padding: 65px 0px 65px 0px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px 0px 0px;
   }
 
   &__label {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: $blue;
+    overflow: hidden;
   }
 
   &__title {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #1a1b1f;
+    margin: 25px 0px 25px 0px;
+    overflow: hidden;
   }
 
   &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 160%;
+    color: #1a1b1f;
+    overflow: hidden;
   }
 
   &__column-info {
+    flex: 0 0 270px;
+    width: 270px;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 32px 43px;
+    margin: 0px 0px 0px 45px;
   }
 
   &__info-cell {
   }
 }
 .info-cell {
-  &_done {
+  margin: 0px 0px 25px 0px;
+  &:last-child {
+    margin: 0px 0px 0px 0px;
   }
   &__info {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: $blue;
+    overflow: hidden;
+    span {
+      color: #1a1b1f;
+    }
+    source,
+    img {
+      display: none;
+    }
+    &._done {
+      span {
+        color: $blue;
+      }
+      source,
+      img {
+        display: inline-block;
+        width: 6px;
+        height: 8px;
+      }
+    }
   }
 
   &__progress-box {
+    width: 100%;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 20px 0px 0px 0px;
   }
 
   &__progress-line {
+    height: 3px;
+    background-color: $blue;
   }
 }
