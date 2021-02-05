@@ -21,93 +21,44 @@ if ($('.slider-close').length > 0) {
   });
 }
 
-// //BildSlider Swiper
-// let sliders = document.querySelectorAll('._swiper');
-// if (sliders) {
-// 	for (let index = 0; index < sliders.length; index++) {
-// 		let slider = sliders[index];
-// 		if (!slider.classList.contains('swiper-bild')) {
-// 			let slider_items = slider.children;
-// 			if (slider_items) {
-// 				for (let index = 0; index < slider_items.length; index++) {
-// 					let el = slider_items[index];
-// 					el.classList.add('swiper-slide');
-// 				}
-// 			}
-// 			let slider_content = slider.innerHTML;
-// 			let slider_wrapper = document.createElement('div');
-// 			slider_wrapper.classList.add('swiper-wrapper');
-// 			slider_wrapper.innerHTML = slider_content;
-// 			slider.innerHTML = '';
-// 			slider.appendChild(slider_wrapper);
-// 			slider.classList.add('swiper-bild');
-// 		}
-// 		if (slider.classList.contains('_gallery')) {
-// 			//slider.data('lightGallery').destroy(true);
-// 		}
-// 	}
-// 	sliders_bild_callback();
-// }
+if ($('.constructions__slider-big').length > 0) {
+  $('.constructions__slider-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: true,
+    // autoplaySpeed: 3000,
+    fade: true,
+    infinite: true,
+    asNavFor: '.constructions__slider-small',
 
-// function sliders_bild_callback(params) { }
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+}
 
-// let slider_about = new Swiper('.about__slider', {
-// 	/*
-// 	effect: 'fade',
-// 	autoplay: {
-// 		delay: 3000,
-// 		disableOnInteraction: false,
-// 	},
-// 	*/
-// 	observer: true,
-// 	observeParents: true,
-// 	slidesPerView: 1,
-// 	spaceBetween: 0,
-// 	autoHeight: true,
-// 	speed: 800,
-// 	//touchRatio: 0,
-// 	//simulateTouch: false,
-// 	//loop: true,
-// 	//preloadImages: false,
-// 	//lazy: true,
-// 	// Dotts
-// 	//pagination: {
-// 	//	el: '.slider-quality__pagging',
-// 	//	clickable: true,
-// 	//},
-// 	// Arrows
-// 	navigation: {
-// 		nextEl: '.about__more .more__item_next',
-// 		prevEl: '.about__more .more__item_prev',
-// 	},
-// 	/*
-// 	breakpoints: {
-// 		320: {
-// 			slidesPerView: 1,
-// 			spaceBetween: 0,
-// 			autoHeight: true,
-// 		},
-// 		768: {
-// 			slidesPerView: 2,
-// 			spaceBetween: 20,
-// 		},
-// 		992: {
-// 			slidesPerView: 3,
-// 			spaceBetween: 20,
-// 		},
-// 		1268: {
-// 			slidesPerView: 4,
-// 			spaceBetween: 30,
-// 		},
-// 	},
-// 	*/
-// 	on: {
-// 		lazyImageReady: function () {
-// 			ibg();
-// 		},
-// 	}
-// 	// And if we need scrollbar
-// 	//scrollbar: {
-// 	//	el: '.swiper-scrollbar',
-// 	//},
-// });
+if ($('.constructions__slider-small').length > 0) {
+  $('.constructions__slider-small').slick({
+    vertical: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    // adaptiveHeight: true,
+    variableWidth: true,
+    centerMode: true,
+    focusOnSelect: true,
+    useTransform: false,
+    // rtl: true,
+    // dots: true,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    infinite: true,
+    asNavFor: '.constructions__slider-big',
+  });
+}
