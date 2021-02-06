@@ -87,7 +87,50 @@ if ($('.constructions__slider-small').length > 0) {
     ],
   });
 }
+// --------------------------
+if ($('.menu-slider').length > 0) {
+  $('.menu-slider').slick({
+    vertical: true,
+    // centerMode: true,
+    // centerPadding: '30px',
 
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    // adaptiveHeight: true,
+    // variableWidth: true,
+    // focusOnSelect: true,
+    verticalSwiping: true,
+
+    arrows: false,
+    infinite: true,
+    // infinite: false,
+    // asNavFor: '.constructions__slider-big',
+    // responsive: [
+    //   // {
+    //   //   breakpoint: 1360,
+    //   //   // settings: 'unslick',
+    //   //   settings: {
+    //   //     // // slidesToShow: 1,
+    //   //     vertical: false,
+    //   //     // centerPadding: '0px',
+    //   //     // centerMode: false,
+    //   //     // variableWidth: false,
+    //   //   },
+    //   // },
+    //   {
+    //     breakpoint: 1360,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       // vertical: false,
+    //       // centerPadding: '0px',
+    //       // centerMode: false,
+    //       // variableWidth: false,
+    //     },
+    //   },
+    // ],
+  });
+}
+// ------------------------
 // $(window).on('resize orientationchange', function () {
 //   if ($(window).width() < 1360) {
 //     $('.constructions__slider-small').slick('unslick');
