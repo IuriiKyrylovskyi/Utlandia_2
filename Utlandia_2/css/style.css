@@ -924,6 +924,8 @@ body.ie ._ibg img {
 
 .header__logo {
   display: block;
+  position: relative;
+  z-index: 50;
 }
 
 .header__logo svg {
@@ -1071,6 +1073,9 @@ body.ie ._ibg img {
 }
 
 .header._scroll .header__logo svg {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   fill: #003dd6;
 }
 
@@ -1096,6 +1101,10 @@ body.ie ._ibg img {
 
 .header._scroll .icon-menu span:nth-child(2) {
   display: none;
+}
+
+._lock .header._scroll .header__logo svg {
+  fill: #ffffff;
 }
 
 .footer {

@@ -71,6 +71,8 @@
 
   &__logo {
     display: block;
+    position: relative;
+    z-index: 50;
     // height: 100%;
   }
   &__logo svg {
@@ -242,8 +244,9 @@
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   transition: $tr;
-
+  
   .header__logo svg {
+    transition: $tr;
     fill: $blue;
   }
   .header__lang a {
@@ -276,5 +279,14 @@
   }
   .icon-menu span:nth-child(2) {
     display: none;
+  }
+}
+
+// _lock =======================
+._lock {
+  .header._scroll {
+    .header__logo svg {
+      fill: #ffffff;
+    }
   }
 }
