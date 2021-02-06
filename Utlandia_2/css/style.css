@@ -1442,10 +1442,10 @@ body.ie ._ibg img {
 }
 
 .round-btn {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 20%;
   right: 20px;
+  margin: 0px 50px 0px 0px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -1465,6 +1465,7 @@ body.ie ._ibg img {
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
   cursor: pointer;
+  display: none;
   z-index: 30;
 }
 
