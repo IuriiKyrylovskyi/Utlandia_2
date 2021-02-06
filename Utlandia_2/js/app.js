@@ -1545,7 +1545,7 @@ if ($('.constructions__slider-big').length > 0) {
 
 if ($('.constructions__slider-small').length > 0) {
   $('.constructions__slider-small').slick({
-    vertical: true,
+    // vertical: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
