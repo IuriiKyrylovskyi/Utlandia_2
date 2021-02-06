@@ -1561,6 +1561,18 @@ if ($('.constructions__slider-small').length > 0) {
     arrows: false,
     infinite: true,
     asNavFor: '.constructions__slider-big',
+    responsive: [
+      {
+        breakpoint: 1360,
+        settings: {
+          // slidesToShow: 1,
+          vertical: false,
+          centerPadding: '0px',
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
+    ],
   });
 }
 
