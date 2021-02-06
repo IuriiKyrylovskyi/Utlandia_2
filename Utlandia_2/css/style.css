@@ -3192,6 +3192,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 1360px) {
+  .header {
+    height: 91px;
+  }
+
   .round-btn {
     margin: 0px 20px 0px 0px;
     width: 100px;
@@ -3336,6 +3340,10 @@ body.ie ._ibg img {
         -ms-flex: 0 1 340px;
             flex: 0 1 340px;
     min-width: 280px;
+  }
+
+  .header {
+    height: 61px;
   }
 
   .header {

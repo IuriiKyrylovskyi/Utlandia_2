@@ -5,11 +5,18 @@
   top: 0px;
   left: 0;
   width: 100vw;
+  // height: 106px;
   z-index: 50;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
   padding-top: 15px;
   padding-bottom: 15px;
   transition: $tr;
+  @media (max-width: 1360px) {
+    height: 91px;
+  }
+  @media (max-width: 1124px) {
+    height: 61px;
+  }
   @media (max-width: 1124px) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -244,7 +251,7 @@
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   transition: $tr;
-  
+
   .header__logo svg {
     transition: $tr;
     fill: $blue;
