@@ -1529,14 +1529,16 @@ if ($('.constructions__slider-big').length > 0) {
     arrows: true,
     // autoplaySpeed: 3000,
     fade: true,
-    infinite: true,
+    // infinite: true,
+    infinite: false,
     asNavFor: '.constructions__slider-small',
 
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           arrows: false,
+          dots: true,
         },
       },
     ],
@@ -1546,35 +1548,74 @@ if ($('.constructions__slider-big').length > 0) {
 if ($('.constructions__slider-small').length > 0) {
   $('.constructions__slider-small').slick({
     vertical: true,
-    centerMode: true,
-    centerPadding: '30px',
+    // centerMode: true,
+    // centerPadding: '30px',
 
     slidesToShow: 4,
     slidesToScroll: 1,
     // adaptiveHeight: true,
-    variableWidth: true,
-    focusOnSelect: true,
-    verticalSwiping: true,
-    // useTransform: false,
-    // rtl: true,
+    // variableWidth: true,
+    // focusOnSelect: true,
+    // verticalSwiping: true,
 
     arrows: false,
-    infinite: true,
+    // infinite: true,
+    infinite: false,
     asNavFor: '.constructions__slider-big',
     responsive: [
+      // {
+      //   breakpoint: 1360,
+      //   // settings: 'unslick',
+      //   settings: {
+      //     // // slidesToShow: 1,
+      //     vertical: false,
+      //     // centerPadding: '0px',
+      //     // centerMode: false,
+      //     // variableWidth: false,
+      //   },
+      // },
       {
         breakpoint: 1360,
         settings: {
-          // slidesToShow: 1,
-          vertical: false,
-          centerPadding: '0px',
-          centerMode: false,
-          variableWidth: false,
+          slidesToShow: 1,
+          // vertical: false,
+          // centerPadding: '0px',
+          // centerMode: false,
+          // variableWidth: false,
         },
       },
     ],
   });
 }
+
+// $(window).on('resize orientationchange', function () {
+//   if ($(window).width() < 1360) {
+//     $('.constructions__slider-small').slick('unslick');
+//     $('.constructions__slider-small').slick({
+//       slidesToShow: 4,
+//       asNavFor: '.constructions__slider-big',
+//       vertical: false,
+
+//       focusOnSelect: true,
+//       // autoplay: false,
+//       // centerMode: true,
+//       infinite: false,
+
+//       responsive: [
+//         {
+//           breakpoint: 767,
+//           settings: {
+//             slidesToShow: 1,
+//             // vertical: false,
+//             // centerPadding: '0px',
+//             // centerMode: false,
+//             // variableWidth: false,
+//           },
+//         },
+//       ],
+//     });
+//   }
+// });
 
 // $(window).on('resize orientationchange', function () {
 //   if ($(window).width() > 1200) {
