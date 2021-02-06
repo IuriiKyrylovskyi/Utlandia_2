@@ -2587,6 +2587,17 @@ body.ie ._ibg img {
           flex-direction: column;
 }
 
+.constructions__slide-small.slick-current .small-slide__data {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #003dd6;
+}
+
+.constructions__slide-small.slick-current .small-slide__time {
+  display: block;
+}
+
 .constructions__slider-big .slick-arrow {
   position: absolute;
   bottom: 0;
@@ -2623,6 +2634,10 @@ body.ie ._ibg img {
   background-image: url("../img/constructions/arrow_next_icon.svg");
 }
 
+.small-slide {
+  margin: 0px 0px 15px 0px;
+}
+
 .small-slide__data {
   font-family: "Mabry Pro";
   font-style: normal;
@@ -2630,9 +2645,11 @@ body.ie ._ibg img {
   font-size: 16px;
   line-height: 140%;
   color: #1a1b1f;
+  margin: 0px 0px 5px 0px;
 }
 
 .small-slide__time {
+  display: none;
   font-family: "Mabry Pro";
   font-style: normal;
   font-weight: normal;
@@ -2777,6 +2794,7 @@ body.ie ._ibg img {
   display: inline-block;
   width: 6px;
   height: 8px;
+  margin-top: auto;
 }
 
 .info-cell__progress-box {

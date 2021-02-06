@@ -62,6 +62,17 @@
   }
 
   &__slide-small {
+    &.slick-current {
+      .small-slide__data {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: $blue;
+      }
+      .small-slide__time {
+        display: block;
+      }
+    }
   }
 
   &__slider-big-box {
@@ -121,6 +132,7 @@
 }
 
 .small-slide {
+  margin: 0px 0px 15px 0px;
   &__data {
     font-family: "Mabry Pro";
     font-style: normal;
@@ -128,9 +140,11 @@
     font-size: 16px;
     line-height: 140%;
     color: #1a1b1f;
+    margin: 0px 0px 5px 0px;
   }
 
   &__time {
+    display: none;
     font-family: "Mabry Pro";
     font-style: normal;
     font-weight: normal;
@@ -138,6 +152,7 @@
     line-height: 16px;
     color: $bluelight;
   }
+
 }
 .big-slide {
   // width: 100%;
@@ -259,6 +274,7 @@
         display: inline-block;
         width: 6px;
         height: 8px;
+        margin-top: auto;
       }
     }
   }
