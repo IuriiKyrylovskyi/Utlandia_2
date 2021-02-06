@@ -184,21 +184,154 @@
 //====================================================================================================
 .menu {
   &__body._active {
+    display: block;
     position: absolute;
     width: 100%;
     min-height: 100vh;
     top: 0;
     left: 0;
+    overflow-y: hidden;
+    background-color: rgba(26, 27, 31, 0.7);
 
-    background-color: rgba(0, 0, 0, 0.75);
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 106px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    background-color: #1a1b1f;
+    // }
+  }
+
+  &__body {
+    display: none;
+    padding: 106px 0px 0px 0px;
+    height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    height: 100%;
+  }
+
+  &__links-box {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 100px;
   }
 
   &__list {
+    &--flex {
+      display: flex;
+      li + li {
+        margin: 0px 0px 0px 47.5px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: "Mabry Pro";
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0px 0px 47.5px 0px;
+    transition: $tr;
+    @media (min-width: $md3+px) {
+      &:hover {
+        color: $semi;
+      }
+    }
+  }
+
+  &__lists-box {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 60px 0px;
+  }
+
+  &__slider {
+    width: 285px;
+    height: 1000px;
+    background-color: #fff;
+  }
+
+  &__slider-inner {
+  }
+}
+
+.big-link {
+  font-size: 72px;
+  line-height: 72px;
+}
+.semi-big-link {
+  font-size: 64px;
+  line-height: 64px;
+  margin: 22.5px 110px 70px 0px;
+}
+.middle-link {
+  font-size: 36px;
+  line-height: 36px;
+}
+.small-link {
+  font-size: 18px;
+  line-height: 18px;
+}
+.header {
+  &__column-second-row {
+  }
+
+  &__socials {
+  }
+}
+.header .socials {
+  max-width: 200px;
+  &__label {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__box {
   }
 
   &__link {
   }
 }
+
+.menu {
+
+		&__slider {
+		}
+
+		&__slider-inner {
+		}
+}
+.menu-slider {
+
+		&__item {
+		}
+
+		&__inner {
+		}
+
+		&__info-row {
+		}
+
+		&__data {
+		}
+
+		&__label {
+		}
+}
+
 
 //Burger
 .icon-menu {
