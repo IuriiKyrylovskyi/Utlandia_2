@@ -1076,7 +1076,7 @@ body.ie ._ibg img {
 }
 
 .menu__slider {
-  width: 325px;
+  width: 405px;
 }
 
 .big-link {
@@ -1113,7 +1113,7 @@ body.ie ._ibg img {
 
 .menu-slider {
   height: 100%;
-  overflow-y: auto;
+  margin: 0px 40px 0px 40px;
 }
 
 .menu-slider .slick-track {
@@ -1310,6 +1310,61 @@ body.ie ._ibg img {
 
 ._lock .header._scroll .header__logo svg {
   fill: #ffffff;
+}
+
+._lock .header._scroll .header__lang a {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header._scroll .header__phone {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header._scroll .header__button {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header._scroll .header__menu-title {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+._lock .header .header__logo svg {
+  fill: #ffffff;
+}
+
+._lock .header .header__lang a {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header .header__phone {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header .header__button {
+  color: #ffffff;
+  z-index: 1;
+}
+
+._lock .header .header__menu-title {
+  color: #ffffff;
+  z-index: 1;
 }
 
 .footer {
@@ -3316,6 +3371,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 1500px) {
+  .menu__links-box {
+    margin: 50px 0px 50px 100px;
+  }
+
   .contacts__content {
     margin: 0px 50px 0px 50px;
   }
@@ -3408,6 +3467,47 @@ body.ie ._ibg img {
 @media (max-width: 1360px) {
   .header {
     height: 91px;
+  }
+
+  .menu__links-box {
+    margin: 50px 0px 50px 50px;
+  }
+
+  .menu__link {
+    font-size: 20px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .menu__lists-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .big-link {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  .semi-big-link {
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0px 50px 50px 0px;
+  }
+
+  .middle-link {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .small-link {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .round-btn {
@@ -3669,6 +3769,22 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 1023px) {
+  .menu-slider .slick-track {
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 300px;
+  }
+
+  .menu-slider__item {
+    width: 300px;
+    height: 200px;
+  }
+
+  .menu-slider__inner {
+    width: 300px;
+    height: 200px;
+  }
+
   .docs__title {
     margin: 0px 0px 40px 0px;
   }

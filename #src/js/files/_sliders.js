@@ -93,7 +93,6 @@ if ($('.menu-slider').length > 0) {
     vertical: true,
     // centerMode: true,
     // centerPadding: '30px',
-
     slidesToShow: 6,
     slidesToScroll: 2,
     // adaptiveHeight: true,
@@ -105,29 +104,20 @@ if ($('.menu-slider').length > 0) {
     infinite: true,
     // infinite: false,
     // asNavFor: '.constructions__slider-big',
-    // responsive: [
-    //   // {
-    //   //   breakpoint: 1360,
-    //   //   // settings: 'unslick',
-    //   //   settings: {
-    //   //     // // slidesToShow: 1,
-    //   //     vertical: false,
-    //   //     // centerPadding: '0px',
-    //   //     // centerMode: false,
-    //   //     // variableWidth: false,
-    //   //   },
-    //   // },
-    //   {
-    //     breakpoint: 1360,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       // vertical: false,
-    //       // centerPadding: '0px',
-    //       // centerMode: false,
-    //       // variableWidth: false,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: 'unslick',
+        // settings: {
+        //   // // slidesToShow: 1,
+        //   vertical: false,
+        //   // centerPadding: '0px',
+        //   // centerMode: false,
+        //   // variableWidth: false,
+        // },
+      },
+    
+    ],
   });
 }
 // ------------------------
