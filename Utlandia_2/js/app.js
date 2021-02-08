@@ -140,13 +140,13 @@ $(window).scroll(function () {
     $('.round-btn').fadeOut();
   }
 });
-$(document).ready(function () {
-  $('.round-btn').click(function (event) {
-    event.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-    return false;
-  });
-});
+// $(document).ready(function () {
+//   $('.round-btn').click(function (event) {
+//     event.preventDefault();
+//     $('html, body').animate({ scrollTop: 0 }, 'slow');
+//     return false;
+//   });
+// });
 
 // =============================================
 ;
