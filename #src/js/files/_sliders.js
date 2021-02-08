@@ -1,4 +1,4 @@
-// slick-slider
+// slick-slider --------
 if ($('.slider-close').length > 0) {
   $('.slider-close').slick({
     slidesToShow: 1,
@@ -20,7 +20,7 @@ if ($('.slider-close').length > 0) {
     ],
   });
 }
-
+// constructions sliders -------
 if ($('.constructions__slider-big').length > 0) {
   $('.constructions__slider-big').slick({
     slidesToShow: 1,
@@ -99,24 +99,22 @@ if ($('.menu-slider').length > 0) {
     // variableWidth: true,
     // focusOnSelect: true,
     verticalSwiping: true,
-
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: false,
     infinite: true,
-    // infinite: false,
-    // asNavFor: '.constructions__slider-big',
     responsive: [
       {
         breakpoint: 767,
-        settings: 'unslick',
-        // settings: {
-        //   // // slidesToShow: 1,
-        //   vertical: false,
-        //   // centerPadding: '0px',
-        //   // centerMode: false,
-        //   // variableWidth: false,
-        // },
+        // settings: 'unslick',
+        settings: {
+          // // slidesToShow: 1,
+          vertical: false,
+          // centerPadding: '0px',
+          // centerMode: false,
+          // variableWidth: false,
+        },
       },
-    
     ],
   });
 }
