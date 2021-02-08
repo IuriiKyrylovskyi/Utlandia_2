@@ -306,6 +306,10 @@
     width: 405px;
     // height: 1000px;
     // background-color: #fff;
+
+    // animation: appear 3s linear;
+    // animation-delay: 3s;
+    // animation-iteration-count: 1;
     @media (max-width: 765px) {
       width: 0;
       height: 0;
@@ -316,7 +320,16 @@
   &__slider-inner {
   }
 }
-
+// @keyframes appear {
+//   from {
+//     opacity: 0;
+//     width: hidden;
+//   }
+//   to {
+//     opacity: 1;
+//     width: visible;
+//   }
+// }
 .big-link {
   font-size: 72px;
   line-height: 72px;
@@ -411,6 +424,7 @@
   height: 100%;
   // overflow-y: auto;
   margin: 0px 40px 0px 40px;
+
   .slick-track {
     flex-wrap: wrap;
     max-height: 225px;
