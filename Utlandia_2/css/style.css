@@ -3681,6 +3681,10 @@ body.ie ._ibg img {
     margin: 0px 45px 0px 45px;
   }
 
+  .menu__body {
+    padding: 61px 0px 0px 0px;
+  }
+
   .footer__column {
     height: auto;
   }
@@ -4109,6 +4113,22 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 765px) {
+  .menu__links-box {
+    margin: 50px 50px 100px 50px;
+  }
+
+  .menu__slider {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  .semi-big-link {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
 @media (max-width: 700px) {
   .constructions__slider-big .slick-dots {
     position: absolute;
@@ -4377,6 +4397,30 @@ body.ie ._ibg img {
     font-size: 40px;
   }
 
+  .menu__body {
+    padding: 70px 0px 0px 0px;
+  }
+
+  .menu__link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .big-link {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .semi-big-link {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .middle-link {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
   .slider-close__title {
     font-size: 27px;
   }
@@ -4399,8 +4443,56 @@ body.ie ._ibg img {
     font-size: 35px;
   }
 
+  .menu__links-box {
+    margin: 20px 35px 100px 35px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .big-link {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .semi-big-link {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .middle-link {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
   .slider-close__title {
     font-size: 24px;
+  }
+}
+
+@media (max-height: 420px) {
+  .menu__body {
+    padding: 61px 0px 0px 0px;
+  }
+
+  .menu__container {
+    overflow-y: auto;
+  }
+
+  .menu__links-box {
+    margin: 0px 35px 0px 35px;
+    padding: 80px 0px 0px 0px;
+  }
+
+  .big-link {
+    padding: 235px 0 0 0;
+  }
+
+  .header .socials {
+    padding: 0px 0px 30px 0px;
   }
 }
 
@@ -4673,6 +4765,14 @@ body.ie ._ibg img {
 
 }
 
+ @media (max-width: 765px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 700px){
 
 @supports (-webkit-appearance:none){
@@ -4794,6 +4894,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 350px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-height: 420px){
 
 @supports (-webkit-appearance:none){
 

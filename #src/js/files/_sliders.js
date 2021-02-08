@@ -87,7 +87,7 @@ if ($('.constructions__slider-small').length > 0) {
     ],
   });
 }
-// --------------------------
+// ------menu slider--------------------
 if ($('.menu-slider').length > 0) {
   $('.menu-slider').slick({
     vertical: true,
@@ -106,18 +106,25 @@ if ($('.menu-slider').length > 0) {
     responsive: [
       {
         breakpoint: 767,
-        // settings: 'unslick',
-        settings: {
-          // // slidesToShow: 1,
-          vertical: false,
-          // centerPadding: '0px',
-          // centerMode: false,
-          // variableWidth: false,
-        },
+        settings: 'unslick',
+        // settings: {
+        //   // // slidesToShow: 1,
+        //   vertical: false,
+        //   // centerPadding: '0px',
+        //   // centerMode: false,
+        //   // variableWidth: false,
+        // },
       },
     ],
   });
 }
+
+$(window).on('resize orientationchange', function () {
+  if ($(window).width() > 767) {
+    $('.menu-slider').slick('unslick');
+  }
+});
+
 // ------------------------
 // $(window).on('resize orientationchange', function () {
 //   if ($(window).width() < 1360) {

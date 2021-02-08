@@ -208,11 +208,23 @@
     display: none;
     padding: 106px 0px 0px 0px;
     height: 100%;
+    @media (max-width: 1124px) {
+      padding: 61px 0px 0px 0px;
+    }
+    @media (max-width: 420px) {
+      padding: 70px 0px 0px 0px;
+    }
+    @media (max-height: 420px) {
+      padding: 61px 0px 0px 0px;
+    }
   }
 
   &__container {
     display: flex;
     height: 100%;
+    @media (max-height: 420px) {
+      overflow-y: auto;
+    }
   }
 
   &__links-box {
@@ -226,6 +238,16 @@
     }
     @media (max-width: 1360px) {
       margin: 50px 0px 50px 50px;
+    }
+    @media (max-width: 765px) {
+      margin: 50px 50px 100px 50px;
+    }
+    @media (max-width: 350px) {
+      margin: 20px 35px 100px 35px;
+    }
+    @media (max-height: 420px) {
+      margin: 0px 35px 0px 35px;
+      padding: 80px 0px 0px 0px;
     }
   }
 
@@ -258,6 +280,15 @@
         color: $semi;
       }
     }
+    @media (max-width: 420px) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    @media (max-width: 350px) {
+      font-size: 14px;
+      line-height: 14px;
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   &__lists-box {
@@ -275,6 +306,11 @@
     width: 405px;
     // height: 1000px;
     // background-color: #fff;
+    @media (max-width: 765px) {
+      width: 0;
+      height: 0;
+      display: none;
+    }
   }
 
   &__slider-inner {
@@ -288,6 +324,17 @@
     font-size: 65px;
     line-height: 65px;
   }
+  @media (max-width: 420px) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  @media (max-width: 350px) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  @media (max-height: 420px) {
+    padding: 235px 0 0 0;
+  }
 }
 .semi-big-link {
   font-size: 64px;
@@ -298,6 +345,17 @@
     line-height: 55px;
     margin: 0px 50px 50px 0px;
   }
+  @media (max-width: 765px) {
+    margin: 0px 0px 50px 0px;
+  }
+  @media (max-width: 420px) {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  @media (max-width: 350px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .middle-link {
   font-size: 36px;
@@ -305,6 +363,14 @@
   @media (max-width: 1360px) {
     font-size: 30px;
     line-height: 30px;
+  }
+  @media (max-width: 420px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  @media (max-width: 350px) {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 .small-link {
@@ -324,6 +390,9 @@
 }
 .header .socials {
   max-width: 200px;
+  @media (max-height: 420px) {
+    padding: 0px 0px 30px 0px;
+  }
   &__label {
     font-size: 14px;
     line-height: 150%;
@@ -338,13 +407,6 @@
   }
 }
 
-.menu {
-  &__slider {
-  }
-
-  &__slider-inner {
-  }
-}
 .menu-slider {
   height: 100%;
   // overflow-y: auto;
