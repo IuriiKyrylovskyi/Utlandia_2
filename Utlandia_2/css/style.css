@@ -2968,6 +2968,11 @@ body.ie ._ibg img {
   display: block;
 }
 
+.constructions__slider-big {
+  display: block;
+  max-width: 1125px;
+}
+
 .constructions__slider-big .slick-arrow {
   position: absolute;
   bottom: 0;
@@ -3098,6 +3103,7 @@ body.ie ._ibg img {
 }
 
 .big-slide__title {
+  height: 68px;
   font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
@@ -3111,13 +3117,14 @@ body.ie ._ibg img {
 }
 
 .big-slide__text {
+  max-height: 220px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 160%;
   color: #1a1b1f;
-  overflow: hidden;
+  overflow-y: auto;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
@@ -3804,7 +3811,7 @@ body.ie ._ibg img {
   }
 
   .big-slide__content {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 30px;
     max-width: 100%;
     background: rgba(255, 255, 255, 0.75);
   }

@@ -115,6 +115,8 @@
   }
 
   &__slider-big {
+    display: block;
+    max-width: 1125px;
     .slick-arrow {
       position: absolute;
       // top: calc(100% - 40px);
@@ -289,7 +291,7 @@
       padding: 35px 15px 65px 15px;
     }
     @media (max-width: 1023px) {
-      padding: 15px 15px 15px 15px;
+      padding: 15px 15px 15px 30px;
       max-width: 100%;
       background: rgba(255, 255, 255, 0.75);
     }
@@ -307,6 +309,7 @@
   }
 
   &__title {
+    height: 68px;
     font-family: "Mabry Pro";
     font-style: normal;
     font-weight: 500;
@@ -323,13 +326,15 @@
   }
 
   &__text {
+    max-height: 220px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 160%;
     color: #1a1b1f;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-y: auto;
     text-overflow: ellipsis;
   }
 
