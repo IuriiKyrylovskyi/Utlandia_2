@@ -1587,6 +1587,98 @@ body.ie ._ibg img {
   fill: #fff;
 }
 
+.temp {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #003dd6;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temp__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.temp__bg img,
+.temp__bg source {
+  max-width: 100%;
+}
+
+.temp__announce {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Mabry Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 92px;
+  line-height: 92px;
+  letter-spacing: 8px;
+  color: #ffffff;
+  background-color: #003dd6;
+  margin: 20px;
+}
+
+.test_fade {
+  -webkit-animation: test_fade ease 10s infinite;
+          animation: test_fade ease 10s infinite;
+}
+
+@-webkit-keyframes test_fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes test_fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .main {
   position: relative;
   min-height: 100vh;
@@ -3974,6 +4066,12 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 767.98px) {
+  .temp__announce {
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: 4px;
+  }
+
   .main__title {
     font-size: 62px;
     line-height: 62px;
