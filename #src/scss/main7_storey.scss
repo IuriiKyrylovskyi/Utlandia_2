@@ -1,13 +1,13 @@
 .storey {
   min-height: 100vh;
-  padding: 120px 0px 0px 0px;
+  padding: 120px 0px 20px 0px;
   display: flex;
   align-items: center;
   @media (max-width: 1366px) {
-    padding: 80px 0px 0px 0px;
+    // padding: 80px 0px 0px 0px;
   }
   @media (max-width: 1124px) {
-    padding: 60px 0px 0px 0px;
+    // padding: 60px 0px 0px 0px;
   }
   // @media (max-hight: 515px) {
   //   height: 100%;
@@ -24,24 +24,43 @@
   }
 
   &__row {
-    width: 100%;
+    // width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    @media (max-width: 1500px) {
+      margin: 0px 40px 0px 40px;
+    }
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+    @media (max-width: 550px) {
+      margin: 0px 20px 0px 20px;
+    }
   }
 
   &__column {
     &:nth-child(1) {
-      flex: 1 0 auto;
+      flex: 1 1 auto;
     }
     &:nth-child(2) {
-      flex: 0 0 490px;
-      width: 490px;
+      flex: 0 1 490px;
+      max-width: 490px;
+      @media (max-width: 1023px) {
+        flex: 0;
+        max-width: 590px;
+        width: 100%;
+        margin: 40px auto 0;
+      }
     }
   }
 
   &__img-block {
     border-right: 1px solid #bdbdbd;
+    @media (max-width: 1023px) {
+      border-right: none;
+      border-bottom: 1px solid #bdbdbd;
+    }
   }
 
   &__description-block {
@@ -59,6 +78,9 @@
   display: flex;
   li + li {
     margin: 0px 0px 45px 45px;
+    @media (max-width: 650px) {
+      margin: 0px 0px 25px 25px;
+    }
   }
   &__item {
     font-family: "Mabry Pro";
@@ -67,6 +89,9 @@
     font-size: 20px;
     line-height: 100%;
     color: #4f4f4f;
+    @media (max-width: 1365px) {
+      font-size: 17px;
+    }
   }
 
   &__item._active {
@@ -76,6 +101,16 @@
 .img-storey {
   display: flex;
   margin: 30px 55px 30px 0px;
+  @media (max-width: 1400px) {
+    margin: 30px 35px 30px 0px;
+  }
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+    margin: 0px 35px 30px 0px;
+  }
+  @media (max-width: 1023px) {
+    margin: 0px 0px 30px 0px;
+  }
   &__info {
     height: 100%;
     max-width: 125px;
@@ -89,12 +124,43 @@
     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
     box-shadow: 15px 25px 45px -15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    @media (max-width: 1365px) {
+      flex: 0 1 125px;
+      justify-content: space-between;
+    }
+    @media (max-width: 1250px) {
+      flex: 0 0 70%;
+      max-width: 70%;
+      margin: 0 auto 40px;
+      padding: 20px 30px;
+    }
+    @media (max-width: 650px) {
+      flex: 0 0 90%;
+      max-width: 90%;
+    }
+    @media (max-width: 450px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 20px 20px;
+    }
   }
 
   &__info-box {
+    @media (max-width: 1250px) {
+      margin: 0px 0px 0px 0px;
+    }
+    @media (max-width: 1250px) {
+      margin: 0px 10px 0px 10px;
+    }
   }
   &__info-box + .img-storey__info-box {
     margin: 45px 0px 0px 0px;
+    @media (max-width: 1250px) {
+      margin: 0px 0px 0px 45px;
+    }
+    @media (max-width: 650px) {
+      margin: 0px 10px 0px 10px;
+    }
   }
 
   &__info-box-num {
@@ -106,6 +172,17 @@
     color: $blue;
     margin: 0px 0px 15px 0px;
     white-space: nowrap;
+    span {
+      position: relative;
+      top: -5px;
+      font-size: 10px;
+    }
+    @media (max-width: 1365px) {
+      font-size: 16px;
+    }
+    @media (max-width: 650px) {
+      font-size: 14px;
+    }
   }
 
   &__info-box-text {
@@ -117,11 +194,28 @@
     text-align: center;
     text-transform: capitalize;
     color: rgba(26, 27, 31, 0.5);
+    @media (max-width: 650px) {
+      font-size: 12px;
+    }
   }
 
   &__img {
     flex: 1 0 auto;
     margin: 0px 50px 0px 50px;
+    @media (max-width: 1365px) {
+      flex: 1 1 auto;
+    }
+    @media (max-width: 1250px) {
+      flex: 0 0 70%;
+      margin: 0px 0px 0px 0px;
+    }
+    @media (max-width: 1023px) {
+      flex: 1 1 calc(90% - 80px);
+    }
+    @media (max-width: 450px) {
+      flex: 1 0 100%;
+      width: 100%;
+    }
     img,
     source {
       display: block;
@@ -132,8 +226,22 @@
   }
 
   &__img-small {
-    width: 150px;
-    flex: 0 0 150px;
+    max-width: 150px;
+    min-width: 80px;
+    flex: 0 1 150px;
+    @media (max-width: 1250px) {
+      max-width: 120px;
+      margin: 0px 0px 0px 20px;
+    }
+    @media (max-width: 1023px) {
+      max-width: 60px;
+      margin: 0px 0px 0px 20px;
+    }
+    @media (max-width: 450px) {
+      display: none;
+      width: 0;
+      height: 0;
+    }
     img,
     source {
       display: block;
@@ -143,7 +251,14 @@
 }
 .storey-descr {
   height: 100%;
+  width: 100%;
   padding: 0px 40px 0px 70px;
+  @media (max-width: 1400px) {
+    padding: 0px 40px 0px 50px;
+  }
+  @media (max-width: 450px) {
+    padding: 0px 0px 0px 0px;
+  }
   &__label {
     font-family: "Mabry Pro";
     font-style: normal;
@@ -152,6 +267,12 @@
     line-height: 100%;
     color: #1a1b1f;
     margin: 0px 0px 15px 0px;
+    @media (max-width: 1365px) {
+      font-size: 24px;
+    }
+    @media (max-width: 650px) {
+      font-size: 22px;
+    }
   }
 
   &__crumbs {
@@ -163,6 +284,9 @@
   &__button {
     width: 100%;
     margin: 35px 0px 35px 0px;
+    @media (max-width: 1365px) {
+      height: 60px;
+    }
   }
 }
 .descr-crumbs {
@@ -173,6 +297,15 @@
   font-size: 18px;
   line-height: 150%;
   margin: 0px 0px 50px 0px;
+  @media (max-width: 1365px) {
+    font-size: 16px;
+  }
+  @media (max-width: 650px) {
+    margin: 0px 0px 20px 0px;
+  }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
   &__item {
     // padding: 0px 15px 0px 0px;
     position: relative;
@@ -213,6 +346,12 @@
   font-size: 16px;
   line-height: 180%;
   color: #1a1b1f;
+  @media (max-width: 1365px) {
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    font-size: 12px;
+  }
   &__row {
     display: flex;
     margin: 0px 0px 15px 0px;
