@@ -44,6 +44,11 @@
     display: flex;
     align-items: center;
     height: 75px;
+    &:nth-child(1) {
+      @media (max-width: 1365px) {
+        max-width: 490px;
+      }
+    }
     &:nth-child(2) {
       // padding-right: 40px;
       flex: 1 0 auto;
@@ -100,7 +105,7 @@
     @media (max-width: 1124px) {
       margin: 10px 20px 0px 30px;
     }
-    @media (max-width: $md2+px) {
+    @media (max-width: 1023px) {
       display: none;
     }
     a {
@@ -108,7 +113,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 14px;
-      margin: 0px 5px 0px 5px;
+      margin: 0px 7px 0px 7px;
       color: #ffffff;
       opacity: 0.5;
       transition: $tr;
@@ -145,7 +150,10 @@
 
   &__button {
     margin: 0px 0px 0px 75px;
-    @media (max-width: 1124px) {
+    @media (max-width: 1350px) {
+      margin: 0 60px 0 20px;
+    }
+    @media (max-width: 1023px) {
       margin: 0px 45px 0px 45px;
     }
     @media (max-width: 665px) {
@@ -172,7 +180,7 @@
     @media (max-width: 1366px) {
       top: 38px;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1250px) {
       display: none;
     }
   }
@@ -183,8 +191,12 @@
 
 //====================================================================================================
 .menu {
+  height: 0px;
+  width: 0;
   &__body._active {
     display: block;
+    opacity: 1;
+    visibility: visible;
     position: absolute;
     width: 100%;
     min-height: 100vh;
@@ -192,6 +204,7 @@
     left: 0;
     overflow-y: hidden;
     background-color: rgba(26, 27, 31, 0.7);
+    transition: all 0.5s ease 0s;
 
     // &:before {
     //   content: "";
@@ -205,7 +218,12 @@
   }
 
   &__body {
-    display: none;
+    display: block;
+    // width: 0;
+    // height: 60px;
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
     padding: 106px 0px 0px 0px;
     height: 100%;
     @media (max-width: 1124px) {

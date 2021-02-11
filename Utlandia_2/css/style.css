@@ -953,7 +953,7 @@ body.ie ._ibg img {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 7px 0px 7px;
   color: #ffffff;
   opacity: 0.5;
   -webkit-transition: all 0.5s ease;
@@ -998,8 +998,15 @@ body.ie ._ibg img {
   transition: all 0.5s ease;
 }
 
+.menu {
+  height: 0px;
+  width: 0;
+}
+
 .menu__body._active {
   display: block;
+  opacity: 1;
+  visibility: visible;
   position: absolute;
   width: 100%;
   min-height: 100vh;
@@ -1007,11 +1014,16 @@ body.ie ._ibg img {
   left: 0;
   overflow-y: hidden;
   background-color: rgba(26, 27, 31, 0.7);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   background-color: #1a1b1f;
 }
 
 .menu__body {
-  display: none;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
   padding: 106px 0px 0px 0px;
   height: 100%;
 }
@@ -1618,6 +1630,8 @@ body.ie ._ibg img {
 
 .temp__bg img,
 .temp__bg source {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
 }
 
@@ -3581,6 +3595,12 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1365px) {
+  .header__column:nth-child(1) {
+    max-width: 490px;
+  }
+}
+
 @media (max-width: 1360px) {
   .header {
     height: 91px;
@@ -3696,13 +3716,21 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1350px) {
+  .header__button {
+    margin: 0 60px 0 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__menu-title {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .header__column:nth-child(2) {
     padding-right: 80px;
-  }
-
-  .header__menu-title {
-    display: none;
   }
 
   .terasse__row {
@@ -3788,10 +3816,6 @@ body.ie ._ibg img {
 
   .header__lang {
     margin: 10px 20px 0px 30px;
-  }
-
-  .header__button {
-    margin: 0px 45px 0px 45px;
   }
 
   .menu__body {
@@ -3886,6 +3910,14 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 1023px) {
+  .header__lang {
+    display: none;
+  }
+
+  .header__button {
+    margin: 0px 45px 0px 45px;
+  }
+
   .menu-slider .slick-track {
     max-height: 200px;
     min-height: 200px;
@@ -3944,10 +3976,6 @@ body.ie ._ibg img {
 
   .select__options {
     font-size: 18px;
-  }
-
-  .header__lang {
-    display: none;
   }
 
   .main__cover {
@@ -4756,7 +4784,31 @@ body.ie ._ibg img {
 
 }
 
+ @media (max-width: 1365px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1360px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1350px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1250px){
 
 @supports (-webkit-appearance:none){
 
