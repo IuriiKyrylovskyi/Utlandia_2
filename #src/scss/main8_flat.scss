@@ -21,11 +21,13 @@
   // }
 
   &__container {
+    width: 100%;
   }
 
   &__row {
     // width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: calc(100vh - 140px);
     display: flex;
     justify-content: center;
     @media (max-width: 1500px) {
@@ -40,6 +42,7 @@
   }
 
   &__column {
+    height: 100%;
     &:nth-child(1) {
       flex: 1 1 auto;
     }
@@ -68,7 +71,33 @@
 }
 
 .flat-img {
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+  }
   &__crumbs {
+  }
+  &__pdf {
+  }
+  &__pdf-link {
+    font-size: 18px;
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 7px 40px 7px 40px;
+    margin: 0px 60px 0px 0px;
+    color: #4f4f4f;
+    background-image: url("../img/main8_flat/pdf_icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: $tr;
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__row {
@@ -100,14 +129,14 @@
 }
 .img-flat {
   display: flex;
-  margin: 30px 55px 30px 0px;
-  @media (max-width: 1400px) {
-    margin: 30px 35px 30px 0px;
-  }
-  @media (max-width: 1250px) {
-    flex-wrap: wrap;
-    margin: 0px 35px 30px 0px;
-  }
+  margin: 30px 15px 30px 0px;
+  // @media (max-width: 1400px) {
+  //   margin: 30px 35px 30px 0px;
+  // }
+  // @media (max-width: 1250px) {
+  //   flex-wrap: wrap;
+  //   margin: 0px 35px 30px 0px;
+  // }
   @media (max-width: 1023px) {
     margin: 0px 0px 30px 0px;
   }
@@ -143,9 +172,16 @@
       max-width: 100%;
       padding: 20px 20px;
     }
+    &__add {
+    }
   }
 
   &__info-box {
+    &:last-child {
+      .img-flat__info-box-num {
+        color: $red;
+      }
+    }
     @media (max-width: 1250px) {
       margin: 0px 0px 0px 0px;
     }
@@ -225,40 +261,73 @@
     }
   }
 
-  &__img-small {
-    max-width: 150px;
-    min-width: 80px;
-    flex: 0 1 150px;
-    @media (max-width: 1250px) {
-      max-width: 120px;
-      margin: 0px 0px 0px 20px;
-    }
-    @media (max-width: 1023px) {
-      max-width: 60px;
-      margin: 0px 0px 0px 20px;
-    }
-    @media (max-width: 450px) {
-      display: none;
-      width: 0;
-      height: 0;
-    }
-    img,
-    source {
-      display: block;
-      max-width: 100%;
-    }
+  &__descr {
+    max-width: 220px;
+    // min-width: 80px;
+    // flex: 0 1 150px;
+    // @media (max-width: 1250px) {
+    //   max-width: 120px;
+    //   margin: 0px 0px 0px 20px;
+    // }
+    // @media (max-width: 1023px) {
+    //   max-width: 60px;
+    //   margin: 0px 0px 0px 20px;
+    // }
+    // @media (max-width: 450px) {
+    //   display: none;
+    //   width: 0;
+    //   height: 0;
+    // }
   }
 }
 .flat-descr {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 0px 40px 0px 70px;
-  @media (max-width: 1400px) {
-    padding: 0px 40px 0px 50px;
+  // padding: 0px 40px 0px 70px;
+  // @media (max-width: 1400px) {
+  //   padding: 0px 40px 0px 50px;
+  // }
+  // @media (max-width: 450px) {
+  //   padding: 0px 0px 0px 0px;
+  // }
+  &__price-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 25px 0px 25px 70px;
   }
-  @media (max-width: 450px) {
-    padding: 0px 0px 0px 0px;
+
+  &__price-box-text {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #1a1b1f;
+    margin: 0px 35px 0px 0px;
   }
+
+  &__price-box-num {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100%;
+    color: $blue;
+    position: relative;
+    span {
+      position: absolute;
+      top: -30%;
+      left: 100%;
+      font-size: 15px;
+      // position: absolute;
+    }
+  }
+
   &__label {
     font-family: "Mabry Pro";
     font-style: normal;
@@ -267,6 +336,8 @@
     line-height: 100%;
     color: #1a1b1f;
     margin: 0px 0px 15px 0px;
+    padding: 50px 0px 25px 70px;
+
     @media (max-width: 1365px) {
       font-size: 24px;
     }
@@ -275,12 +346,17 @@
     }
   }
 
-  &__crumbs {
+  &__spoller-box {
+    flex: 1 1 auto;
+    max-height: 380px;
+    height: 100%;
+    padding: 25px 0px 25px 70px;
   }
 
-  &__table {
+  &__button-box {
+    height: 75px;
+    padding: 0px 0px 0px 70px;
   }
-
   &__button {
     width: 100%;
     margin: 35px 0px 35px 0px;
@@ -289,87 +365,96 @@
     }
   }
 }
-.descr-crumbs {
-  display: flex;
-  font-family: "Mabry Pro";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  margin: 0px 0px 50px 0px;
-  @media (max-width: 1365px) {
-    font-size: 16px;
-  }
-  @media (max-width: 650px) {
-    margin: 0px 0px 20px 0px;
-  }
-  @media (max-width: 450px) {
-    font-size: 15px;
-  }
-  &__item {
-    // padding: 0px 15px 0px 0px;
-    position: relative;
-    &:first-child {
-      margin: 0px 38px 0px 0px;
-      &:after {
-        content: "/";
-        position: absolute;
-        left: calc(100% + 15px);
-        color: $blue;
-      }
-    }
-    &:nth-child(2) {
-      margin: 0px 38px 0px 0px;
-      &:after {
-        content: "/";
-        position: absolute;
-        left: calc(100% + 15px);
-        color: $red;
-      }
-    }
-    &--floor {
-      color: #1a1b1f;
-    }
 
-    &--flat {
-      color: rgba(26, 27, 31, 0.5);
-    }
-
-    &--sold {
-      color: $red;
-    }
+.img-flat {
+  &__add {
   }
 }
-.descr-table {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 180%;
-  color: #1a1b1f;
-  @media (max-width: 1365px) {
+.add-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  &__box {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    line-height: 150%;
+    color: #1a1b1f;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+  &__text {
+    font-weight: 400;
     font-size: 14px;
   }
-  @media (max-width: 650px) {
-    font-size: 12px;
+}
+
+.flat-spoller {
+  // margin: 30px 0px 50px 0px;
+  &__item {
   }
-  &__row {
+
+  &__title {
     display: flex;
-    margin: 0px 0px 15px 0px;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px;
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    border: 1px solid #4f4f4f;
+    margin: 1px 0 1px 0;
+    @media (min-width: $md2+px) {
+      cursor: pointer;
+    }
+    &._active {
+      border: 1px solid $blue;
+    }
+    &._active ~ .flat-spoller__body {
+      display: block;
+    }
   }
 
-  &__left {
-    flex: 0 0 40%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  &__title-text {
+    font-weight: 500;
   }
 
-  &__right {
-    flex: 0 0 60%;
-    padding: 0px 0px 0px 20px;
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  &__title-num {
+    font-weight: 400;
+    span {
+      font-size: 12px;
+      position: relative;
+      &:after {
+        content: "2";
+        position: absolute;
+        top: -50%;
+        left: 100%;
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__body {
+    display: none;
+    background: #f8f8f8;
+    padding: 35px 70px 30px 25px;
+    max-height: 190px;
+    overflow-y: auto;
+  }
+
+  &__body-item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 180%;
+    color: #000000;
   }
 }
