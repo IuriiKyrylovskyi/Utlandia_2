@@ -17,3 +17,6 @@ $(window).scroll(function () {
 
 // =============================================
 $('.flat-spoller__body').niceScroll();
+$('.licence__imgs-box').niceScroll({
+  cursorcolor: '#003DD6',
+});

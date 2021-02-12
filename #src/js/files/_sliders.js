@@ -161,6 +161,34 @@ if ($('.about-pagin__list').length > 0) {
   });
 }
 
+// licence ===================================
+if ($('.licence__img-slider').length > 0) {
+  $('.licence__img-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // adaptiveHeight: false,
+    arrows: false,
+    asNavFor: '.licence__labels-slider',
+    autoplay: false,
+    fade: true,
+    infinite: false,
+  });
+}
+
+if ($('.licence__labels-slider').length > 0) {
+  $('.licence__labels-slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    //  adaptiveHeight: true,
+    asNavFor: '.licence__img-slider',
+    centerMode: false,
+    arrows: false,
+    focusOnSelect: true,
+    autoplay: false,
+    infinite: false,
+  });
+}
+
 // ------------------------
 // $(window).on('resize orientationchange', function () {
 //   if ($(window).width() < 1360) {
