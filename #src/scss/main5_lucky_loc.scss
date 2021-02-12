@@ -180,41 +180,81 @@
   }
 }
 
+// ==== about =====
 .lucky__tabs-about {
   width: 37%;
   height: 100%;
   background: rgba(26, 27, 31, 0.89);
-}
-.lucky__tabs-item.about {
-  background: transparent;
-  .lucky__tabs-item-img {
-    border-right: 2px solid transparent;
-  }
-}
-.lucky__title.about {
-  color: #fff;
-}
-.lucky__tabs-item-text.about {
-  color: #fff;
-  border: 2px solid transparent;
-  margin-left: 5px;
-}
-
-.lucky__tabs-item.about .lucky__tabs-item-img {
-  border: 2px solid #fff;
-}
-.lucky__tabs-item.about._active .lucky__tabs-item-img {
-  background-color: #fff;
-  // border-right: 2px solid transparent;
-}
-.lucky__tabs-item.about._active .lucky__tabs-item-text.about {
-  background-color: $blue;
-}
-.about .lucky__tabs-blocks {
-  width: 100%;
-}
-.about .lucky__tabs-items-box {
-  @media (max-width: 1400px) {
+  @media (max-width: 1000px) {
     width: 50%;
+  }
+
+  .lucky__tabs-items-box {
+    @media (max-width: 1400px) {
+      width: 50%;
+    }
+  }
+
+  .lucky__title-box {
+  }
+
+  .lucky__title {
+    color: #fff;
+    @media (max-width: $md3+px) {
+      background-color: rgba(26, 27, 31, 0.89);
+    }
+  }
+
+  .lucky__tabs-items {
+  }
+
+  .lucky__tabs-item {
+    background: transparent;
+    transition: all 0.5s ease;
+    @media (max-width: $md3+px) {
+      background: rgba(26, 27, 31, 0.89);
+    }
+  }
+  .lucky__tabs-item._active {
+    .lucky__tabs-item-img {
+      background-color: #fff;
+      @media (max-width: $md3+px) {
+        border: 2px solid $blue;
+      }
+    }
+    .lucky__tabs-item-text {
+      color: #fff;
+      border: 2px solid $blue;
+      background-color: $blue;
+      margin-left: 5px;
+    }
+  }
+
+  .lucky__tabs-item:hover {
+    @media (min-width: $md2+px) {
+      .lucky__tabs-item-img {
+        transition: all 0.5s ease;
+        background-color: transparent;
+        border: 2px solid $blue;
+      }
+      .lucky__tabs-item-text {
+        text-decoration: underline;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .lucky__tabs-item-img {
+      border: 2px solid #fff;
+    }
+  }
+
+  .lucky__tabs-item-img {
+    border: 2px solid #fff;
+  }
+
+  .lucky__tabs-item-text {
+    color: #fff;
+    border: 2px solid transparent;
+    margin-left: 5px;
   }
 }

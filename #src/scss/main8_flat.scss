@@ -517,6 +517,7 @@
       visibility: visible;
       padding: 35px 70px 30px 25px;
       height: 190px;
+      transform: rotateX(0deg);
       @media (max-width: 1320px) {
         padding: 20px 25px 20px 30px;
       }
@@ -552,6 +553,10 @@
     padding: 0px 70px 0px 25px;
     overflow-y: auto;
     transition: $tr;
+    transform: rotateX(90deg);
+    @media (max-width: 1320px) {
+      padding: 0px 25px 0px 30px;
+    }
   }
 
   &__body-item {
@@ -563,3 +568,9 @@
     color: #000000;
   }
 }
+
+// @keyframes rotateOnX {
+//   to {
+//     transform: rotateX(180deg);
+//   }
+// }
