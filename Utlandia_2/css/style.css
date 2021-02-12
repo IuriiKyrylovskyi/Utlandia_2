@@ -4427,6 +4427,10 @@ body.ie ._ibg img {
     width: auto;
   }
 
+  .about .lucky__tabs-items-box {
+    width: 50%;
+  }
+
   .img-storey {
     margin: 30px 35px 30px 0px;
   }

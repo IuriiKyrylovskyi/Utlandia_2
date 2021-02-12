@@ -213,3 +213,8 @@
 .about .lucky__tabs-blocks {
   width: 100%;
 }
+.about .lucky__tabs-items-box {
+  @media (max-width: 1400px) {
+    width: 50%;
+  }
+}
