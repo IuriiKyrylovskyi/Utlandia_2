@@ -1,0 +1,294 @@
+.about-4 {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 125px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  // margin: 0 auto;
+
+  @media (max-width: 1550px) {
+    padding: 100px 0px 60px;
+  }
+  @media (max-width: 1365px) {
+    padding: 60px 0px 0;
+  }
+  // @media (max-width: $md2+px) {
+  //   padding: 100px 0px 60px;
+  // }
+  // @media (max-width: $md3+px) {
+  //   padding: 100px 0px 40px;
+  // }
+  &__container {
+    height: 100%;
+    flex: 0 1 auto;
+    @media (max-width: 1610px) {
+      max-width: 100%;
+    }
+    // width: 100%;
+    // margin: auto 0;
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 158, 235, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 50px 90px 100px;
+    padding: 0 90px;
+    @media (max-width: 1365px) {
+      padding: 0 50px;
+      margin: 50px 50px 50px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 0px 20px;
+    }
+  }
+
+  &__slider-pagin {
+  }
+
+  &__slider {
+  }
+}
+
+.about-pagin {
+  &__list {
+    .slick-track {
+      flex: 0 1 auto;
+      transform: translate3d(0px, 0px, 0px) !important;
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1365px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  li + li {
+    margin-left: 30px;
+  }
+  @media (max-width: 1550px) {
+    li,
+    li + li {
+      margin: 0px 15px;
+    }
+  }
+  @media (max-width: 550px) {
+    li,
+    li + li {
+      margin: 0px 0px;
+    }
+  }
+  &__item {
+    display: block;
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(26, 27, 31, 0.5);
+    padding: 27px 22.5px;
+    border-bottom: 1px solid #e3e4e8;
+    transition: $tr;
+    text-align: center;
+    cursor: pointer;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      line-height: 16px;
+      padding: 22px 7.5px;
+    }
+    @media (max-width: 1365px) {
+      flex: 0 0 30%;
+    }
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #1a1b1f;
+      }
+    }
+    @media (max-width: 1120px) {
+      flex: 0 0 27%;
+      padding: 12px 0px;
+    }
+    @media (max-width: $md3+px) {
+      font-size: 12px;
+      line-height: 12px;
+      // padding: 12px 7.5px;
+    }
+    @media (max-width: 550px) {
+      flex: 0 0 40%;
+    }
+    &.slick-current {
+      color: $blue;
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+.about-slider {
+  background-color: #fff;
+  padding: 50px 40px;
+  @media (max-width: $md3+px) {
+    padding: 40px 40px 20px;
+  }
+  .slick-track {
+    flex: 0 1 auto;
+    width: 100%;
+    // max-width: 100%;
+  }
+  &__item {
+  }
+
+  &__item-row {
+    display: flex;
+    height: 100%;
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item-column {
+    &:nth-child(1) {
+      flex: 0 0 40%;
+      width: 40%;
+      @media (max-width: 550px) {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      flex: 1 1 55%;
+      width: 55%;
+      padding: 20px 0px 100px 70px;
+      @media (max-width: 1023px) {
+        padding: 0px 0px 80px 40px;
+      }
+      @media (max-width: $md3+px) {
+        padding: 0px 0px 0px 40px;
+      }
+      @media (max-width: 550px) {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  &__img {
+    height: 100%;
+    img,
+    source {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__title {
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 110%;
+    color: #1a1b1f;
+    max-width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px 0px 25px 0px;
+    @media (max-width: $md3+px) {
+      font-size: 32px;
+    }
+    @media (max-width: 550px) {
+      margin: 25px 0px;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1a1b1f;
+    max-width: 555px;
+    overflow-y: auto;
+    @media (max-width: $md3+px) {
+      font-size: 14px;
+    }
+    @media (max-width: 550px) {
+      margin: 0px 0px 20px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid #f2f2f2;
+    z-index: 2;
+    transition: all 0.5s ease;
+    @media (max-width: 1023px) {
+      bottom: 45px;
+    }
+    @media (min-width: $md2+px) {
+      &:hover {
+        border: 1px solid $blue;
+      }
+    }
+  }
+  .slick-next {
+    left: calc(45% + 47px);
+    background-image: url("../img/constructions/arrow_next_icon.svg");
+  }
+  .slick-prev {
+    left: 45%;
+    background-image: url("../img/constructions/arrow_prev_icon.svg");
+  }
+  .slick-disabled {
+    background-color: #ff4b4b;
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    button {
+      font-size: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid rgba(26, 27, 31, 0.5);
+      margin: 30px 7px 7px;
+      @media (max-width: 550px) {
+        margin: 7px;
+      }
+    }
+    .slick-active button {
+      width: 12px;
+      height: 12px;
+      background-color: $bluehover;
+      border: 1px solid #fff;
+    }
+  }
+}
