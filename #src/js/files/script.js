@@ -16,3 +16,4 @@ $(window).scroll(function () {
 // });
 
 // =============================================
+$('.flat-spoller__body').niceScroll();

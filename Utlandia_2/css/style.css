@@ -3081,6 +3081,7 @@ body.ie ._ibg img {
 
 .flat__row {
   height: calc(100vh - 140px);
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3316,7 +3317,7 @@ body.ie ._ibg img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  max-height: 380px;
+  max-height: 410px;
   height: 100%;
   padding: 25px 0px 25px 70px;
 }
