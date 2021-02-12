@@ -1,6 +1,6 @@
 .about-2 {
   &__container {
-    max-width: 1380px;
+    // max-width: 1380px;
   }
 
   &__content {
@@ -12,16 +12,21 @@
     padding: 120px 0px 40px 0px;
   }
 
-  &__title {
+  &__title._title {
+    max-width: 590px;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 36px;
     color: #000000;
     margin: 0px 0px 80px 0px;
     padding: 0px 20px 0px 20px;
     @media (max-width: 1023px) {
       margin: 0px 0px 40px 0px;
+    }
+    @media (max-width: 550px) {
+      font-size: 32px;
+      line-height: 32px;
     }
   }
 
@@ -39,25 +44,25 @@
     margin: 15px;
     padding: 19px 28px 18px 15px;
     background: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 3px 10px rgba(128, 128, 128, 0.555);
-    transition: $tr;
-    cursor: pointer;
-    @media (max-width: 1360px) {
+    // border: 1px solid #e0e0e0;
+    // box-shadow: 0 3px 10px rgba(128, 128, 128, 0.555);
+    // transition: $tr;
+    // cursor: pointer;
+    @media (max-width: 1600px) {
       flex: 0 0 47%;
     }
     @media (max-width: 1060px) {
       flex: 0 0 43%;
     }
-    @media (min-width: $md2+px) {
-      &:hover {
-        background: #f2f2f2;
-        transform: translateY(5px);
-        .about-2__look {
-          color: $blue;
-        }
-      }
-    }
+    // @media (min-width: $md2+px) {
+    //   &:hover {
+    //     background: #f2f2f2;
+    //     transform: translateY(5px);
+    //     .about-2__look {
+    //       color: $blue;
+    //     }
+    //   }
+    // }
     @media (max-width: 890px) {
       flex: 0 0 73%;
     }
@@ -71,81 +76,66 @@
     justify-content: space-between;
     width: 100%;
     text-align: left;
-    @media (max-width: 550px) {
-      flex-wrap: wrap;
-    }
+    // @media (max-width: 550px) {
+    //   flex-wrap: wrap;
+    // }
   }
 
   &__item-column {
-    &:nth-child(1) {
-      display: flex;
-      flex-grow: 1;
-    }
+    // &:nth-child(1) {
+    //   display: flex;
+    //   flex-grow: 1;
+    // }
 
     // &:nth-child(2) {
     //   flex-grow: 1;
     // }
     &:last-child {
+      flex: 1 1 auto;
       display: flex;
       flex-direction: column;
-      @media (max-width: 550px) {
-        width: 100%;
-        margin: 15px 0px 0px 0px;
-      }
+      // @media (max-width: 550px) {
+      //   width: 100%;
+      //   margin: 15px 0px 0px 0px;
+      // }
     }
   }
   &__icon {
-    svg {
-      width: 51px;
-      height: 69px;
-      fill: $blue;
-    }
-    &._nonactive {
-      svg {
-        fill: #4f4f4f;
-      }
-    }
-  }
-
-  &__name {
-    // flex: 1 0 100%;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 110%;
-    color: #1a1b1f;
-    margin: 0px 15px 0px 25px;
-    overflow: hidden;
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    width: 85px;
+    height: 101px;
+    margin: 0px 30px 0px 0px;
     @media (max-width: 550px) {
-      // width: 100%;
-      flex-direction: row;
+      width: 43px;
+      height: 52px;
+      margin: 0px 12px 0px 0px;
+    }
+    img,
+    source,
+    svg {
+      max-width: 100%;
     }
   }
 
-  &__data {
-    flex-grow: 1;
+  &__label {
+    font-family: "Mabry Pro";
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 110%;
-    color: $blue;
-    white-space: nowrap;
+    font-size: 28px;
+    line-height: 120%;
+    color: #1a1b1f;
+    margin: 0px 0px 15px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  &__look {
+  &__text {
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 110%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
     color: #1a1b1f;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
