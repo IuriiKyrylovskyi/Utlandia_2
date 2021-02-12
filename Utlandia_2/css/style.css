@@ -2502,9 +2502,19 @@ body.ie ._ibg img {
 }
 
 .lucky__tabs-about {
+  position: relative;
   width: 37%;
   height: 100%;
-  background: rgba(26, 27, 31, 0.89);
+  background-color: rgba(26, 27, 31, 0.89);
+}
+
+.lucky__tabs-about .lucky__tabs-about-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .lucky__tabs-about .lucky__title {
@@ -2534,7 +2544,16 @@ body.ie ._ibg img {
 }
 
 .lucky__tabs-about .lucky__tabs-item-img {
+  position: relative;
   border: 2px solid #fff;
+}
+
+.lucky__tabs-about .lucky__tabs-item-img img,
+.lucky__tabs-about .lucky__tabs-item-img source,
+.lucky__tabs-about .lucky__tabs-item-img svg {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .lucky__tabs-about .lucky__tabs-item-text {
@@ -4293,8 +4312,6 @@ body.ie ._ibg img {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-color: transparent;
-    border: 2px solid #003dd6;
   }
 
   .lucky__tabs-about .lucky__tabs-item:hover .lucky__tabs-item-text {
@@ -5428,6 +5445,10 @@ body.ie ._ibg img {
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  .lucky__tabs-about .lucky__tabs-about-bg {
+    display: none;
   }
 
   .lucky__tabs-about .lucky__title {
