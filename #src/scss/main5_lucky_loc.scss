@@ -107,6 +107,7 @@
       .lucky__tabs-item-img {
         border-right: 2px solid #fff;
       }
+
       .lucky__tabs-item-text {
         border: 2px solid $blue;
       }
@@ -177,4 +178,38 @@
       background-size: cover;
     }
   }
+}
+
+.lucky__tabs-about {
+  width: 37%;
+  height: 100%;
+  background: rgba(26, 27, 31, 0.89);
+}
+.lucky__tabs-item.about {
+  background: transparent;
+  .lucky__tabs-item-img {
+    border-right: 2px solid transparent;
+  }
+}
+.lucky__title.about {
+  color: #fff;
+}
+.lucky__tabs-item-text.about {
+  color: #fff;
+  border: 2px solid transparent;
+  margin-left: 5px;
+}
+
+.lucky__tabs-item.about .lucky__tabs-item-img {
+  border: 2px solid #fff;
+}
+.lucky__tabs-item.about._active .lucky__tabs-item-img {
+  background-color: #fff;
+  // border-right: 2px solid transparent;
+}
+.lucky__tabs-item.about._active .lucky__tabs-item-text.about {
+  background-color: $blue;
+}
+.about .lucky__tabs-blocks {
+  width: 100%;
 }
