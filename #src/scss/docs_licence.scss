@@ -113,6 +113,7 @@
     margin: 0px 0px 2px 0px;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     @media (max-width: $md3+px) {
       flex-direction: column;
       padding: 35px 50px 35px 0px;
