@@ -932,6 +932,26 @@ body.ie ._ibg img {
   z-index: 50;
 }
 
+.header__logo span {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  font-family: "Mabry Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #d53030;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .header__logo svg {
   fill: #ffffff;
   -webkit-transition: all 0.5s ease;
@@ -983,6 +1003,8 @@ body.ie ._ibg img {
 
 .header__button {
   margin: 0px 0px 0px 75px;
+  -webkit-animation: fadein 0.55s;
+          animation: fadein 0.55s;
 }
 
 .header__menu-title {
@@ -1000,6 +1022,26 @@ body.ie ._ibg img {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .menu {
@@ -1304,6 +1346,16 @@ body.ie ._ibg img {
   fill: #003dd6;
 }
 
+._white-header .header .header__logo span,
+.header._scroll .header__logo span,
+.header._white .header__logo span {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
 ._white-header .header .header__lang a,
 .header._scroll .header__lang a,
 .header._white .header__lang a {
@@ -1320,6 +1372,13 @@ body.ie ._ibg img {
 .header._scroll .header__menu-title,
 .header._white .header__menu-title {
   color: #000000;
+}
+
+._white-header .header .header__button,
+.header._scroll .header__button,
+.header._white .header__button {
+  -webkit-animation: fadein 0.55s;
+          animation: fadein 0.55s;
 }
 
 ._white-header .header .icon-menu span,
@@ -1344,6 +1403,10 @@ body.ie ._ibg img {
   fill: #ffffff;
 }
 
+._lock .header._scroll .header__logo span {
+  color: #ffffff;
+}
+
 ._lock .header._scroll .header__lang a {
   color: #ffffff;
   z-index: 1;
@@ -1356,6 +1419,8 @@ body.ie ._ibg img {
 
 ._lock .header._scroll .header__button {
   color: #ffffff;
+  -webkit-animation: fadein 0.55s;
+          animation: fadein 0.55s;
   z-index: 1;
 }
 
@@ -1379,6 +1444,10 @@ body.ie ._ibg img {
   fill: #ffffff;
 }
 
+._lock .header .header__logo span {
+  color: #d53030;
+}
+
 ._lock .header .header__lang a {
   color: #ffffff;
   z-index: 1;
@@ -1390,6 +1459,9 @@ body.ie ._ibg img {
 }
 
 ._lock .header .header__button {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   color: #ffffff;
   z-index: 1;
 }
