@@ -1003,8 +1003,6 @@ body.ie ._ibg img {
 
 .header__button {
   margin: 0px 0px 0px 75px;
-  -webkit-animation: fadein 0.55s;
-          animation: fadein 0.55s;
 }
 
 .header__menu-title {
@@ -1022,26 +1020,6 @@ body.ie ._ibg img {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 .menu {
@@ -1377,8 +1355,8 @@ body.ie ._ibg img {
 ._white-header .header .header__button,
 .header._scroll .header__button,
 .header._white .header__button {
-  -webkit-animation: fadein 0.55s;
-          animation: fadein 0.55s;
+  color: #ffffff;
+  background-color: #003dd6;
 }
 
 ._white-header .header .icon-menu span,
@@ -1418,9 +1396,6 @@ body.ie ._ibg img {
 }
 
 ._lock .header._scroll .header__button {
-  color: #ffffff;
-  -webkit-animation: fadein 0.55s;
-          animation: fadein 0.55s;
   z-index: 1;
 }
 
