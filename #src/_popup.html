@@ -1,15 +1,32 @@
-<div class="popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
+<div class="popup popup_form">
+  <div class="popup__content">
+    <div class="popup__body">
+      <div class="popup__close">
+        <span>Закрити</span>
+      </div>
+      <form action="#" class="popup__form form">
+        <h2 class="form__title">Заполните форму</h2>
+        <h4 class="form__subtitle">Наш менеджер свяжеться с вами в ближайшее время</h4>
+        <div class="form__input-box">
+          <input
+            autocomplete="off"
+            type="text"
+            name="form[]"
+            data-error="Error"
+            data-value="Ваше Имя"
+            class="input _req"
+          />
+          <input
+            autocomplete="off"
+            type="tel"
+            name="form[]"
+            data-value="Ваш номер телефона"
+            data-error="Enter correct number, please"
+            class="input phone _req"
+          />
+        </div>
+        <button type="submit" class="form__btn btn">Отправить</button>
+      </form>
+    </div>
+  </div>
 </div>

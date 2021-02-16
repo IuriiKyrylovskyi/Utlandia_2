@@ -17,7 +17,6 @@
   // }
 }
 
-
 // =====title-box========
 // ._title-box {
 //   // max-width: 600px;
@@ -93,6 +92,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  min-height: 40px;
   padding: 0px 15px 0px 15px;
 
   font-family: "Mabry Pro";
@@ -121,6 +121,9 @@
     // padding: 0px 25px 0px 25px;
     flex: 0 1 340px;
     min-width: 280px;
+  }
+  @media (max-width: 550px) {
+    max-height: 75px;
   }
 }
 //<SELECT (sel+tab)>====================================================================================================

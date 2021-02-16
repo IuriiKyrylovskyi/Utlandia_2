@@ -632,9 +632,9 @@
   }
 
   .header__button {
-    // transition: $tr;
-    color: #ffffff;
-    background-color: $blue;
+    transition: $tr;
+    // color: #ffffff;
+    // background-color: $blue;
     // animation: fadein 0.55s;
   }
   .header__menu {
@@ -652,6 +652,10 @@
 
 // _lock =======================
 ._lock {
+  .header__button.button {
+    opacity: 0;
+    visibility: hidden;
+  }
   .header._scroll {
     .header__logo svg {
       fill: #ffffff;
@@ -670,12 +674,14 @@
       z-index: 1;
     }
     .header__button {
+      opacity: 0;
+      visibility: hidden;
       // color: $blue;
       // // color: #ffffff;
       // letter-spacing: 0.05em;
       // background-color: #fff;
 
-      z-index: 1;
+      // z-index: 1;
     }
     .header__menu-title {
       color: #ffffff;
