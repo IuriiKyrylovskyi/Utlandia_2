@@ -16,7 +16,20 @@
   //   margin-top: 20px;
   // }
 }
-
+// =====flat===========
+.flat {
+  fill: blue;
+  transition: $tr;
+  z-index: 1;
+  @media (min-width: $md2+px) {
+    cursor: pointer;
+    // fill: transparent;
+    &:hover {
+      fill: $blue;
+      opacity: 0.5;
+    }
+  }
+}
 // =====title-box========
 // ._title-box {
 //   // max-width: 600px;
@@ -85,7 +98,6 @@
   &._fw {
     width: 100%;
   }
-  
 }
 //</BUTTONS>====================================================================================================
 .button {

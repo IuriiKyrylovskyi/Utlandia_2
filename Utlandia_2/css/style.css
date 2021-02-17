@@ -148,6 +148,14 @@ body._lock {
   margin-top: 100px;
 }
 
+.flat {
+  fill: blue;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
 ._title {
   font-family: "Mabry Pro";
   font-weight: 500;
@@ -3160,18 +3168,21 @@ body.ie ._ibg img {
 }
 
 .img-storey__img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
   margin: 0px 50px 0px 50px;
+  position: relative;
+  height: 100%;
 }
 
-.img-storey__img img,
-.img-storey__img source {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
+.img-storey__img-bg svg,
+.img-storey__img-bg img,
+.img-storey__img-bg source {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 375px;
 }
 
 .img-storey__img-small {
@@ -5075,6 +5086,15 @@ body.ie ._ibg img {
 }
 
 @media (min-width: 991.98px) {
+  .flat {
+    cursor: pointer;
+  }
+
+  .flat:hover {
+    fill: #003dd6;
+    opacity: 0.5;
+  }
+
   .quantity__button:hover::before,
   .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
