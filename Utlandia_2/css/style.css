@@ -148,7 +148,7 @@ body._lock {
   margin-top: 100px;
 }
 
-.flat {
+.flat-h {
   fill: blue;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -5082,11 +5082,11 @@ body.ie ._ibg img {
 }
 
 @media (min-width: 991.98px) {
-  .flat {
+  .flat-h {
     cursor: pointer;
   }
 
-  .flat:hover {
+  .flat-h:hover {
     fill: #003dd6;
     opacity: 0.5;
   }

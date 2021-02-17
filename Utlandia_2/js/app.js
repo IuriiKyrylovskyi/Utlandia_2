@@ -149,10 +149,10 @@ $(window).scroll(function () {
 // });
 
 // =============================================
-$('.flat-spoller__body').niceScroll();
-$('.licence__imgs-box').niceScroll({
-  cursorcolor: '#003DD6',
-});
+// $('.flat-spoller__body').niceScroll();
+// $('.licence__imgs-box').niceScroll({
+//   cursorcolor: '#003DD6',
+// });
 ;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf('MSIE ');
