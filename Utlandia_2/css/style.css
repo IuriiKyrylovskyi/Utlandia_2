@@ -3176,9 +3176,7 @@ body.ie ._ibg img {
 .img-storey__img-bg svg,
 .img-storey__img-bg img,
 .img-storey__img-bg source {
-  position: absolute;
-  top: 0;
-  left: 0;
+  max-width: 100%;
 }
 
 .img-storey__img-small {
