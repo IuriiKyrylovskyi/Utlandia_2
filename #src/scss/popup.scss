@@ -2,7 +2,7 @@
 .popup {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 100;
+  z-index: 1100;
   padding: 30px 10px;
   position: fixed;
   top: 0px;
@@ -58,35 +58,51 @@
     transform: scale(0);
     transition: all 0.3s ease 0s;
     background-color: #fff;
-    padding: 50px;
+    padding: 60px;
     width: 100%;
-    max-width: 800px;
+    max-width: 665px;
+    @media (max-width: $md2+px) {
+      margin: 20px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 60px 30px 50px;
+    }
   }
   // .popup__close
   &__close {
-    width: 15px;
-    height: 15px;
+    width: 90px;
+    height: 16px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 26px;
+    right: 36px;
     cursor: pointer;
     z-index: 30;
-    background: url("../img/popup_close.svg") 0 0 no-repeat;
+    background: url("../img/popup_close.svg") 100% 0 no-repeat;
     font-family: "Mabry Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 100%;
-    text-align: center;
+    // text-align: center;
     color: #1a1b1f;
+    span{
+      @media (max-width:$md3+px){
+        display: none;
+      }
+    }
   }
 }
 //====================================================================================================
 
 .form {
-  padding: 60px;
+  // padding: 60px;
   background-color: #fff;
-  max-width: 665px;
+  max-width: 355px;
+  margin: 0 auto;
+  @media (max-width: $md3+px) {
+    // padding: 40px;
+  }
+
   &__title {
     font-family: "Mabry Pro";
     font-style: normal;
@@ -95,6 +111,7 @@
     line-height: 100%;
     text-align: center;
     color: #1a1b1f;
+    margin: 0px 0px 25px 0px;
   }
 
   &__subtitle {
@@ -108,14 +125,21 @@
   }
 
   &__input-box {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 100%;
-    color: #1a1b1f;
-    padding: 15px 10px 15px 15px;
-    background-color: #f3f6fd;
+    margin: 60px 0px 30px 0px;
+    input {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 100%;
+      color: #1a1b1f;
+      padding: 15px 10px 15px 15px;
+      background-color: #f3f6fd;
+      margin: 0px 0px 10px 0px;
+      &._error {
+        border: 1px solid $red;
+      }
+    }
   }
 
   &__btn {
@@ -127,7 +151,14 @@
     text-align: center;
     letter-spacing: 0.05em;
     color: #f2f2f2;
+    max-width: 285px;
+    min-width: 285px;
+    height: 60px;
+    margin: 0 auto;
     // padding: 20px 22px;
+    @media (max-width:350px){
+      min-width: 200px;
+    }
   }
 }
 

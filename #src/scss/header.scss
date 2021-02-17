@@ -653,8 +653,9 @@
 // _lock =======================
 ._lock {
   .header__button.button {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
+    // display: none;
   }
   .header._scroll {
     .header__logo svg {
