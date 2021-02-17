@@ -18,12 +18,12 @@
 }
 // =====flat===========
 .flat-h {
-  fill: blue;
+  fill: $blue;
+  opacity: 0.2;
   transition: $tr;
   z-index: 1;
   @media (min-width: $md2+px) {
     cursor: pointer;
-    // fill: transparent;
     &:hover {
       fill: $blue;
       opacity: 0.5;

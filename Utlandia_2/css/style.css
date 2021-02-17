@@ -149,7 +149,8 @@ body._lock {
 }
 
 .flat-h {
-  fill: blue;
+  fill: #003dd6;
+  opacity: 0.2;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2901,8 +2902,8 @@ body.ie ._ibg img {
 }
 
 .floors__floor {
-  -webkit-animation: fadeIn 16s infinite ease;
-          animation: fadeIn 16s infinite ease;
+  -webkit-animation: fadeIn 18s infinite ease;
+          animation: fadeIn 18s infinite ease;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2980,6 +2981,11 @@ body.ie ._ibg img {
 .floors__floor:nth-child(8) {
   -webkit-animation-delay: 16s;
           animation-delay: 16s;
+}
+
+.floors__floor:nth-child(9) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
 }
 
 @-webkit-keyframes fadeIn {

@@ -140,19 +140,11 @@ $(window).scroll(function () {
     $('.round-btn').fadeOut();
   }
 });
-// $(document).ready(function () {
-//   $('.round-btn').click(function (event) {
-//     event.preventDefault();
-//     $('html, body').animate({ scrollTop: 0 }, 'slow');
-//     return false;
-//   });
-// });
-
 // =============================================
-// $('.flat-spoller__body').niceScroll();
-// $('.licence__imgs-box').niceScroll({
-//   cursorcolor: '#003DD6',
-// });
+$('.flat-spoller__body').niceScroll();
+$('.licence__imgs-box').niceScroll({
+  cursorcolor: '#003DD6',
+});
 ;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf('MSIE ');

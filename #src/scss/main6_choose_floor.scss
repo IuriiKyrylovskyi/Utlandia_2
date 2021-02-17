@@ -138,7 +138,7 @@
     height: auto;
   }
   &__floor {
-    animation: fadeIn 16s infinite ease;
+    animation: fadeIn 18s infinite ease;
     transition: $tr;
     @media (min-width: $md2+px) {
       cursor: pointer;
@@ -194,7 +194,7 @@
 }
 
 // Set delay per List Item
-$total-items: 8;
+$total-items: 9;
 @for $i from 1 through $total-items {
   .floors__floor:nth-child(#{$i}) {
     animation-delay: 2s * $i;
