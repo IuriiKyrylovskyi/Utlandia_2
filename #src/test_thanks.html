@@ -7,15 +7,14 @@
     <meta name="keywords" content="up to 20 words" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="./img/icons/favicon-16x16.png" />
-    <!-- <meta name="robots" content="noindex, nofollow"> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper _white-header">
+      @@include('_header.html',{})
       <section class="thanks">
         <div class="thanks__container _container">
           <div class="thanks__body">
@@ -144,25 +143,25 @@
                   </a>
                 </div>
               </div>
-               <div class="thanks__bg">
+              <div class="thanks__bg">
                 <img src="./img/thanks/bg.svg" alt="dove" />
               </div>
             </div>
           </div>
         </div>
-        <div class="thanks__footer">
-          <div class="thanks__footer-container _container">
-            <div class="thanks__footer-box">
-              <a href="#" class="thanks__footer-link">Перейти на головну</a>
-              <div class="thanks__footer-logo">
-                <img src="./img/thanks/tomin_logo.svg" alt="tomin_logo" />
-              </div>
+      </section>
+      <footer class="thanks__footer">
+        <div class="thanks__footer-container _container">
+          <div class="thanks__footer-box">
+            <a href="#" class="thanks__footer-link">Перейти на головну</a>
+            <div class="thanks__footer-logo">
+              <img src="./img/thanks/tomin_logo.svg" alt="tomin_logo" />
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
-    <!-- @@include('_popup.html',{})  -->
-    <!-- @@include('_js.html',{}) -->
+    @@include('_popup.html',{}) 
+    @@include('_js.html',{})
   </body>
 </html>
