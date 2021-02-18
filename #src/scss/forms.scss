@@ -30,6 +30,18 @@
     }
   }
 }
+.flat-h._sold {
+  fill: #fff;
+  opacity: 0.7;
+  transition: none;
+  z-index: 1;
+  pointer-events: none;
+  @media (min-width: $md2+px) {
+    &:hover {
+      box-shadow: 0 0 0;
+    }
+  }
+}
 // =====title-box========
 // ._title-box {
 //   // max-width: 600px;
