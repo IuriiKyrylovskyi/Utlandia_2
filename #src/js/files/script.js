@@ -12,3 +12,5 @@ $('.flat-spoller__body').niceScroll();
 $('.licence__imgs-box').niceScroll({
   cursorcolor: '#003DD6',
 });
+// parallax
+new universalParallax().init();

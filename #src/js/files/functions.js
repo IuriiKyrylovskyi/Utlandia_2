@@ -523,5 +523,4 @@ animate({
   }
 })();
 
-// parallax
-new universalParallax().init();
+

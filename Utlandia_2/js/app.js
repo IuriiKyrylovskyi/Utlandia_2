@@ -145,7 +145,8 @@ $('.flat-spoller__body').niceScroll();
 $('.licence__imgs-box').niceScroll({
   cursorcolor: '#003DD6',
 });
-;
+// parallax
+new universalParallax().init();;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf('MSIE ');
 var isMobile = {
@@ -671,8 +672,7 @@ animate({
   }
 })();
 
-// parallax
-new universalParallax().init();
+
 ;
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
