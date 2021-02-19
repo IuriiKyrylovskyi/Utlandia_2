@@ -4860,6 +4860,7 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .thanks__body {
@@ -4898,8 +4899,8 @@ body.ie ._ibg img {
 
 .thanks__logo-awards {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 40px;
+  left: 25px;
 }
 
 .thanks__logo-awards img,
@@ -7220,6 +7221,10 @@ body.ie ._ibg img {
   .licence__title {
     font-size: 25px;
     line-height: 25px;
+  }
+
+  .thanks__bg {
+    width: 175%;
   }
 }
 
