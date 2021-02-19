@@ -6710,11 +6710,13 @@ body.ie ._ibg img {
   }
 
   .thanks__title-box {
-    padding: 0px 70px 0px 70px;
+    padding: 0px 30px 0px 90px;
   }
 
   .thanks__logo-awards {
-    width: 50px;
+    width: 80px;
+    top: 10px;
+    left: 10px;
   }
 
   .thanks__title {
