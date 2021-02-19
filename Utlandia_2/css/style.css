@@ -167,6 +167,20 @@ body._lock {
   pointer-events: none;
 }
 
+._section_a_small,
+._section_b_small {
+  fill: #809eeb;
+  fill-opacity: 0.2;
+  stroke: #809eeb;
+  stroke-width: 0.5;
+}
+
+._section_a_small._active,
+._section_b_small._active {
+  fill: #003dd6;
+  fill-opacity: 1;
+}
+
 ._title {
   font-family: "Mabry Pro";
   font-weight: 500;
@@ -3193,6 +3207,7 @@ body.ie ._ibg img {
 .img-storey__img-bg img,
 .img-storey__img-bg source {
   max-width: 100%;
+  height: auto;
 }
 
 .img-storey__img-small {
@@ -3203,6 +3218,7 @@ body.ie ._ibg img {
           flex: 0 1 150px;
 }
 
+.img-storey__img-small svg,
 .img-storey__img-small img,
 .img-storey__img-small source {
   display: block;
@@ -7302,6 +7318,9 @@ body.ie ._ibg img {
             flex: 0 0 100%;
     max-width: 100%;
     padding: 20px 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 
   .img-storey__img {
@@ -7309,12 +7328,15 @@ body.ie ._ibg img {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
     width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 
   .img-storey__img-small {
-    display: none;
-    width: 0;
-    height: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .storey-descr {

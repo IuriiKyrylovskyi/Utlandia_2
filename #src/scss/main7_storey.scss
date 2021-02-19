@@ -143,6 +143,7 @@
       flex: 0 0 100%;
       max-width: 100%;
       padding: 20px 20px;
+      order: 1;
     }
   }
 
@@ -219,6 +220,7 @@
     @media (max-width: 450px) {
       flex: 1 0 100%;
       width: 100%;
+      order: 3;
     }
   }
   &__img-bg {
@@ -235,6 +237,7 @@
       // top: 0;
       // left: 0;
       max-width: 100%;
+      height: auto;
       // height: 375px;
       // max-width: 600px;
       // display: block;
@@ -259,10 +262,12 @@
       margin: 0px 0px 0px 20px;
     }
     @media (max-width: 450px) {
-      display: none;
-      width: 0;
-      height: 0;
+      order: 2;
+      // display: none;
+      // width: 0;
+      // height: 0;
     }
+    svg,
     img,
     source {
       display: block;

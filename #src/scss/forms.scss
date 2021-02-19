@@ -42,6 +42,18 @@
     }
   }
 }
+// ==== _section_a_small=====
+._section_a_small,
+._section_b_small {
+  fill: #809eeb;
+  fill-opacity: 0.2;
+  stroke: #809eeb;
+  stroke-width: 0.5;
+  &._active {
+    fill: $blue;
+    fill-opacity: 1;
+  }
+}
 // =====title-box========
 // ._title-box {
 //   // max-width: 600px;
