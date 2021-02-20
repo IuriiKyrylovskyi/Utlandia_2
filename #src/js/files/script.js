@@ -8,7 +8,11 @@ $(window).scroll(function () {
   }
 });
 // =============================================
-$('.flat-spoller__body').niceScroll();
+$('.flat-spoller__body').niceScroll({
+  cursoropacitymax: 0,
+  background: 'transparent',
+});
+
 $('.licence__imgs-box').niceScroll({
   cursorcolor: '#003DD6',
 });

@@ -176,6 +176,8 @@
   //   margin: 0px 0px 30px 0px;
   // }
   &__info {
+    position: relative;
+    z-index: 1;
     height: 100%;
     width: 125px;
     flex: 0 0 125px;
@@ -280,7 +282,7 @@
   }
 
   &__img {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     margin: 0px 50px 0px 50px;
     @media (max-width: 1365px) {
       flex: 1 1 auto;
@@ -387,7 +389,7 @@
     line-height: 100%;
     color: #1a1b1f;
     margin: 0px 0px 15px 0px;
-    padding: 50px 0px 25px 70px;
+    padding: 40px 0px 0px 70px;
 
     @media (max-width: 1365px) {
       font-size: 24px;
@@ -406,7 +408,7 @@
   &__spoller-box {
     flex: 1 1 auto;
     max-height: 410px;
-    height: 100%;
+    // height: 100%;
     padding: 25px 0px 25px 70px;
     @media (max-width: 1320px) {
       padding: 0px 0px 25px 40px;
@@ -457,7 +459,7 @@
     font-style: normal;
     line-height: 150%;
     color: #1a1b1f;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 25px 0px;
     @media (max-width: 1320px) {
       // flex: 0 0 23%;
       margin: 10px;
@@ -515,8 +517,9 @@
     &._active ~ .flat-spoller__body {
       opacity: 1;
       visibility: visible;
-      padding: 35px 70px 30px 25px;
+      max-height: 260px;
       height: 190px;
+      padding: 15px 40px 15px 25px;
       transform: rotateX(0deg);
       @media (max-width: 1320px) {
         padding: 20px 25px 20px 30px;

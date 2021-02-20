@@ -141,7 +141,11 @@ $(window).scroll(function () {
   }
 });
 // =============================================
-$('.flat-spoller__body').niceScroll();
+$('.flat-spoller__body').niceScroll({
+  cursoropacitymax: 0,
+  background: 'transparent',
+});
+
 $('.licence__imgs-box').niceScroll({
   cursorcolor: '#003DD6',
 });
@@ -674,7 +678,7 @@ animate({
 
 
 ;
-//let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
+// //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
 	for (let index = 0; index < forms.length; index++) {
