@@ -7447,6 +7447,10 @@ body.ie ._ibg img {
     text-align: center;
   }
 
+  .img-flat__info--flat .img-flat__info-box-text {
+    text-align: center;
+  }
+
   .about-1__title-box {
     margin: 30px 0px 30px 0px;
     padding: 25px 20px;
