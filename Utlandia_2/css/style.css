@@ -3365,6 +3365,11 @@ body.ie ._ibg img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+}
+
+.storey-descr--test {
+  width: auto;
 }
 
 .flat {
