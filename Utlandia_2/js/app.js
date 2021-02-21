@@ -1,6 +1,3 @@
-function email_test(input) {
-	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-};
 'use strict';
 
 /**
@@ -131,6 +128,9 @@ var universalParallax = function universalParallax() {
 	};
 };
 ;
+function email_test(input) {
+	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+};
 // === round-btn ==================================
 $(window).scroll(function () {
   let height = $(window).scrollTop();

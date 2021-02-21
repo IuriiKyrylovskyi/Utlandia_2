@@ -1,5 +1,5 @@
-@@include('files/regular.js', {});
 @@include('libs/universal-parallax.js');
+@@include('files/regular.js', {});
 @@include('files/script.js', {});
 @@include('files/functions.js', {});
 // @@include('files/forms.js', {});
