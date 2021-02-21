@@ -143,12 +143,19 @@
     @media (min-width: $md2+px) {
       cursor: pointer;
       fill: transparent;
+      // opacity: 0.2;
+      // animation: none;
       &:hover {
         animation-name: hover;
         animation-timing-function: ease;
         fill: $blue;
         opacity: 0.5;
       }
+    }
+    @media (max-width: $md2+px) {
+      fill: $blue;
+      opacity: 0.3;
+      animation: none;
     }
   }
   &_0 {

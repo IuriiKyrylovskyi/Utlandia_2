@@ -6460,6 +6460,13 @@ body.ie ._ibg img {
     padding: 60px 40px 40px 50px;
   }
 
+  .floors__floor {
+    fill: #003dd6;
+    opacity: 0.3;
+    -webkit-animation: none;
+            animation: none;
+  }
+
   .contacts__content {
     width: 50%;
     padding: 0px 30px 0px 0px;
