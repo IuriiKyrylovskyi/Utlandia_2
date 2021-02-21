@@ -196,6 +196,23 @@
       padding: 10px;
       margin: 0 auto 20px;
       justify-content: flex-start;
+      &--flat {
+        flex: 0 1 auto;
+        width: 80%;
+        justify-content: center;
+
+        .img-flat__info-box {
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      &--flat {
+        width: auto;
+        flex-direction: column;
+        .img-flat__info-box {
+          text-align: center;
+        }
+      }
     }
     // @media (max-width: 1250px) {
     //   flex: 0 0 70%;
