@@ -3346,6 +3346,27 @@ body.ie ._ibg img {
      text-overflow: ellipsis;
 }
 
+.storey__column-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-storey__img-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.storey__img-title-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .flat {
   min-height: 100vh;
   padding: 120px 0px 20px 0px;

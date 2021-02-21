@@ -3720,7 +3720,7 @@ window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(
   }
 
 }));;
-/*!
+// /*!
  * dist/inputmask.min
  * https://github.com/RobinHerbots/Inputmask
  * Copyright (c) 2010 - 2020 Robin Herbots
