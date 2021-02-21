@@ -1,5 +1,8 @@
 .storey__row-test {
   padding: 0px 40px;
+  @media (max-width: 550px) {
+    padding: 0px 15px;
+  }
 }
 .storey__column-test {
   display: flex;
@@ -14,6 +17,9 @@
     @media (max-width: 1450px) {
       flex-direction: column;
       flex-wrap: nowrap;
+    }
+    @media (max-width: 1023px) {
+      margin: 0px 0px 0px 0px;
     }
   }
   .img-storey__info {
@@ -32,6 +38,9 @@
       flex: 0 1 auto;
       // width: 80%;
       max-width: 100%;
+    }
+    @media (max-width: 550px) {
+      margin: 0 auto;
     }
   }
   @media (max-width: 1250px) {

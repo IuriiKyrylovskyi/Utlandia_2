@@ -6313,6 +6313,10 @@ body.ie ._ibg img {
     margin: 0px 0px 0px 20px;
   }
 
+  .storey__column-test .storey-img__row.img-storey {
+    margin: 0px 0px 0px 0px;
+  }
+
   .img-storey__img-test {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7307,6 +7311,14 @@ body.ie ._ibg img {
 
   .storey__row {
     margin: 0px 20px 0px 20px;
+  }
+
+  .storey__row-test {
+    padding: 0px 15px;
+  }
+
+  .storey__column-test .img-storey__info {
+    margin: 0 auto;
   }
 
   .flat__row {
