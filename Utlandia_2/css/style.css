@@ -3793,6 +3793,45 @@ body.ie ._ibg img {
   color: #000000;
 }
 
+.radio {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 20px 70px;
+}
+
+.radio__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #003dd6;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.radio__item._active {
+  color: #fff;
+  background-color: #003dd6;
+}
+
+.radio__item input {
+  display: none;
+}
+
 .contacts._section {
   margin-top: 100px;
 }
@@ -5331,6 +5370,15 @@ body.ie ._ibg img {
     cursor: pointer;
   }
 
+  .radio__item {
+    cursor: pointer;
+  }
+
+  .radio__item:hover {
+    color: #fff;
+    background-color: #054bfd;
+  }
+
   .contacts__phone:hover {
     color: #054bfd;
   }
@@ -5923,6 +5971,10 @@ body.ie ._ibg img {
 
   .flat-spoller__body {
     padding: 0px 25px 0px 30px;
+  }
+
+  .radio {
+    padding: 0px 0px 20px 40px;
   }
 }
 
@@ -7010,6 +7062,10 @@ body.ie ._ibg img {
             flex: 0 0 45%;
   }
 
+  .radio {
+    padding: 0px 0px 20px 0px;
+  }
+
   .constructions__slider-big .slick-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7671,6 +7727,10 @@ body.ie ._ibg img {
 
   .slider-close__title {
     font-size: 24px;
+  }
+
+  .radio__item {
+    font-size: 12px;
   }
 }
 

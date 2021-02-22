@@ -64,7 +64,7 @@
       </div>
 
       <div class="flat__column">
-        <div class="flat__description-block flat-descr">
+        <form action="#" class="flat__description-block flat-descr">
           <div class="flat-descr__price-box">
             <p class="flat-descr__price-box-text">Цена</p>
             <p class="flat-descr__price-box-num">960 у.е / м<span>2</span></p>
@@ -131,15 +131,22 @@
               </div>
             </div>
           </div>
-          <div class="flat-descr__radio-box">
-              
+          <div class="flat-descr__radio-box radio">
+            <div class="radio__item">
+              <input type="radio" value="1" name="full" checked />
+              <span>100% оплата</span>
+            </div>
+            <div class="radio__item">
+              <input type="radio" value="2" name="month" />
+              <span>рассрочка 24 мес</span>
+            </div>
           </div>
 
           <div class="flat-descr__button-box">
             <!-- <button class="flat-descr__button button _popup-link">Записаться на просмотр</button> -->
             <a href="#form" class="button _popup-link">Записаться на просмотр</a>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
