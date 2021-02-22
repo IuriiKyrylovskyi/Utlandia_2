@@ -125,6 +125,8 @@
     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
     box-shadow: 15px 25px 45px -15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    position: relative;
+    z-index: 2;
     @media (max-width: 1365px) {
       flex: 0 1 125px;
       justify-content: space-between;

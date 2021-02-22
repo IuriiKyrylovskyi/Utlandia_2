@@ -30,7 +30,7 @@
 		"gulp-sass": "latest",
 		"gulp-ttf2woff": "latest",
 		"gulp-ttf2woff2": "latest",
-		"gulp-uglify-es": "latest",
+		"gulp-uglify-es": "^2.0.0",
 		"gulp-webp-css": "^1.1.0",
 		"gulp-webp-html": "latest",
 		"imagemin-mozjpeg": "^9.0.0",

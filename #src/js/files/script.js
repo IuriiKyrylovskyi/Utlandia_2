@@ -8,7 +8,7 @@ $(window).scroll(function () {
   }
 });
 // =============================================
-$('.flat-spoller__body').niceScroll({
+$('._spols-block').niceScroll({
   cursoropacitymax: 0,
   background: 'transparent',
 });

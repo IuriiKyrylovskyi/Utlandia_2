@@ -1,4 +1,7 @@
+@@include('libs/smoothScroll.js', {});
+@@include('libs/jquery.nicescroll.js', {});
 @@include('libs/universal-parallax.js');
+
 @@include('files/regular.js', {});
 @@include('files/script.js', {});
 @@include('files/functions.js', {});
