@@ -3673,6 +3673,27 @@ body.ie ._ibg img {
   padding: 25px 0px 25px 70px;
 }
 
+.flat-descr__tel {
+  padding: 0px 0px 0px 70px;
+  margin: 0px 0px 10px 0px;
+}
+
+.flat-descr__tel input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1a1b1f;
+  padding: 15px 10px 15px 15px;
+  background-color: #f3f6fd;
+  margin: 0px 0px 10px 0px;
+}
+
+.flat-descr__tel input._error {
+  border: 1px solid #d53030;
+}
+
 .flat-descr__button-box {
   height: 75px;
   padding: 0px 0px 0px 70px;
@@ -5936,6 +5957,10 @@ body.ie ._ibg img {
     padding: 0px 0px 25px 40px;
   }
 
+  .flat-descr__tel {
+    padding: 0px 0px 0px 40px;
+  }
+
   .flat-descr__button-box {
     padding: 0px 0px 0px 40px;
   }
@@ -7052,6 +7077,10 @@ body.ie ._ibg img {
 
   .flat-descr__spoller-box {
     padding: 0px 0px 25px 0px;
+  }
+
+  .flat-descr__tel {
+    padding: 0px 0px 0px 0px;
   }
 
   .flat-descr__button-box {

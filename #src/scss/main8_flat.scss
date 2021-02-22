@@ -425,7 +425,30 @@
       padding: 0px 0px 25px 0px;
     }
   }
-
+  &__tel {
+    padding: 0px 0px 0px 70px;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 1320px) {
+      padding: 0px 0px 0px 40px;
+    }
+    @media (max-width: 767px) {
+      padding: 0px 0px 0px 0px;
+    }
+    input {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 100%;
+      color: #1a1b1f;
+      padding: 15px 10px 15px 15px;
+      background-color: #f3f6fd;
+      margin: 0px 0px 10px 0px;
+      &._error {
+        border: 1px solid $red;
+      }
+    }
+  }
   &__button-box {
     height: 75px;
     padding: 0px 0px 0px 70px;
@@ -436,7 +459,7 @@
       padding: 0px 0px 0px 0px;
     }
   }
-  button{
+  button {
     margin: 0px 0px 0px 0px;
   }
   &__button {
