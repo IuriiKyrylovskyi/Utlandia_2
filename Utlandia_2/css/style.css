@@ -7749,6 +7749,19 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 400px) {
+  .header__phone svg {
+    top: 5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__phone {
+    margin: 0px 20px 0px 0px;
+  }
+}
+
 @media (max-width: 390px) {
   .terasse__title-box {
     padding: 25px 10px;
@@ -7772,6 +7785,10 @@ body.ie ._ibg img {
 
   .form__btn {
     min-width: 200px;
+  }
+
+  .header__phone {
+    display: none;
   }
 
   .menu__links-box {
@@ -8377,6 +8394,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 420px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 400px){
 
 @supports (-webkit-appearance:none){
 
