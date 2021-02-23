@@ -1206,6 +1206,7 @@ body.ie ._ibg img {
 }
 
 .header__phone {
+  position: relative;
   font-family: "Mabry Pro";
   font-weight: 500;
   font-size: 18px;
@@ -1215,6 +1216,16 @@ body.ie ._ibg img {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.header__phone svg {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  fill: #fff;
 }
 
 .header__button {
@@ -1562,6 +1573,12 @@ body.ie ._ibg img {
   color: #000000;
 }
 
+._white-header .header .header__phone svg,
+.header._scroll .header__phone svg,
+.header._white .header__phone svg {
+  fill: #003dd6;
+}
+
 ._white-header .header .header__menu-title,
 .header._scroll .header__menu-title,
 .header._white .header__menu-title {
@@ -1612,6 +1629,10 @@ body.ie ._ibg img {
   z-index: 1;
 }
 
+._lock .header._scroll .header__phone svg {
+  fill: #fff;
+}
+
 ._lock .header._scroll .header__button {
   opacity: 0;
   visibility: hidden;
@@ -1649,6 +1670,10 @@ body.ie ._ibg img {
 ._lock .header .header__phone {
   color: #ffffff;
   z-index: 1;
+}
+
+._lock .header .header__phone svg {
+  fill: #fff;
 }
 
 ._lock .header .header__button {
@@ -6742,7 +6767,17 @@ body.ie ._ibg img {
 
 @media (max-width: 880px) {
   .header__phone {
+    height: 100%;
+    display: block;
+    width: 35px;
+  }
+
+  .header__phone span {
     display: none;
+  }
+
+  .header__phone svg {
+    display: block;
   }
 }
 
@@ -6778,6 +6813,10 @@ body.ie ._ibg img {
 
   .popup__close span {
     display: none;
+  }
+
+  .header__phone {
+    margin: 0px 40px 0px 0px;
   }
 
   .temp__announce {
@@ -7063,6 +7102,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 767px) {
+  .header__button {
+    display: none;
+  }
+
   .flat-img__pdf-link {
     font-size: 15px;
   }
@@ -7228,12 +7271,6 @@ body.ie ._ibg img {
 
   .slider-close__icon {
     margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 665px) {
-  .header__button {
-    display: none;
   }
 }
 
@@ -8252,14 +8289,6 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 680px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 665px){
 
 @supports (-webkit-appearance:none){
 

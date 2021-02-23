@@ -145,6 +145,7 @@
   }
 
   &__phone {
+    position: relative;
     font-family: "Mabry Pro";
     font-weight: 500;
     font-size: 18px;
@@ -152,6 +153,16 @@
     color: #ffffff;
     white-space: nowrap;
     transition: $tr;
+
+    svg {
+      display: none;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      fill: #fff;
+    }
     @media (min-width: $md2+px) {
       &:hover {
         transform: scale(1.1);
@@ -159,7 +170,19 @@
       }
     }
     @media (max-width: 880px) {
-      display: none;
+      height: 100%;
+      display: block;
+      width: 35px;
+
+      span {
+        display: none;
+      }
+      svg {
+        display: block;
+      }
+    }
+    @media (max-width: $md3+px) {
+      margin: 0px 40px 0px 0px;
     }
   }
 
@@ -171,7 +194,7 @@
     @media (max-width: 1023px) {
       margin: 0px 45px 0px 45px;
     }
-    @media (max-width: 665px) {
+    @media (max-width: 767px) {
       display: none;
     }
   }
@@ -625,6 +648,9 @@
 
   .header__phone {
     color: #000000;
+    svg {
+      fill: $blue;
+    }
   }
 
   .header__menu-title {
@@ -671,8 +697,11 @@
     }
     .header__phone {
       color: #ffffff;
-
       z-index: 1;
+      svg {
+        // fill: #000;
+        fill: #fff;
+      }
     }
     .header__button {
       opacity: 0;
@@ -714,8 +743,10 @@
     }
     .header__phone {
       color: #ffffff;
-
       z-index: 1;
+      svg {
+        fill: #fff;
+      }
     }
     .header__button {
       transition: $tr;
