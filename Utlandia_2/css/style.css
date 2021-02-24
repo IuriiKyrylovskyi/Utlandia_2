@@ -1207,6 +1207,7 @@ body.ie ._ibg img {
 
 .header__phone {
   position: relative;
+  top: 2px;
   font-family: "Mabry Pro";
   font-weight: 500;
   font-size: 18px;
@@ -1372,6 +1373,7 @@ body.ie ._ibg img {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.5);
+  margin: 35px 0 0 0;
 }
 
 .menu-slider {
@@ -1634,8 +1636,13 @@ body.ie ._ibg img {
 }
 
 ._lock .header._scroll .header__button {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+  width: 0;
+  max-width: 0;
+  min-width: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 0px;
+          flex: 0 1 0;
 }
 
 ._lock .header._scroll .header__menu-title {
@@ -6322,6 +6329,12 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1123px) {
+  ._lock .header._scroll .header__phone {
+    margin-right: 40px;
+  }
+}
+
 @media (max-width: 1120px) {
   .about-pagin__item {
     -webkit-box-flex: 0;
@@ -6380,7 +6393,7 @@ body.ie ._ibg img {
   }
 
   .header__button {
-    margin: 0px 45px 0px 45px;
+    margin: 0px 20px 0px 20px;
   }
 
   .menu-slider .slick-track {
@@ -7760,6 +7773,10 @@ body.ie ._ibg img {
   .header__phone {
     margin: 0px 20px 0px 0px;
   }
+
+  ._lock .header._scroll .header__phone {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -7792,7 +7809,7 @@ body.ie ._ibg img {
   }
 
   .menu__links-box {
-    margin: 20px 35px 100px 35px;
+    margin: 55px 35px 60px 35px;
   }
 
   .menu__link {
@@ -7814,6 +7831,10 @@ body.ie ._ibg img {
   .middle-link {
     font-size: 22px;
     line-height: 22px;
+  }
+
+  ._lock .header .socials__label {
+    display: none;
   }
 
   .slider-close__title {
@@ -8154,6 +8175,14 @@ body.ie ._ibg img {
 }
 
  @media (max-width: 1124px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1123px){
 
 @supports (-webkit-appearance:none){
 
