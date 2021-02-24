@@ -147,3 +147,16 @@ if ($('.licence__labels-slider').length > 0) {
   });
 }
 
+if ($('.storey__slider').length > 0) {
+  $('.storey__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    // centerMode: false,
+    fade: true,
+    // arrows: true,
+    //    focusOnSelect: true,
+    // autoplay: false,
+      infinite: false,
+  });
+}

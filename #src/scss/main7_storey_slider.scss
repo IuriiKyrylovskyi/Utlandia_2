@@ -1,0 +1,96 @@
+.storey__slider {
+  .slick-arrow {
+    font-size: 0;
+    color: transparent;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    background-color: transparent;
+    transition: $tr;
+    @media (min-width: $md2+px) {
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    @media (max-width: 1023px) {
+      top: 170px;
+    }
+    @media (max-width: 690px) {
+      top: 190px;
+    }
+  }
+  .slick-prev {
+    right: 240px;
+    z-index: 1;
+    background-image: url("../img/main7_storey/s_b_nonactive.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.slick-disabled {
+      background-image: url("../img/main7_storey/s_b_active.svg");
+    }
+    @media (max-width: 1650px) {
+      right: 290px;
+    }
+    @media (max-width: 1650px) {
+      right: 250px;
+    }
+    @media (max-width: 1023px) {
+      right: 120px;
+    }
+    @media (max-width: 800px) {
+      // right: calc(50% + 20px);
+    }
+  }
+  .slick-next {
+    right: 120px;
+    background-image: url("../img/main7_storey/s_a_nonactive.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &.slick-disabled {
+      background-image: url("../img/main7_storey/s_a_active.svg");
+    }
+    @media (max-width: 1650px) {
+      right: 170px;
+    }
+    @media (max-width: 1650px) {
+      right: 130px;
+    }
+    @media (max-width: 1023px) {
+      right: 40px;
+    }
+  }
+}
+.storey__slider-nav-box {
+  margin: 0px 40px 40px 70px;
+  border-bottom: 1px solid #bdbdbd;
+  @media (max-width: 1400px) {
+    margin: 0px 40px 30px 50px;
+  }
+  @media (max-width: 450px) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+.storey__slider-nav {
+  height: 120px;
+  width: 100%;
+  // background-color: pink;
+}
+
+.img-storey__img-bg svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px auto 0;
+  @media (max-width: $md3+px) {
+    margin: 100px auto 0;
+  }
+}
+
+.storey__slider-nav-box {
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
