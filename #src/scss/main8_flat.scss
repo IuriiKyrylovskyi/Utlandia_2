@@ -540,6 +540,7 @@
     color: #000000;
     border: 1px solid #4f4f4f;
     margin: 1px 0 1px 0;
+    position: relative;
     @media (max-width: 1320px) {
       padding: 20px 30px;
     }
@@ -652,4 +653,13 @@
       display: none;
     }
   }
+}
+
+.flat-spoller__title-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // z-index: -1;
 }
