@@ -8,7 +8,6 @@
     top: 50px;
     background-color: transparent;
     transition: $tr;
-    z-index: 2;
     @media (min-width: $md2+px) {
       cursor: pointer;
       &:hover {
@@ -47,6 +46,7 @@
   }
   .slick-next {
     right: 120px;
+    z-index: 1;
     background-image: url("../img/main7_storey/s_a_nonactive.svg");
     background-repeat: no-repeat;
     background-position: center;
