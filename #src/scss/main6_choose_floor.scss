@@ -160,6 +160,13 @@
       stroke-width: 4px;
     }
   }
+  &__num-box {
+    // position: absolute;
+    // width: 50px;
+    // height: 100%;
+    // top: 0;
+    // right: 0;
+  }
   &_0 {
   }
   &_1 {
@@ -230,5 +237,39 @@ $total-items: 9;
   100% {
     opacity: 0;
     fill: transparent;
+  }
+}
+
+.floor-num {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0%;
+  left: 62%;
+  z-index: 2;
+  display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 155px 0px 60px;
+  }
+  @media (max-width: $md3+px) {
+    padding: 45px 0px 40px;
+  }
+
+  &__num {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: $blue;
+    background-color: #fff;
+    font-family: "Mabry Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
   }
 }
