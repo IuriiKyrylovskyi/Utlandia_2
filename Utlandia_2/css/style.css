@@ -3161,13 +3161,14 @@ body.ie ._ibg img {
           justify-content: center;
 }
 
-.storey__column:nth-child(1) {
+.storey__column-storey:nth-child(1) {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  border-left: 1px solid #bdbdbd;
 }
 
-.storey__column:nth-child(2) {
+.storey__column-storey:nth-child(2) {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 490px;
           flex: 0 0 490px;
@@ -3483,25 +3484,22 @@ body.ie ._ibg img {
           justify-content: center;
 }
 
-.flat__column {
+.flat__column-flat {
   height: 100%;
 }
 
-.flat__column:nth-child(1) {
+.flat__column-flat:nth-child(1) {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
 
-.flat__column:nth-child(2) {
+.flat__column-flat:nth-child(2) {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 490px;
           flex: 0 0 490px;
   max-width: 490px;
-}
-
-.flat__img-block {
-  border-right: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
 }
 
 .flat-img__top-row {
@@ -5651,14 +5649,14 @@ body.ie ._ibg img {
     margin: 50px 0px 50px 100px;
   }
 
-  .storey__column:nth-child(2) {
+  .storey__column-storey:nth-child(2) {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 430px;
             flex: 0 0 430px;
     max-width: 430px;
   }
 
-  .flat__column:nth-child(2) {
+  .flat__column-flat:nth-child(2) {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 430px;
             flex: 0 0 430px;
@@ -6454,7 +6452,11 @@ body.ie ._ibg img {
             flex-direction: column;
   }
 
-  .storey__column:nth-child(2) {
+  .storey__column-storey:nth-child(1) {
+    border: none;
+  }
+
+  .storey__column-storey:nth-child(2) {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
@@ -6506,7 +6508,8 @@ body.ie ._ibg img {
             flex-direction: column;
   }
 
-  .flat__column:nth-child(2) {
+  .flat__column-flat:nth-child(2) {
+    border: none;
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
@@ -6516,7 +6519,6 @@ body.ie ._ibg img {
   }
 
   .flat__img-block {
-    border-right: none;
     border-bottom: 1px solid #bdbdbd;
   }
 
