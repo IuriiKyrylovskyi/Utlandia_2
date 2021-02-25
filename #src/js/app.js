@@ -1,11 +1,11 @@
 @@include('libs/smoothScroll.js', {});
 @@include('libs/jquery.nicescroll.js', {});
 @@include('libs/universal-parallax.js');
-
+@@include('libs/inputmask.min.js', {});
 @@include('files/regular.js', {});
 @@include('files/script.js', {});
 @@include('files/functions.js', {});
-// @@include('files/forms.js', {});
+@@include('files/forms.js', {});
 @@include('files/scroll.js', {});
 @@include('files/slick.min.js');
 @@include('files/_sliders.js');

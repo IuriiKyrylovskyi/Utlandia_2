@@ -6591,6 +6591,10 @@ body.ie ._ibg img {
     margin: 0px 20px 0px 20px;
   }
 
+  .main__link {
+    color: #ffffff;
+  }
+
   .location__row {
     padding: 30px;
   }

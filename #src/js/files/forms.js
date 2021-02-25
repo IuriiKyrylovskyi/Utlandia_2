@@ -13,7 +13,7 @@ function form_submit(e) {
 	let error = form_validate(form);
 	if (error == 0) {
 		//SendForm
-		form_clean(form);
+		// form_clean(form);
 		if (message) {
 			popup_open('message-' + message);
 			e.preventDefault();
@@ -89,16 +89,16 @@ function form_remove_error(input) {
 		input.parentElement.removeChild(input_error);
 	}
 }
-function form_clean(form) {
-	let inputs = form.querySelectorAll('input,textarea');
-	for (let index = 0; index < inputs.length; index++) {
-		const el = inputs[index];
-		el.parentElement.classList.remove('_focus');
-		el.classList.remove('_focus');
-		el.value = el.getAttribute('data-value');
-	}
+// function form_clean(form) {
+// 	let inputs = form.querySelectorAll('input,textarea');
+// 	for (let index = 0; index < inputs.length; index++) {
+// 		const el = inputs[index];
+// 		el.parentElement.classList.remove('_focus');
+// 		el.classList.remove('_focus');
+// 		el.value = el.getAttribute('data-value');
+// 	}
 	
-}
+// }
 
 let viewPass = document.querySelectorAll('.form__viewpass');
 for (let index = 0; index < viewPass.length; index++) {
