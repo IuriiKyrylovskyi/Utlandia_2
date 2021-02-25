@@ -8,6 +8,7 @@
     top: 50px;
     background-color: transparent;
     transition: $tr;
+    z-index: 2;
     @media (min-width: $md2+px) {
       cursor: pointer;
       &:hover {

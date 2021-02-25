@@ -1,9 +1,11 @@
 .flat {
   min-height: 100vh;
-  padding: 120px 0px 20px 0px;
-  display: flex;
-  align-items: center;
+  padding: 160px 0px 20px 0px;
+  // display: flex;
+  // align-items: center;
   @media (max-width: 1366px) {
+    padding: 120px 0px 20px 0px;
+
     // padding: 80px 0px 0px 0px;
   }
   @media (max-width: 1124px) {
@@ -50,8 +52,12 @@
       flex: 1 1 auto;
     }
     &:nth-child(2) {
-      flex: 0 1 490px;
+      flex: 0 0 490px;
       max-width: 490px;
+      @media (max-width: 1500px) {
+        flex: 0 0 430px;
+        max-width: 430px;
+      }
       @media (max-width: 1023px) {
         flex: 0;
         max-width: 590px;
@@ -426,6 +432,8 @@
     }
   }
   &__tel {
+    width: 100%;
+
     padding: 0px 0px 0px 70px;
     margin: 0px 0px 10px 0px;
     @media (max-width: 1320px) {
@@ -435,6 +443,7 @@
       padding: 0px 0px 0px 0px;
     }
     input {
+      width: 100%;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 300;
