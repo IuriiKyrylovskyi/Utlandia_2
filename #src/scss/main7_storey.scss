@@ -43,10 +43,10 @@
   &__column-storey {
     &:nth-child(1) {
       flex: 1 1 auto;
-      border-left: 1px solid #bdbdbd;
-      @media (max-width: 1023px) {
-        border: none;
-      }
+      // border-left: 1px solid #bdbdbd;
+      // @media (max-width: 1023px) {
+      //   border: none;
+      // }
     }
     &:nth-child(2) {
       flex: 0 0 490px;

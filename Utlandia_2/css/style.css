@@ -3165,7 +3165,6 @@ body.ie ._ibg img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  border-left: 1px solid #bdbdbd;
 }
 
 .storey__column-storey:nth-child(2) {
@@ -6450,10 +6449,6 @@ body.ie ._ibg img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-
-  .storey__column-storey:nth-child(1) {
-    border: none;
   }
 
   .storey__column-storey:nth-child(2) {
