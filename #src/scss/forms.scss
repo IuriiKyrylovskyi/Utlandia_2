@@ -271,6 +271,7 @@ textarea {
   &._focus {
   }
   &._error {
+    color: $blue;
   }
 }
 textarea.input {

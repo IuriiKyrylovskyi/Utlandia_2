@@ -351,6 +351,10 @@ textarea {
   padding: 0px 20px;
 }
 
+.input._error {
+  color: #003dd6;
+}
+
 textarea.input {
   resize: none;
   padding: 0px 0px;
@@ -3718,17 +3722,20 @@ body.ie ._ibg img {
 .flat-descr__tel {
   width: 100%;
   padding: 0px 0px 0px 70px;
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 .flat-descr__tel input {
   width: 100%;
-  font-family: "Roboto";
+  font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
   color: #1a1b1f;
+  color: #003dd6;
+  font-weight: 500;
+  font-style: italic;
   padding: 15px 10px 15px 15px;
   background-color: #f3f6fd;
   margin: 0px 0px 10px 0px;
@@ -3749,7 +3756,6 @@ body.ie ._ibg img {
 
 .flat-descr__button {
   width: 100%;
-  margin: 35px 0px 35px 0px;
 }
 
 .add-info {
@@ -5860,6 +5866,7 @@ body.ie ._ibg img {
 
   .flat-descr__button {
     height: 60px;
+    max-width: 430px;
   }
 
   .about-4 {
@@ -6525,7 +6532,7 @@ body.ie ._ibg img {
   }
 
   .flat-descr__button {
-    margin: 0px 0px 0px 0px;
+    min-width: 100%;
   }
 
   .docs__title {

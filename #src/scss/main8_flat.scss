@@ -63,7 +63,6 @@
         max-width: 590px;
         width: 100%;
         margin: 0px auto 0;
-
       }
     }
   }
@@ -436,7 +435,7 @@
     width: 100%;
 
     padding: 0px 0px 0px 70px;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     @media (max-width: 1320px) {
       padding: 0px 0px 0px 40px;
     }
@@ -445,12 +444,17 @@
     }
     input {
       width: 100%;
-      font-family: "Roboto";
+      // font-family: "Roboto";
+      font-family: "Mabry Pro";
+
       font-style: normal;
       font-weight: 300;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 100%;
       color: #1a1b1f;
+      color: $blue;
+      font-weight: 500;
+      font-style: italic;
       padding: 15px 10px 15px 15px;
       background-color: #f3f6fd;
       margin: 0px 0px 10px 0px;
@@ -474,12 +478,27 @@
   }
   &__button {
     width: 100%;
-    margin: 35px 0px 35px 0px;
+    // margin: 35px 0px 35px 0px;
     @media (max-width: 1365px) {
       height: 60px;
+      // max-width: 315px;
+      max-width: 430px;
     }
     @media (max-width: 1023px) {
-      margin: 0px 0px 0px 0px;
+      min-width: 100%;
+
+      // position: fixed;
+      // z-index: 10;
+      // bottom: 0px;
+      // left: 0px;
+      // min-width: 100vw;
+      // margin: 0px 0px 0px 0px;
+      // border-right: 5px solid #fff;
+      // border-left: 5px solid #fff;
+      // border-bottom: 5px solid #fff;
+      // input {
+      //   color: $blue;
+      // }
     }
   }
 }
