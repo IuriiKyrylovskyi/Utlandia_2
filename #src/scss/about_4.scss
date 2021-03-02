@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  // margin: 0 auto;
 
   @media (max-width: 1550px) {
     padding: 100px 0px 60px;
@@ -13,20 +12,13 @@
   @media (max-width: 1365px) {
     padding: 60px 0px 0;
   }
-  // @media (max-width: $md2+px) {
-  //   padding: 100px 0px 60px;
-  // }
-  // @media (max-width: $md3+px) {
-  //   padding: 100px 0px 40px;
-  // }
+
   &__container {
     height: 100%;
     flex: 0 1 auto;
     @media (max-width: 1610px) {
       max-width: 100%;
     }
-    // width: 100%;
-    // margin: auto 0;
   }
 
   &__content {
@@ -51,12 +43,6 @@
     @media (max-width: $md3+px) {
       padding: 0px 20px;
     }
-  }
-
-  &__slider-pagin {
-  }
-
-  &__slider {
   }
 }
 
@@ -122,7 +108,6 @@
     @media (max-width: $md3+px) {
       font-size: 12px;
       line-height: 12px;
-      // padding: 12px 7.5px;
     }
     @media (max-width: 550px) {
       flex: 0 0 40%;
@@ -142,7 +127,6 @@
   .slick-track {
     flex: 0 1 auto;
     width: 100%;
-    // max-width: 100%;
   }
   &__item {
   }
