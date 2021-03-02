@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
@@ -499,10 +497,6 @@ textarea.input {
   clear: both;
 }
 
-.rub:after {
-  content: "₽";
-}
-
 ol.counter {
   list-style-type: none;
   counter-reset: item;
@@ -659,46 +653,6 @@ body.ie ._ibg img {
   display: block;
 }
 
-#map {
-  background: url("../img/icons/loading.gif") center/50px no-repeat;
-}
-
-._swiper {
-  overflow: hidden;
-}
-
-._swiper > div {
-  width: 100%;
-  height: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-._swiper.swiper-container-autoheight > div {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.swiper-container-initialized .swiper-slide {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.swiper-container-android .swiper-slide,
-.swiper-container-android .swiper-wrapper {
-  -webkit-transform: translate3d(0px, 0, 0);
-          transform: translate3d(0px, 0, 0);
-}
-
-.swiper-button-lock {
-  display: none !important;
-}
-
 .slick-slider {
   position: relative;
 }
@@ -744,59 +698,8 @@ body.ie ._ibg img {
   display: block;
 }
 
-.mirror {
-  -webkit-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-}
-
 .nicescroll-rails {
   z-index: 1000 !important;
-}
-
-.gm-style-iw-t {
-  opacity: 0;
-}
-
-.baloon {
-  opacity: 1;
-  right: -7px !important;
-  bottom: 80px !important;
-}
-
-.baloon button {
-  display: none !important;
-}
-
-.baloon:after {
-  display: none !important;
-}
-
-.baloon-style {
-  display: none;
-}
-
-.baloon-content.gm-style-iw {
-  opacity: 1;
-  border-radius: 0px !important;
-  max-width: 300px !important;
-  padding: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  overflow: visible !important;
-}
-
-.baloon-content.gm-style-iw > .gm-style-iw-d {
-  overflow: hidden !important;
-  max-width: none !important;
-}
-
-.baloon-content.gm-style-iw:after {
-  display: none !important;
-}
-
-.baloon-close {
-  top: 18px !important;
 }
 
 ._custom-scroll {
@@ -7909,7 +7812,6 @@ body.ie ._ibg img {
   }
 }
 @supports (-webkit-appearance:none){
-#map{background:url("../img/icons/loading.gif") center/50px no-repeat}
 .popup__close{background:url("../img/popup_close.svg") 100% 0 no-repeat}
 .close-ter__slider-box .slick-prev{background-image:url("../img/main4_close_territory/arrow_prev.svg")}
 .close-ter__slider-box .slick-next{background-image:url("../img/main4_close_territory/arrow_next.svg")}
