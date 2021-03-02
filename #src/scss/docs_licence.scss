@@ -1,7 +1,4 @@
 .licence {
-  &__container {
-  }
-
   &__body {
     position: relative;
     width: 100%;
@@ -37,13 +34,11 @@
     }
   }
 
-  &__link {
-  }
+ 
 
   &__labels-slider {
     position: absolute;
     width: 220px;
-    // height: 400px;
     top: 200px;
     left: 40px;
     background-color: hsla(0, 0%, 100%, 0.8);
@@ -56,8 +51,6 @@
     }
     @media (max-width: $md2+px) {
       position: static;
-      // top: 100%;
-      // left: 0;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -82,12 +75,7 @@
         color: #1a1b1f;
       }
     }
-    // @media (max-width: $md2+px) {
-    //   flex: 0 0 42%;
-    // }
-    // @media (max-width: $md3+px) {
-    //   flex: 0 0 90%;
-    // }
+  
     &.slick-current {
       color: $blue;
     }
@@ -103,8 +91,7 @@
       margin: 0px 0px 40px 0px;
     }
   }
-  &__slider-item {
-  }
+  
 
   &__title-box {
     width: 100%;
@@ -161,8 +148,7 @@
     }
   }
 
-  &__content-row {
-  }
+ 
 
   &__imgs-box {
     max-height: 930px;
@@ -173,7 +159,6 @@
     img,
     source {
       display: block;
-      // max-width: 100%;
       max-width: 650px;
       width: 100%;
       margin: 55px auto;
