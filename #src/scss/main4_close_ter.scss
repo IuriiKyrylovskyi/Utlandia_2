@@ -1,6 +1,5 @@
 .close-ter {
   &__body {
-    // min-height: 100vh;
     height: calc(100vh - 100px);
     width: 100%;
     position: relative;
@@ -17,9 +16,6 @@
     @media (max-height: 810px) {
       min-height: 730px;
     }
-    // @media (max-width: $md4+px) {
-    //   height: calc(100vh - 20px);
-    // }
   }
 
   &__bg {
@@ -35,7 +31,6 @@
       height: 100%;
       top: 0;
       left: 0;
-      // overflow: cover;
     }
   }
 
@@ -65,20 +60,13 @@
     background-color: #fff;
   }
 
-  &__title {
-  }
-
   &__slider-box {
-    // max-width: 890px;
     width: 100%;
-  }
-  &__slider {
   }
 }
 
 .slider-close {
   &__item {
-    // width: 890px;
     background-color: $blue;
     padding: 60px 70px;
     @media (max-width: 680px) {
@@ -96,13 +84,6 @@
     @media (max-width: 680px) {
       flex-direction: column;
     }
-  }
-
-  &__column {
-    // &:nth-child(2) {
-    //   // flex: 0 1 auto;
-    //   flex-shrink: 1;
-    // }
   }
 
   &__icon {
@@ -168,9 +149,6 @@
 }
 
 .close-ter__slider-box {
-  .slick-arrow {
-  }
-
   .slick-prev {
     position: absolute;
     top: 23px;

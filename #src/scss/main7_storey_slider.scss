@@ -40,9 +40,6 @@
     @media (max-width: 1023px) {
       right: 120px;
     }
-    @media (max-width: 800px) {
-      // right: calc(50% + 20px);
-    }
   }
   .slick-next {
     right: 120px;
@@ -77,7 +74,6 @@
 .storey__slider-nav {
   height: 120px;
   width: 100%;
-  // background-color: pink;
 }
 
 .img-storey__img-bg svg {

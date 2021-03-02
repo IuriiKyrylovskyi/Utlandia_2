@@ -1,24 +1,11 @@
-// body._lock {
-//   .location__parallax.parallax {
-//     width: calc(100% - 33px);
-//   }
-// }
-
 .location {
   min-height: 100vh;
-  // position: relative;
 }
-// .location__parallax-container {
-//   position: absolute;
-//   height: 200px;
-//   top: 55%;
-//   padding: 0px 0px 45% 0px;
-// }
+
 .location .parallax__container {
   clip: rect(0, auto, auto, 0);
   overflow: hidden;
   height: 45%;
-  // width: 100%;
   width: 100vw;
   position: absolute;
   top: 55%;
@@ -34,26 +21,10 @@
   top: 0%;
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
-  
+
   position: relative;
 }
-// .location__bg {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   img,
-//   source {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     background-attachment: fixed;
-//   }
-// }
+
 .location__content {
   display: flex;
   flex-direction: column;
@@ -78,7 +49,6 @@
 }
 
 .location__title {
-  // flex: 0 0 430px;
   max-width: 430px;
   font-family: "Mabry Pro";
   font-style: normal;
@@ -92,7 +62,6 @@
 }
 
 .location__text {
-  // flex: 0 0 610px;
   max-width: 610px;
   font-family: "Roboto";
   font-style: normal;
