@@ -32,10 +32,4 @@ $(document).on('click', '.radio__item', function (event) {
   return false;
 });
 
-// // tel mask
-// var elements = document.getElementsByClassName('imaskjs__input_tel');
-// for (var i = 0; i < elements.length; i++) {
-//   new IMask(elements[i], {
-//     mask: '+{38}(000)000-00-00',
-//   });
-// }
+

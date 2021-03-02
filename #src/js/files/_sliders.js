@@ -25,9 +25,7 @@ if ($('.constructions__slider-big').length > 0) {
     slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: true,
-    // autoplaySpeed: 3000,
     fade: true,
-    // infinite: true,
     infinite: false,
     asNavFor: '.constructions__slider-small',
 
@@ -124,7 +122,6 @@ if ($('.licence__img-slider').length > 0) {
   $('.licence__img-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // adaptiveHeight: false,
     arrows: false,
     asNavFor: '.licence__labels-slider',
     autoplay: false,
@@ -137,7 +134,6 @@ if ($('.licence__labels-slider').length > 0) {
   $('.licence__labels-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    //  adaptiveHeight: true,
     asNavFor: '.licence__img-slider',
     centerMode: false,
     arrows: false,
@@ -152,11 +148,7 @@ if ($('.storey__slider').length > 0) {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // centerMode: false,
     fade: true,
-    // arrows: true,
-    //    focusOnSelect: true,
-    // autoplay: false,
       infinite: false,
   });
 }
