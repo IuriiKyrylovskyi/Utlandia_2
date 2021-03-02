@@ -1617,6 +1617,10 @@ body.ie ._ibg img {
   display: none;
 }
 
+._lock ._white-header .header .header__logo span {
+  color: #fff;
+}
+
 ._lock .header._scroll .header__logo svg {
   fill: #ffffff;
 }
@@ -3944,6 +3948,7 @@ body.ie ._ibg img {
 .contacts__map iframe {
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 .contacts__container {
@@ -4386,6 +4391,7 @@ body.ie ._ibg img {
   left: 0;
   -o-object-fit: contain;
      object-fit: contain;
+  border: 0;
 }
 
 .big-slide__column-content source,
