@@ -1,7 +1,4 @@
-// ==== common styles ========
 ._section {
-  // margin-top: 100px;
-  // background-color: #fff;
   margin-top: 100px;
   @media (max-width: 1366px) {
     margin-top: 60px;
@@ -9,14 +6,7 @@
   @media (max-width: 1124px) {
     margin-top: 40px;
   }
-  // @media (max-width: $md3+px) {
-  //   margin-top: 30px;
-  // }
-  // @media (max-width: $md4+px) {
-  //   margin-top: 20px;
-  // }
 }
-// =====flat===========
 .flat-h {
   fill: $blue;
   opacity: 0.2;
@@ -42,7 +32,6 @@
     }
   }
 }
-// ==== _section_a_small=====
 ._section_a_small,
 ._section_b_small {
   fill: #809eeb;
@@ -54,32 +43,7 @@
     fill-opacity: 1;
   }
 }
-// ===============
-// .flat-spoller .nicescroll-cursors{
-//   background-color: transparent;
-//   top: 0 !important;
-//   z-index: -1000;
-// }
-// =====title-box========
-// ._title-box {
-//   // max-width: 600px;
-//   padding: 65px 100px;
-//   background-color: #fff;
-//   margin: 40px 0px 100px 0px;
 
-//   @media (max-width: 600px) {
-//     margin: 40px 0px 50px 0px;
-//     padding: 45px 50px;
-//   }
-//   @media (max-width: 500px) {
-//     margin: 30px 0px 30px 0px;
-//     padding: 25px 20px;
-//   }
-//   @media (max-width: 390px) {
-//     padding: 25px 00px;
-//   }
-// }
-// =====title========
 ._title {
   font-family: "Mabry Pro";
   font-weight: 500;
@@ -96,7 +60,6 @@
     font-size: 35px;
   }
 }
-//<FORM ()>====================================================================================================
 .form {
   &__error {
     font-size: 12px;
@@ -105,9 +68,7 @@
   }
 }
 
-//</FORM>====================================================================================================
 
-//<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
   display: inline-flex;
   padding: 0px 0px;
@@ -119,7 +80,6 @@
     width: 100%;
   }
 }
-//</BUTTONS>====================================================================================================
 .button {
   display: flex;
   flex: 0 0 340px;
@@ -147,14 +107,8 @@
       background-color: $bluehover;
     }
   }
-  // @media (max-width: 1366px) {
-  //   padding: 0px 45px 0px 45px;
-  // }
-  // @media (max-width: 1210px) {
-  //   padding: 0px 35px 0px 35px;
-  // }
+
   @media (max-width: 1124px) {
-    // padding: 0px 25px 0px 25px;
     flex: 0 1 340px;
     min-width: 280px;
   }
@@ -162,14 +116,11 @@
     max-height: 75px;
   }
 }
-//<SELECT (sel+tab)>====================================================================================================
 .select {
   position: relative;
-  // .select__item
   &__item {
     position: relative;
   }
-  // .select__title
   &__title {
     color: #000;
     border: 1px solid #d9d9d9;
@@ -180,7 +131,6 @@
       font-size: 18px;
     }
   }
-  // .select__value
   &__value {
     display: flex;
     font-size: 14px;
@@ -202,7 +152,6 @@
       transition: all 0.3s ease 0s;
       width: 11px;
       height: 7px;
-      background: url("../img/icons/select.svg") center / 100% no-repeat;
     }
   }
   &__input {
@@ -210,7 +159,6 @@
     background-color: transparent;
     height: 100%;
   }
-  // .select__options
   &__options {
     color: #000;
     display: none;
@@ -229,7 +177,6 @@
       font-size: 18px;
     }
   }
-  // .select__option
   &__option {
     cursor: pointer;
     padding: 5px 15px;
@@ -252,9 +199,7 @@
     }
   }
 }
-//</SELECT>====================================================================================================
 
-//<INPUT (inp+tab)>====================================================================================================
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -268,8 +213,7 @@ textarea {
   width: 100%;
   display: block;
   padding: 0px 20px;
-  &._focus {
-  }
+ 
   &._error {
     color: $blue;
   }
@@ -278,23 +222,16 @@ textarea.input {
   resize: none;
   padding: 0px 0px;
 }
-//</INPUT>====================================================================================================
 
-//<CHECK (chk+tab)>====================================================================================================
 .checkbox {
   position: relative;
-  // .checkbox__input
   &__input {
     position: absolute;
     width: 0;
     height: 0;
     opacity: 0;
     visibility: hidden;
-    &:checked + .checkbox__text:before {
-      background: #fff url("../img/icons/check.svg") center no-repeat;
-    }
   }
-  // .checkbox__text
   &__text {
     display: inline-flex;
     align-items: center;
@@ -334,21 +271,16 @@ textarea.input {
     }
   }
 }
-//</CHECK>====================================================================================================
 
-//<OPTIONS (opt+tab)>====================================================================================================
 .options {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  // .options__item
   &__item {
     position: relative;
     cursor: pointer;
-    &._error {
-    }
+    
   }
-  // .options__input
   &__input {
     position: absolute;
     width: 0;
@@ -357,13 +289,11 @@ textarea.input {
     left: 0;
     top: 0;
     visibility: hidden;
-    &:checked + .options__text:before {
-    }
+    
     &:checked + .options__text:after {
       transform: scale(1);
     }
   }
-  // .options__text
   &__text {
     display: inline-flex;
     align-items: center;
@@ -399,112 +329,3 @@ textarea.input {
     }
   }
 }
-//</OPTIONS>====================================================================================================
-
-//<RATING>====================================================================================================
-.rating-block {
-  display: table;
-  font-size: 0;
-}
-.rating {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  &.edit .star {
-    cursor: pointer;
-  }
-  .star {
-    width: 17px;
-    height: 14px;
-    display: inline-block;
-    position: relative;
-    z-index: 3;
-  }
-}
-.rating__line {
-  position: absolute;
-  width: 85px;
-  height: 14px;
-  top: 0;
-  left: 0;
-  background: url("../img/icons/bg_rating.svg") 0 0 no-repeat;
-  z-index: 1;
-  background-size: 85px 100%;
-}
-.rating__activeline {
-  position: absolute;
-  width: 0px;
-  height: 14px;
-  top: 0;
-  left: 0;
-  background: url("../img/icons/bg_rating_active.svg") 0 0 no-repeat;
-  z-index: 2;
-  background-size: 85px 100%;
-}
-.rating__value {
-  display: inline-block;
-  color: #1b3139;
-  font-size: 14px;
-  line-height: 13px;
-  vertical-align: middle;
-}
-//</RATING>====================================================================================================
-
-//<QUANTITY>====================================================================================================
-.quantity {
-  width: 88px;
-  height: 40px;
-  display: flex;
-  border: 1px solid rgba(166, 166, 166, 0.45);
-  // .quantity__button
-  &__button {
-    flex: 0 0 30px;
-    position: relative;
-    cursor: pointer;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transition: all 0.3s ease 0s;
-      margin: 0px 0px 0px -4.5px;
-      background-color: #a6a6a6;
-      width: 9px;
-      height: 1px;
-    }
-    @media (min-width: $md2+px) {
-      &:hover {
-        &::before,
-        &::after {
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-      }
-    }
-    // .quantity__button_plus
-    &_plus {
-      &::before {
-        transform: rotate(-90deg);
-      }
-    }
-    // .quantity__button_minus
-    &_minus {
-    }
-  }
-  // .quantity__input
-  &__input {
-    flex: 1 1 auto;
-    input {
-      height: 100%;
-      color: #a6a6a6;
-      font-size: 12px;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-//</QUANTITY>====================================================================================================
-
-//<RANGE>====================================================================================================
-
-//</RANGE>====================================================================================================
