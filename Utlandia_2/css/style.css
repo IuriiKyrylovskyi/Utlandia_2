@@ -4378,6 +4378,16 @@ body.ie ._ibg img {
           align-items: flex-end;
 }
 
+.big-slide__column-content iframe {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .big-slide__column-content source,
 .big-slide__column-content img {
   position: absolute;
