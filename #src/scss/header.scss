@@ -273,7 +273,7 @@
     @media (max-width: 765px) {
       margin: 50px 50px 100px 50px;
     }
-    @media (max-width: 350px) {
+    @media (max-width: 370px) {
       margin: 55px 35px 60px 35px;
     }
     @media (max-height: 420px) {
@@ -378,6 +378,7 @@
   @media (max-width: 420px) {
     font-size: 44px;
     line-height: 44px;
+    margin: 0px 0px 20px 0px;
   }
   @media (max-width: 350px) {
     font-size: 32px;
@@ -411,6 +412,9 @@
 
 .header .socials {
   max-width: 200px;
+  @media (max-width: 380px) {
+    margin: 0 auto;
+  }
   @media (max-height: 420px) {
     padding: 0px 0px 30px 0px;
   }
@@ -420,6 +424,14 @@
     letter-spacing: 0.01em;
     color: rgba(255, 255, 255, 0.5);
     margin: 35px 0 0 0;
+    @media (max-width: 370px) {
+      margin: 20px 0 0 0;
+    }
+  }
+  &__box {
+    @media (max-width: 370px) {
+      margin: 15px 0px 0px 0px;
+    }
   }
 }
 
@@ -700,12 +712,9 @@
     }
     .socials__label {
       @media (max-width: 350px) {
-        display: none;
+        // display: none;
       }
     }
-    .socials__box {
-      @media (max-width: 350px) {
-      }
-    }
+    
   }
 }
