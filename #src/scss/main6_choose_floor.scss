@@ -209,11 +209,11 @@ $total-items: 9;
   left: 62%;
   z-index: 2;
   display: none;
-  @media (max-width: 1200px) {
+  @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 155px 0px 60px;
+    padding: 245px 0px 60px;
   }
   @media (max-width: $md3+px) {
     padding: 45px 0px 40px;
