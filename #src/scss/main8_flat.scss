@@ -79,6 +79,7 @@
     }
   }
   &__pdf {
+    white-space: nowrap;
     @media (max-width: 1220px) {
       margin: 10px;
     }

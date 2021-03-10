@@ -107,6 +107,11 @@
     padding: 35px;
   }
 }
+@media (max-width: 430px) {
+  .terasse__row {
+    align-items: center;
+  }
+}
 
 .terasse__column {
   display: flex;

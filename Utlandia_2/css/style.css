@@ -1086,8 +1086,8 @@ body.ie ._ibg img {
 
 .menu__links-box {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,6 +1099,10 @@ body.ie ._ibg img {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px 100px;
+}
+
+.menu__list {
+  padding: 0px 40px 0px 0px;
 }
 
 .menu__list--flex {
@@ -2307,6 +2311,7 @@ body .rngst_phone_button {
 }
 
 .location__column-title {
+  min-height: 68px;
   font-family: "Mabry Pro";
   font-style: normal;
   font-weight: 500;
@@ -2758,7 +2763,7 @@ body .rngst_phone_button {
 }
 
 .choose__title {
-  max-width: 220px;
+  max-width: 245px;
   margin: 0px 0px 35px 0px;
 }
 
@@ -3325,6 +3330,10 @@ body .rngst_phone_button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flat-img__pdf {
+  white-space: nowrap;
 }
 
 .flat-img__pdf-link {
@@ -3992,6 +4001,7 @@ body .rngst_phone_button {
   font-size: 14px;
   line-height: 110%;
   color: #1a1b1f;
+  text-align: right;
 }
 
 .constructions {
@@ -5723,6 +5733,10 @@ body .rngst_phone_button {
     margin: 50px 0px 50px 50px;
   }
 
+  .menu__list {
+    padding: 0px 0px 0px 0px;
+  }
+
   .menu__link {
     font-size: 20px;
     margin: 0px 0px 25px 0px;
@@ -6664,6 +6678,10 @@ body .rngst_phone_button {
     max-width: 100%;
     margin: 20px 20px;
   }
+
+  .location__column-title {
+    min-height: auto;
+  }
 }
 
 @media (max-height: 545px) and (max-width: 823px) {
@@ -7595,6 +7613,12 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 430px) {
+  .terasse__row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .terasse__column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
