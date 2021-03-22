@@ -4346,6 +4346,10 @@ body .rngst_phone_button {
   background-color: #003dd6;
 }
 
+.ytp-cued-thumbnail-overlay-image {
+  background-size: contain !important;
+}
+
 .about-1 {
   position: relative;
   min-height: calc(100vh - 100px);
@@ -6736,6 +6740,35 @@ body .rngst_phone_button {
 
   .round-btn__text {
     font-size: 9px;
+  }
+
+  .rngst_phone_button {
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: 0;
+  }
+
+  .rngst_phone_circle {
+    display: none;
+  }
+
+  .rngst_phone_icon {
+    top: 0;
+    left: 0;
+  }
+
+  .rngst_phone_fill {
+    top: -30px;
+    left: -30px;
   }
 
   .location__title-box {

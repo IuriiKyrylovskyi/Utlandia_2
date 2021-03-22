@@ -129,3 +129,30 @@ body .rngst_phone_button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.rngst_phone_button {
+  @media (max-width: $md3+px) {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+}
+.rngst_phone_circle {
+  @media (max-width: $md3+px) {
+    display: none;
+  }
+}
+.rngst_phone_icon {
+  @media (max-width: $md3+px) {
+    top: 0;
+    left: 0;
+  }
+}
+.rngst_phone_fill{
+  @media (max-width:$md3+px){
+     top: -30px;
+    left: -30px;
+  }
+}

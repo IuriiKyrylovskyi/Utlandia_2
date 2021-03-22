@@ -43,7 +43,7 @@
     width: 200px;
     margin: 0px 30px 0px 0px;
     overflow: hidden;
-   
+
     @media (max-width: 1360px) {
       flex: 1 1 auto;
       width: 90vw;
@@ -175,8 +175,6 @@
       }
     }
   }
-
-  
 }
 
 .small-slide {
@@ -335,7 +333,6 @@
       padding: 15px 0px;
     }
   }
- 
 }
 .info-cell {
   margin: 0px 0px 25px 0px;
@@ -399,4 +396,8 @@
     height: 3px;
     background-color: $blue;
   }
+}
+
+.ytp-cued-thumbnail-overlay-image {
+  background-size: contain !important;
 }

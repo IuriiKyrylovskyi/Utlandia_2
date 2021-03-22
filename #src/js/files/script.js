@@ -32,4 +32,22 @@ $(document).on('click', '.radio__item', function (event) {
   return false;
 });
 
+// // ====
+// const youTubeImgs = document.querySelectorAll('.ytp-cued-thumbnail-overlay-image');
+// console.log(youTubeImgs);
+// const youTubeImgStyleContent = () => {
+//   if (youTubeImgs.length === 0) {
+//     return;
+//   }
 
+//   for (let index = 0; index < youTubeImgs.length; index++) {
+//     const img = youTubeImgs[index];
+//     img.style.backgroundSize = 'content';
+//   }
+//   // youTubeImgs.map(img => {
+//   //   img.style.backgroundSize = 'content';
+//   //   return img;
+//   // });
+// };
+
+// youTubeImgStyleContent();
