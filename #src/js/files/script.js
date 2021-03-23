@@ -33,21 +33,71 @@ $(document).on('click', '.radio__item', function (event) {
 });
 
 // // ====
-// const youTubeImgs = document.querySelectorAll('.ytp-cued-thumbnail-overlay-image');
-// console.log(youTubeImgs);
-// const youTubeImgStyleContent = () => {
-//   if (youTubeImgs.length === 0) {
-//     return;
-//   }
+// if (window.location.toString().indexOf('test_constractions_video.html') > 0) {
+//   const iframes = document.querySelectorAll('iframe');
+//   console.log(iframes);
+//   const youTubeImgStyleContent = () => {
+//     if (iframes.length === 0) {
+//       return;
+//     }
 
-//   for (let index = 0; index < youTubeImgs.length; index++) {
-//     const img = youTubeImgs[index];
-//     img.style.backgroundSize = 'content';
+//     iframes.forEach(iframe => {
+//       const youTubeImg = iframe.contentWindow.document.querySelector('.ytp-cued-thumbnail-overlay-image');
+//       console.log(youTubeImg);
+//       youTubeImg.style.backgroundSize = 'content';
+//     });
+//   };
+
+//   youTubeImgStyleContent();
+// }
+
+// $('iframe').each(function () {
+//   function injectCSS() {
+//   //   $iframe
+//   //     .contents()
+//   //     .find('head')
+//   //     .append($('<link/>', { rel: 'stylesheet', href: 'iframe.css', type: 'text/css' }));
+//   // }
+
+//   // var $iframe = $(this);
+//   // $iframe.on('load', injectCSS);
+//   injectCSS();
+// });
+
+// $('iframe').each(function () {
+//   function injectCSS() {
+//     let link = document.createElement("link");
+
+//     // Set the attributes
+//     // for link element
+//     link.href = "iframe.css";
+//     link.rel = "stylesheet";
+//     link.type = "text/css";
+
+//     // Set the link element at the
+//     // 'head' of HTML document
+//     document.head.appendChild(link);
 //   }
-//   // youTubeImgs.map(img => {
-//   //   img.style.backgroundSize = 'content';
-//   //   return img;
-//   // });
+//   injectCSS();
+// });
+
+// const iframes = document.querySelectorAll('iframe');
+// const youTubeImgStyleContent = () => {
+//   iframes.forEach(iframe => {
+//     console.log(iframes);
+//     if (iframes.length === 0) {
+//       return;
+//     }
+
+//     let link = iframe.createElement('link');
+
+//     link.name = 'img';
+//     link.href = 'iframe.css';
+//     link.rel = 'stylesheet';
+//     link.type = 'text/css';
+//     console.log(link);
+//     iframe.head.appendChild(link);
+//   });
 // };
 
 // youTubeImgStyleContent();
