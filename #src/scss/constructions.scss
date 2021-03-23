@@ -221,6 +221,12 @@
     max-width: 805px;
     display: flex;
     align-items: flex-end;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width:$md3+px){
+      cursor: pointer;
+    }
 
     @media (max-width: 1500px) {
       max-width: 705px;
@@ -239,7 +245,7 @@
       top: 0;
       left: 0;
       object-fit: contain;
-
+      background-size: contain;
       border: 0;
     }
     source,
@@ -249,7 +255,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 

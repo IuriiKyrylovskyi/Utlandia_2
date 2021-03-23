@@ -3895,75 +3895,9 @@ $(document).on('click', '.radio__item', function (event) {
   return false;
 });
 
-// // ====
-// if (window.location.toString().indexOf('test_constractions_video.html') > 0) {
-//   const iframes = document.querySelectorAll('iframe');
-//   console.log(iframes);
-//   const youTubeImgStyleContent = () => {
-//     if (iframes.length === 0) {
-//       return;
-//     }
 
-//     iframes.forEach(iframe => {
-//       const youTubeImg = iframe.contentWindow.document.querySelector('.ytp-cued-thumbnail-overlay-image');
-//       console.log(youTubeImg);
-//       youTubeImg.style.backgroundSize = 'content';
-//     });
-//   };
 
-//   youTubeImgStyleContent();
-// }
 
-// $('iframe').each(function () {
-//   function injectCSS() {
-//   //   $iframe
-//   //     .contents()
-//   //     .find('head')
-//   //     .append($('<link/>', { rel: 'stylesheet', href: 'iframe.css', type: 'text/css' }));
-//   // }
-
-//   // var $iframe = $(this);
-//   // $iframe.on('load', injectCSS);
-//   injectCSS();
-// });
-
-// $('iframe').each(function () {
-//   function injectCSS() {
-//     let link = document.createElement("link");
-
-//     // Set the attributes
-//     // for link element
-//     link.href = "iframe.css";
-//     link.rel = "stylesheet";
-//     link.type = "text/css";
-
-//     // Set the link element at the
-//     // 'head' of HTML document
-//     document.head.appendChild(link);
-//   }
-//   injectCSS();
-// });
-
-// const iframes = document.querySelectorAll('iframe');
-// const youTubeImgStyleContent = () => {
-//   iframes.forEach(iframe => {
-//     console.log(iframes);
-//     if (iframes.length === 0) {
-//       return;
-//     }
-
-//     let link = iframe.createElement('link');
-
-//     link.name = 'img';
-//     link.href = 'iframe.css';
-//     link.rel = 'stylesheet';
-//     link.type = 'text/css';
-//     console.log(link);
-//     iframe.head.appendChild(link);
-//   });
-// };
-
-// youTubeImgStyleContent();
 ;
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf('MSIE ');
@@ -5303,5 +5237,30 @@ if ($('.storey__slider').length > 0) {
     fade: true,
       infinite: false,
   });
+}
+;
+// 1. Ссылку на видео храним в data-src, а не src
+// 2. Обратим внимание, что выставлены параметры автовоспроизведения(autoplay=1),
+// отмены воспроизведения похожих видео(rel = 0),
+// не показываем информацию об авторе(showinfo = 0),
+// отключаем лого ютуб(modestbranding = 1)
+$(document).on('click', '.js-videoPoster', function (e) {
+  //отменяем стандартное действие button
+  e.preventDefault();
+  var poster = $(this);
+  // ищем родителя ближайшего по классу
+  var wrapper = poster.closest('.js-videoWrapper');
+  videoPlay(wrapper);
+});
+
+//вопроизводим видео, при этом скрывая постер
+function videoPlay(wrapper) {
+  var iframe = wrapper.find('.js-videoIframe');
+  // Берем ссылку видео из data
+  var src = iframe.data('src');
+  // скрываем постер
+  wrapper.addClass('videoWrapperActive');
+  // подставляем в src параметр из data
+  iframe.attr('src', src);
 }
 ;
