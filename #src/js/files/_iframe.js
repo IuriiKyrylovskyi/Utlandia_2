@@ -22,3 +22,5 @@ function videoPlay(wrapper) {
   // подставляем в src параметр из data
   iframe.attr('src', src);
 }
+
+

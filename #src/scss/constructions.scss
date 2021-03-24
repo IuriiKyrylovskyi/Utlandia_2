@@ -32,7 +32,7 @@
     display: flex;
     height: 100%;
     width: 100%;
-    @media (max-width: 1360px) {
+    @media (max-width: 1470px) {
       flex-direction: column;
       padding: 0px 40px 0px 40px;
     }
@@ -44,7 +44,7 @@
     margin: 0px 30px 0px 0px;
     overflow: hidden;
 
-    @media (max-width: 1360px) {
+    @media (max-width: 1470px) {
       flex: 1 1 auto;
       width: 90vw;
     }
@@ -61,7 +61,7 @@
       background: rgb(255, 255, 255);
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.9990246376294768) 0%, rgba(255, 255, 255, 0) 100%);
       z-index: 1;
-      @media (max-width: 1360px) {
+      @media (max-width: 1470px) {
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.9990246376294768) 0%, rgba(255, 255, 255, 0) 50%);
       }
     }
@@ -69,7 +69,7 @@
       flex-wrap: wrap;
       max-height: 50px;
       min-height: 40px;
-      @media (max-width: 1360px) {
+      @media (max-width: 1470px) {
         max-height: 60px;
         min-height: 60px;
       }
@@ -173,6 +173,9 @@
         left: 50%;
         transform: translateX(-50%);
       }
+      @media (max-width: 420px) {
+        top: 190px;
+      }
     }
   }
 }
@@ -208,11 +211,14 @@
   }
   &__row {
     display: flex;
-    @media (max-width: 700px) {
+    @media (max-width: 1023px) {
       flex-direction: column;
     }
     @media (max-width: 600px) {
       height: 827px;
+    }
+    @media (max-width: 420px) {
+      height: 615px;
     }
   }
 
@@ -224,7 +230,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    @media (min-width:$md3+px){
+    @media (min-width: $md3+px) {
       cursor: pointer;
     }
 
@@ -234,7 +240,7 @@
     @media (max-width: 1360px) {
       max-width: 1000px;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 1023px) {
       height: 400px;
       margin: 0px 0px 40px 0px;
     }
@@ -326,7 +332,7 @@
     border-radius: 2px;
     padding: 32px 43px;
     margin: 0px 5px 0px 45px;
-    @media (max-width: 700px) {
+    @media (max-width: 1023px) {
       margin: 0px auto;
       display: flex;
       justify-content: center;
@@ -345,7 +351,7 @@
   &:last-child {
     margin: 0px 0px 0px 0px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 1023px) {
     flex: 0 0 40%;
     width: 40%;
     margin: 0 20px;
@@ -404,6 +410,6 @@
   }
 }
 
-.ytp-cued-thumbnail-overlay-image {
-  background-size: contain !important;
-}
+// .ytp-cued-thumbnail-overlay-image {
+//   background-size: contain !important;
+// }

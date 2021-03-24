@@ -5136,7 +5136,7 @@ if ($('.constructions__slider-small').length > 0) {
     asNavFor: '.constructions__slider-big',
     responsive: [
       {
-        breakpoint: 1360,
+        breakpoint: 1470,
         settings: {
           slidesToShow: 1,
         },
@@ -5263,4 +5263,6 @@ function videoPlay(wrapper) {
   // подставляем в src параметр из data
   iframe.attr('src', src);
 }
+
+
 ;
