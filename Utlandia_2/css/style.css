@@ -4123,7 +4123,7 @@ body .rngst_phone_button {
 
 .constructions__slider-big .slick-arrow {
   position: absolute;
-  bottom: 0;
+  bottom: -41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
