@@ -6599,7 +6599,7 @@ body .rngst_phone_button {
   }
 
   .main__list {
-    margin: 0px 20px 0px 20px;
+    margin: 0px auto;
   }
 
   .main__link {
@@ -7395,6 +7395,16 @@ body .rngst_phone_button {
   }
 }
 
+@media (max-width: 629px) {
+  .header__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 25px auto;
+    min-width: 80%;
+  }
+}
+
 @media (max-width: 600px) {
   .terasse__title-box {
     margin: 40px 0px 50px 0px;
@@ -7860,6 +7870,30 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 365px) {
+  .header__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 25px auto;
+    min-width: 80%;
+    max-height: 50px;
+    font-size: 14px;
+  }
+
+  .main__title {
+    font-size: 44px;
+    line-height: 44px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .main__subtitle {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .main__link {
+    font-size: 20px;
+  }
+
   .location__column-title {
     font-size: 24px;
   }
@@ -7928,12 +7962,6 @@ body .rngst_phone_button {
 
   .header .socials {
     padding: 0px 0px 30px 0px;
-  }
-}
-
-@media (max-height: 570px) {
-  .main__title-box {
-    min-height: 280px;
   }
 }
 
@@ -8407,6 +8435,14 @@ body .rngst_phone_button {
 
 }
 
+ @media (max-width: 629px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 600px){
 
 @supports (-webkit-appearance:none){
@@ -8528,14 +8564,6 @@ body .rngst_phone_button {
 }
 
  @media (max-height: 420px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-height: 570px){
 
 @supports (-webkit-appearance:none){
 
