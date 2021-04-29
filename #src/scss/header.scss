@@ -188,18 +188,18 @@
     @media (max-width: 767px) {
       display: none;
     }
-    @media (max-width: 629px) {
-      display: flex;
-      margin: 25px auto;
-      min-width: 80%;
-    }
-    @media (max-width: 365px) {
-      display: flex;
-      margin: 25px auto;
-      min-width: 80%;
-      max-height: 50px;
-      font-size: 14px;
-    }
+    // @media (max-width: 629px) {
+    //   display: flex;
+    //   margin: 25px auto;
+    //   min-width: 80%;
+    // }
+    // @media (max-width: 365px) {
+    //   display: flex;
+    //   margin: 25px auto;
+    //   min-width: 80%;
+    //   max-height: 50px;
+    //   font-size: 14px;
+    // }
   }
 
   &__menu-title {
