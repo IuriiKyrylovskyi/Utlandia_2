@@ -243,6 +243,18 @@
     transition: all 0.5s ease 0s;
 
     background-color: #1a1b1f;
+    @media (max-width: 765px) {
+      overflow-y: auto;
+
+      &:before{
+        content:'';
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(29, 29, 34);
+      }
+    }
   }
 
   &__body {
@@ -265,9 +277,12 @@
   &__container {
     display: flex;
     height: 100%;
-    @media (max-height: 420px) {
-      overflow-y: auto;
+    @media (max-width: 765px) {
+      height: auto;
     }
+    // @media (max-height: 420px) {
+    //   overflow-y: auto;
+    // }
   }
 
   &__links-box {
@@ -296,7 +311,7 @@
 
   &__list {
     padding: 0px 40px 0px 0px;
-    @media (max-width:1360px){
+    @media (max-width: 1360px) {
       padding: 0px 0px 0px 0px;
     }
     &--flex {
@@ -731,6 +746,5 @@
         // display: none;
       }
     }
-    
   }
 }

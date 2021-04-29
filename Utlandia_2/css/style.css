@@ -7261,6 +7261,23 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 765px) {
+  .menu__body._active {
+    overflow-y: auto;
+  }
+
+  .menu__body._active:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1d1d22;
+  }
+
+  .menu__container {
+    height: auto;
+  }
+
   .menu__links-box {
     margin: 50px 50px 100px 50px;
   }
@@ -7945,10 +7962,6 @@ body .rngst_phone_button {
 @media (max-height: 420px) {
   .menu__body {
     padding: 61px 0px 0px 0px;
-  }
-
-  .menu__container {
-    overflow-y: auto;
   }
 
   .menu__links-box {
