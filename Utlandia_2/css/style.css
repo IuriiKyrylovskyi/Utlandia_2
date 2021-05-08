@@ -7266,7 +7266,7 @@ body .rngst_phone_button {
   }
 
   .menu__body._active:before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     width: 100%;
@@ -7409,6 +7409,16 @@ body .rngst_phone_button {
 
   .main__list li:not(:last-child) {
     margin: 0px 0px 35px 0px;
+  }
+}
+
+@media (max-width: 629px) {
+  .main .header__button.button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 25px auto;
+    min-width: 80%;
   }
 }
 
@@ -7877,6 +7887,16 @@ body .rngst_phone_button {
 }
 
 @media (max-width: 365px) {
+  .main .header__button.button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 25px auto;
+    min-width: 80%;
+    max-height: 50px;
+    font-size: 14px;
+  }
+
   .main__title {
     font-size: 44px;
     line-height: 44px;
@@ -8421,6 +8441,14 @@ body .rngst_phone_button {
 }
 
  @media (max-width: 630px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 629px){
 
 @supports (-webkit-appearance:none){
 
