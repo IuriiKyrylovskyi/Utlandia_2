@@ -1,6 +1,6 @@
 .storey__slider {
   .slick-arrow {
-    font-size: 0;
+    // font-size: 0;
     color: transparent;
     width: 100px;
     height: 100px;
@@ -23,12 +23,13 @@
   }
   .slick-prev {
     right: 240px;
-    z-index: 5 !important;
+    z-index: 3;
     background-image: url("../img/main7_storey/s_b_nonactive.svg");
     background-repeat: no-repeat;
     background-position: center;
 
     &.slick-disabled {
+      z-index: 5;
       background-image: url("../img/main7_storey/s_b_active.svg");
     }
     @media (max-width: 1650px) {
@@ -43,12 +44,15 @@
   }
   .slick-next {
     right: 120px;
-    z-index: 5 !important;
+    z-index: 3;
     background-image: url("../img/main7_storey/s_a_nonactive.svg");
     background-repeat: no-repeat;
     background-position: center;
     &.slick-disabled {
+      z-index: 5;
       background-image: url("../img/main7_storey/s_a_active.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
     @media (max-width: 1650px) {
       right: 170px;
