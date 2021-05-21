@@ -1,13 +1,14 @@
 .storey__slider {
   .slick-arrow {
     // font-size: 0;
+    position: absolute;
+    top: 50px;
     color: transparent;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 50px;
     background-color: transparent;
     transition: $tr;
+    z-index: 3 !important;
     @media (min-width: $md2+px) {
       cursor: pointer;
       &:hover {
@@ -23,13 +24,13 @@
   }
   .slick-prev {
     right: 240px;
-    z-index: 3;
+    // z-index: 3;
     background-image: url("../img/main7_storey/s_b_nonactive.svg");
     background-repeat: no-repeat;
     background-position: center;
 
     &.slick-disabled {
-      z-index: 5;
+      // z-index: 5 ;
       background-image: url("../img/main7_storey/s_b_active.svg");
     }
     @media (max-width: 1650px) {
@@ -44,12 +45,12 @@
   }
   .slick-next {
     right: 120px;
-    z-index: 3;
+    // z-index: 3;
     background-image: url("../img/main7_storey/s_a_nonactive.svg");
     background-repeat: no-repeat;
     background-position: center;
     &.slick-disabled {
-      z-index: 5;
+      // z-index: 5;
       background-image: url("../img/main7_storey/s_a_active.svg");
       background-repeat: no-repeat;
       background-position: center;

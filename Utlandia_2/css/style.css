@@ -3247,40 +3247,37 @@ foreignobject {
 }
 
 .storey__slider .slick-arrow {
+  position: absolute;
+  top: 50px;
   color: transparent;
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 50px;
   background-color: transparent;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 3 !important;
 }
 
 .storey__slider .slick-prev {
   right: 240px;
-  z-index: 3;
   background-image: url("../img/main7_storey/s_b_nonactive.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .storey__slider .slick-prev.slick-disabled {
-  z-index: 5;
   background-image: url("../img/main7_storey/s_b_active.svg");
 }
 
 .storey__slider .slick-next {
   right: 120px;
-  z-index: 3;
   background-image: url("../img/main7_storey/s_a_nonactive.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .storey__slider .slick-next.slick-disabled {
-  z-index: 5;
   background-image: url("../img/main7_storey/s_a_active.svg");
   background-repeat: no-repeat;
   background-position: center;
