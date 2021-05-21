@@ -3261,7 +3261,7 @@ foreignobject {
 
 .storey__slider .slick-prev {
   right: 240px;
-  z-index: 5;
+  z-index: 5 !important;
   background-image: url("../img/main7_storey/s_b_nonactive.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -3273,7 +3273,7 @@ foreignobject {
 
 .storey__slider .slick-next {
   right: 120px;
-  z-index: 5;
+  z-index: 5 !important;
   background-image: url("../img/main7_storey/s_a_nonactive.svg");
   background-repeat: no-repeat;
   background-position: center;
